@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/top/Section 4 - Focal Lesions and HCC Findings</text></category>
+    <info format="html"><text><![CDATA[Section 4 - Focal Lesions and HCC Findings]]></text></info>
+  </question>
+  <question type="multichoice">
+    <name><text>Q001</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A round, well-circumscribed, uniformly hyperechoic lesion with posterior enhancement in an otherwise normal liver is most consistent with:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>This is the classic hemangioma appearance.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Abscess]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Metastasis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[HCC]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Hemangioma]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q002</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A feature distinguishing tumor from bland portal vein thrombus is that tumor thrombus:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Expansile thrombus with internal flow suggests tumor invasion.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Never expands the vein]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Occurs only in the splenic vein]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Is always anechoic]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Expands the vein and may show internal vascularity on Doppler]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q003</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Criteria for a simple hepatic cyst include all EXCEPT:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Mural nodularity makes a cyst complex and warrants further evaluation.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Posterior acoustic enhancement]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Anechoic contents]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Imperceptible thin wall]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Internal solid mural nodularity]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q004</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A cystic lesion containing daughter cysts and a detached undulating membrane suggests:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Daughter cysts and the water-lily sign are characteristic of echinococcal disease.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Focal fat sparing]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Simple cyst]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Hemangioma]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Hydatid (echinococcal) cyst]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q005</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A thick-walled complex hypoechoic collection with internal debris in a febrile patient most suggests:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Clinical context plus a complex walled collection points to abscess, pyogenic or amoebic.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Hepatic abscess]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Focal fatty sparing]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Simple cyst]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Hemangioma]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q006</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A lesion with a hypoechoic rim around an echogenic center (target sign) most suggests:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The target appearance is characteristic of metastatic disease.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Simple cyst]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Metastasis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Septated cyst]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Focal fat]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q007</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Focal fatty sparing is most characteristically located:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Typical location and absence of mass effect distinguish sparing from a true lesion.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[At the inferior right lobe tip]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[In the caudate only]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[In the hepatic dome]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Adjacent to the gallbladder fossa or anterior to the portal vein]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q008</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which feature argues an area of altered echogenicity is a pseudolesion rather than a mass?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Absence of mass effect with vessels passing through is the key reassuring feature.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Vessels course through it undisplaced, with geographic non-spherical margins]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It has a thick halo]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It displaces adjacent vessels]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It grows over time]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q009</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A thin hypoechoic halo around a solid lesion in a cirrhotic liver:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The halo corresponds to a fibrous pseudocapsule and is concerning in an at-risk liver.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Is a recognized feature of HCC warranting further evaluation]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Excludes malignancy]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Indicates a simple cyst]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Indicates focal fat]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q010</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The mosaic pattern of internal architecture is most associated with:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Mosaic heterogeneity with internal septa is characteristic of larger HCC.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Hemangioma]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Small simple cysts]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Focal sparing]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Larger HCC]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q011</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Doppler interrogation of an HCC may demonstrate:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Neoangiogenesis produces detectable arterial flow, though its absence does not exclude HCC.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[No flow ever]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Internal arterial vascularity, sometimes with a basket-like peripheral pattern]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Flow identical to a simple cyst]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Only venous flow]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q012</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Focal liver lesions on screening should be measured:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Two-plane measurement with documented location makes interval comparison meaningful.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[By visual estimate]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[In one plane only]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Only if over 3 cm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[In at least two orthogonal planes with segment location recorded]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q013</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Infiltrative HCC is clinically important because it:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The infiltrative pattern is most easily missed and often accompanies portal vein tumor thrombus.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Permeates diffusely without a discrete mass and is easily missed]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Occurs only in non-cirrhotic livers]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Never involves the portal vein]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Is the easiest pattern to detect]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q014</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Detection of multiple discrete lesions in a cirrhotic liver should prompt:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Multifocality affects staging and treatment options.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Documenting number and largest size, and referral for diagnostic imaging]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Repeat in 12 months]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Recording the largest only]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Reassurance]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q015</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A well-defined lesion with a central echogenic scar and a spoke-wheel vascular pattern in a non-cirrhotic liver suggests:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The central scar with spoke-wheel vascularity is characteristic of FNH.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Abscess]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[HCC]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Hydatid cyst]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Focal nodular hyperplasia]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q016</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A peripheral hepatic mass associated with capsular retraction and segmental biliary dilatation suggests:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Capsular retraction with biliary obstruction is characteristic of intrahepatic cholangiocarcinoma.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Cholangiocarcinoma]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Focal fat]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Hemangioma]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Simple cyst]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q017</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A small brightly echogenic focus with dense posterior shadowing and no mass effect most likely represents:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Calcified granulomas are common incidental findings requiring no follow-up.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[HCC]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[A calcified granuloma]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Hemangioma]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Metastasis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q018</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A lesion identified only on a single image, in a location corresponding to a rib shadow, should first prompt:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Artifacts mimic lesions; confirmation in a second plane and window is the first step.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Doppler only]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Immediate referral]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Recording as definite HCC]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Rescanning from a different window to confirm the lesion is real]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q019</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The differential for a solid liver lesion differs between cirrhotic and non-cirrhotic livers because:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Pre-test probability shifts markedly with the background liver, which drives the workup.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Cysts occur only in cirrhosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[A solid lesion in a cirrhotic liver carries a much higher probability of HCC]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Hemangiomas occur only in cirrhosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Metastases occur only in cirrhosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q020</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Subcapsular lesions near the hepatic dome are frequently missed because:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Dome coverage requires deliberate intercostal imaging with breath-holding.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[They are anechoic]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[They lie in a region poorly covered by standard subcostal windows]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[They are always small]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[They do not exist]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q021</text></name>
+    <questiontext format="html"><text><![CDATA[<p>When a screening operator is uncertain whether a finding is real, the appropriate action is to:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Escalation with stored images is the designed safety net in a task-shifted program.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Report it as normal]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Delete the images]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Refer immediately for biopsy]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Store the images and escalate for expert over-read]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q022</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A cyst containing thin internal septations without solid components or nodularity is best managed by:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>A septated cyst is not strictly a simple cyst. Thin, smooth septations without nodularity, solid components, or increased vascularity are reassuring, but management should still consider septal thickness, any enhancement, symptoms, and expert or local review rather than being decided by septation alone.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Immediate referral for CT]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Repeat scan in one week]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Documentation and routine surveillance, with expert or local review if the septations are thick, nodular, or vascular]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Biopsy]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q023</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The most important reason to record lesion location by segment is to:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Without location, interval comparison and correlation with CT/MRI becomes unreliable.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Allow the same lesion to be identified and compared on follow-up imaging]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Satisfy documentation rules]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Determine AFP threshold]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Reduce scan time]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q024</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A previously ablated HCC lesion on follow-up ultrasound:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Post-treatment appearances persist; interpretation requires the prior imaging and treatment history.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Always disappears immediately]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Always indicates recurrence]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[May remain visible as an altered area, so comparison with prior imaging is essential]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Should appear completely normal]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q025</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A hyperechoic lesion in a cirrhotic liver should be treated differently from one in a normal liver because:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The hyperechoic-equals-hemangioma heuristic is unsafe in an at-risk liver.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[HCC can appear hyperechoic, so the usual reassurance about hyperechoic lesions does not apply]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Cirrhotic livers are hypoechoic]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Hyperechoic lesions are always benign]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Hemangiomas never occur in cirrhosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+</quiz>

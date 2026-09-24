@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Peer-to-Peer Practice - Liver POCUS Course</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/static/favicon.png">
+<link rel="stylesheet" href="/static/css/site.css">
+<link rel="stylesheet" href="/static/css/content-dark.css">
+</head>
+<body>
+<div class="site-header" id="site-header"></div>
+<div class="site-course-nav" id="course-nav"></div>
+<div class="site-shell" style="padding-top:1.6rem">
+<div class="lp-mod">
+
+<p class="lp-eyebrow">Week 2</p>
+<h2>Peer-to-Peer Practice</h2>
+
+<div class="lp-obj">
+<p>What this block requires</p>
+<ul>
+<li>In-person, instructor-led knobology training: operating the machine, not reading about it</li>
+<li>Guided anatomy-finding: an instructor demonstrates, then every trainee locates the same structure</li>
+<li>Unstructured peer-to-peer practice time, working through the full checklist below</li>
+<li>Every trainee completes the full checklist, comfortably and repeatably, before moving on</li>
+</ul>
+</div>
+
+<h3><span class="lp-num">01</span>In-person practice</h3>
+<p>The purpose of this block is to get used to using the ultrasound: the settings, how to change them, and how to apply them appropriately, then how to actually physically scan, how to position yourself, how to hold the probe, and then gradually work through the checklist and anatomy.</p>
+
+<p>Later, the phantom lesion session will simulate finding an abnormal nodule injected at a known size and location. Progression to pathology should only happen once normal anatomy is understood and can be found on ultrasound. For instance, if you are consistently struggling to find normal liver anatomy and vessels, you may not notice a 5&nbsp;mm nodule.</p>
+
+<p>This block exists to make normal anatomy second nature before pathology is introduced. It is deliberately in person and hands-on, not a video or a simulator, because knobology, the physical business of adjusting depth, gain, and probe pressure while watching the screen, is a motor and physical skill. It is learned by repetition on a real person, with an instructor watching and correcting as you go.</p>
+
+<h3><span class="lp-num">02</span>Structure</h3>
+<ol>
+<li><strong>Day 1, morning: knobology.</strong> Instructor-led. Every trainee operates the machine directly, adjusting depth and gain on a volunteer, with the instructor correcting technique hands-on.</li>
+<li><strong>Day 1, afternoon: guided anatomy tour.</strong> Instructor demonstrates finding each structure on the checklist below, in the fixed order from Session 2b. Trainees follow immediately after on their own volunteer, one structure at a time, before moving to the next.</li>
+<li><strong>Day 2, morning: peer-to-peer practice.</strong> Trainees pair up and work through the full checklist independently, switching roles, with instructors circulating to answer questions and help.</li>
+</ol>
+
+<h3><span class="lp-num">03</span>Readiness checklist</h3>
+<p>Every trainee should be able to find each of the following on a peer volunteer before progressing to the simulation lab. Being comfortable finding the following means without instructor guidance, without needing more than one or two attempts, and most importantly, being able to reproduce the same image consistently.</p>
+
+<p class="lp-check-group">Vessels and landmarks (Session 2a)</p>
+<ul class="lp-check">
+<li>Aorta and IVC, transverse and longitudinal</li>
+<li>Celiac trunk and its branches (the "seagull")</li>
+<li>Splenic vein, followed from the confluence toward the splenic hilum</li>
+<li>Portal vein confluence</li>
+</ul>
+
+<p class="lp-check-group">Liver (Session 2, 2b)</p>
+<ul class="lp-check">
+<li>Ligamentum teres (segment II/III divider)</li>
+<li>Caudate lobe</li>
+<li>Hepatic venous confluence ("venous star")</li>
+<li>Right lobe, full systematic sweep: three transverse columns with a cranial fan each, longitudinal sweep, intercostal</li>
+<li>Left lobe</li>
+</ul>
+
+<p class="lp-check-group">Porta hepatis and gallbladder (Session 2b)</p>
+<ul class="lp-check">
+<li>Portal vein, hepatic artery, and common bile duct together ("Mickey Mouse")</li>
+<li>Common bile duct, measured correctly</li>
+<li>Gallbladder, long axis (fanned wall to wall) and transverse (fundus to neck)</li>
+</ul>
+
+<p class="lp-check-group">Pancreas, spleen, and free fluid windows (Session 2a, 4a)</p>
+<ul class="lp-check">
+<li>Pancreas, head through body toward the tail, via the splenic vein landmark</li>
+<li>Spleen, left lateral intercostal, true long axis between the poles</li>
+<li>Hepatorenal recess (Morison's pouch)</li>
+</ul>
+
+<h3><span class="lp-num">04</span>What happens next</h3>
+<p>Once every trainee in the cohort can complete the checklist comfortably, the group moves to the <strong>Simulation Lab</strong>: the same machine, the same anatomy, now with injected nodules to find against a known answer key. The <strong>Peer OSCE Scanning</strong> assessment follows on a separate day after that.</p>
+
+<p>A trainee who cannot yet complete the checklist should keep practicing here rather than move on. Progressing before normal anatomy is comfortable does not save time, it just creates more issues and bad habits down the line.</p>
+</div>
+<div id="prevnext"></div>
+
+</div>
+<script src="/static/js/api.js"></script>
+<script src="/static/js/course-structure.js"></script>
+<script>
+(async () => {
+  await Api.requireAuth();
+  const here = window.location.pathname.split("/").pop();
+
+  // top course-nav strip: section titles only, current section highlighted
+  const navEl = document.getElementById("course-nav");
+  navEl.innerHTML = COURSE.map((s) => {
+    const active = s.items.some((it) => it.page && it.page.endsWith(here));
+    return `<a href="/index.html#" class="${active ? "active" : ""}">${s.section}</a>`;
+  }).join("");
+
+  // prev/next footer across content pages only
+  const flat = flatPages();
+  const idx = flat.findIndex((p) => p.page.endsWith(here));
+  const prev = idx > 0 ? flat[idx - 1] : null;
+  const next = idx >= 0 && idx < flat.length - 1 ? flat[idx + 1] : null;
+  document.getElementById("prevnext").innerHTML = `
+    <div class="site-prevnext">
+      <span>${prev ? `&larr; <a href="/${prev.page}">${prev.title}</a>` : ""}</span>
+      <span><a href="/index.html">Course Home</a></span>
+      <span>${next ? `<a href="/${next.page}">${next.title}</a> &rarr;` : ""}</span>
+    </div>`;
+})();
+</script>
+</body>
+</html>

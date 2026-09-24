@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Trainer-of-Trainers - Liver POCUS Course</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/static/favicon.png">
+<link rel="stylesheet" href="/static/css/site.css">
+<link rel="stylesheet" href="/static/css/content-dark.css">
+</head>
+<body>
+<div class="site-header" id="site-header"></div>
+<div class="site-course-nav" id="course-nav"></div>
+<div class="site-shell" style="padding-top:1.6rem">
+<div class="lp-mod">
+
+<p class="lp-eyebrow">Weeks 9&ndash;10</p>
+<h2>Trainer-of-Trainers</h2>
+
+<p class="lp-lede">A screening program that depends on the people who started it has not been built yet. These two weeks are what makes the next cohort possible without us.</p>
+
+<div class="lp-obj">
+<p>By the end of these two weeks you should be able to</p>
+<ul>
+<li>Teach a scanning or interpretation session to a peer or junior learner, observed</li>
+<li>Give useful feedback on someone else's scan and report</li>
+<li>Identify what in this curriculum did not work in your setting</li>
+</ul>
+</div>
+
+<h3><span class="lp-num">01</span>The teach-back</h3>
+<p>Each trainee leads a 30&ndash;45 minute session on one Week 1&ndash;2 topic of their choice, plus a peer OSCE scan walkthrough, with faculty observing.</p>
+
+<p>Choose the topic you found hardest, not the one you found easiest. Teaching the thing you struggled with is where you discover whether you actually understand it, and you will explain it better than someone who never found it difficult.</p>
+
+<div class="lp-key">
+<strong>What is being assessed here is different</strong>
+Faculty rate the teach-back using the same OSCE checklist, noted &ldquo;as trainer&rdquo;. But the competence in question is teaching, not scanning. Someone can be an excellent scanner and a poor teacher, usually by demonstrating rather than explaining, or by skipping the step they now do automatically and no longer notice.
+</div>
+
+<h3><span class="lp-num">02</span>Giving feedback on a scan</h3>
+<p>The pattern that works, and it takes practice:</p>
+<ul>
+<li><strong>Watch the whole study before commenting.</strong> Interrupting mid-sweep teaches the trainee to scan for your approval rather than for the patient.</li>
+<li><strong>Ask what they saw before telling them.</strong> Their answer tells you whether the problem was acquisition or interpretation, and those need different fixes.</li>
+<li><strong>Name one thing to change.</strong> A list of six corrections changes nothing. One specific change, practiced on the next patient, changes technique.</li>
+</ul>
+
+<h3><span class="lp-num">03</span>The closing debrief</h3>
+<p>The final session is a group debrief on the whole ten weeks. This is not a formality, it is a data collection point, and the findings feed directly into the feasibility assessment this program exists to produce.</p>
+
+<p>Worth covering explicitly:</p>
+<ul>
+<li>Which parts of the protocol did not survive contact with real clinics, and why</li>
+<li>What the referral pathway actually did when you used it, as opposed to what it was designed to do</li>
+<li>Which teaching material was written for a setting that is not yours</li>
+<li>What you would change before the next cohort runs</li>
+</ul>
+
+<div class="lp-field">
+<strong>Deliberately loosely specified</strong>
+The structure above is a starting point, not a protocol. You know your faculty bandwidth, your cohort, and your clinics better than a curriculum written in advance can. Treat these two weeks as yours to shape.
+</div>
+</div>
+<div id="prevnext"></div>
+
+</div>
+<script src="/static/js/api.js"></script>
+<script src="/static/js/course-structure.js"></script>
+<script>
+(async () => {
+  await Api.requireAuth();
+  const here = window.location.pathname.split("/").pop();
+
+  // top course-nav strip: section titles only, current section highlighted
+  const navEl = document.getElementById("course-nav");
+  navEl.innerHTML = COURSE.map((s) => {
+    const active = s.items.some((it) => it.page && it.page.endsWith(here));
+    return `<a href="/index.html#" class="${active ? "active" : ""}">${s.section}</a>`;
+  }).join("");
+
+  // prev/next footer across content pages only
+  const flat = flatPages();
+  const idx = flat.findIndex((p) => p.page.endsWith(here));
+  const prev = idx > 0 ? flat[idx - 1] : null;
+  const next = idx >= 0 && idx < flat.length - 1 ? flat[idx + 1] : null;
+  document.getElementById("prevnext").innerHTML = `
+    <div class="site-prevnext">
+      <span>${prev ? `&larr; <a href="/${prev.page}">${prev.title}</a>` : ""}</span>
+      <span><a href="/index.html">Course Home</a></span>
+      <span>${next ? `<a href="/${next.page}">${next.title}</a> &rarr;` : ""}</span>
+    </div>`;
+})();
+</script>
+</body>
+</html>

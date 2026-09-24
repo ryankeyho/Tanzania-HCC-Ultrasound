@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/top/Section 6 - Structured Reporting and Interpretation</text></category>
+    <info format="html"><text><![CDATA[Structured reporting and interpretation practice.]]></text></info>
+  </question>
+  <question type="multichoice">
+    <name><text>Q001</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which set of elements constitutes a complete screening liver ultrasound report?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Every field carries decision weight; an impression without adequacy, US category, and findings cannot be acted on or audited.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Impression only]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Lesion size and AFP only]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Indication, visualization adequacy (VIS-A/B/C), US category (US-1/2/3), parenchymal findings, focal lesions with size and location, AFP if available, impression and recommended next step]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Operator name and date only]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q002</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The 'indication' field on a screening report matters because it:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The indication primarily determines surveillance eligibility and clinical context, a cirrhotic patient and a non-cirrhotic HBV carrier qualify under different criteria. Once enrolled, the basic ultrasound recall thresholds applied are generally the same; the indication anchors interpretation rather than changing the recall algorithm itself.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Duplicates the impression]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Records why this patient is in surveillance, which determines whether the patient is correctly eligible for the program]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Is required for billing only]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Describes the machine settings]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q003</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A report impression should be written so that:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The impression is the actionable summary; burying the recommendation in the findings causes missed follow-up.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It avoids any recommendation]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[A referring clinician can act on it without reading the full findings section]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Only a radiologist could interpret it]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It restates every measurement]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q004</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Recording the date the next screen is due on a negative report primarily:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Surveillance fails at the interval far more often than at the scan; the next-due date is the operational fix.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Satisfies audit requirements only]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Converts a negative result into a scheduled action, which is what sustains interval adherence]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Replaces the recall algorithm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Is optional in most programs]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q005</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which impression is most appropriate for a complete study showing a coarse nodular liver, splenomegaly, and no focal lesion?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The impression should state the visualization score, the US category, the parenchymal finding, the absence of focal disease, and the next action. A truly complete, unremarkable study like this one would typically be US-1/VIS-A.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Normal liver ultrasound]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Limited study, repeat]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Abnormal liver, refer urgently]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Adequate study (VIS-A). US-1. Cirrhotic morphology with splenomegaly. No focal lesion identified. Continue 6-month surveillance; next due [date]]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+    <question type="multichoice">
+    <name><text>Q007</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which phrase in a report is most likely to cause downstream harm?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>'No evidence of malignancy' overstates what a screening ultrasound can establish and invites false reassurance.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Adequate visualization]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[No focal lesion seen in the visualized liver]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Technically limited study]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[No evidence of malignancy]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+    <question type="multichoice">
+    <name><text>Q009</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Severe steatosis with deep attenuation should be reflected in the report because it:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The negative predictive value of the study is lower, and the reader needs to know that.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Is a benign incidental finding requiring no mention]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Indicates cirrhosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Reduces sensitivity for focal lesions, which changes how a negative result should be interpreted]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Requires immediate referral]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q010</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A 46-year-old with HBV cirrhosis. Adequate study. A 0.7 cm hypoechoic nodule in segment VI, new since the last scan. AFP 6 ng/mL. The appropriate recommendation is:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Sub-centimetre nodules enter short-interval follow-up; both size and AFP are below recall thresholds.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Biopsy]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Return to routine 6-month surveillance with no change]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Repeat ultrasound in 3-6 months to assess for growth]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Multiphase CT or MRI now]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q011</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A 52-year-old with cirrhosis. Adequate study. A 2.1 cm heterogeneous lesion with a thin halo in segment VIII. AFP 11 ng/mL. The appropriate recommendation is:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>A lesion of 1 cm or greater triggers diagnostic imaging regardless of AFP; a normal AFP does not downgrade it.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Reassure, as AFP is normal]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Refer for multiphase contrast-enhanced CT or MRI]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Repeat ultrasound in 3 months]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Repeat ultrasound in 6 months]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q012</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A 60-year-old with cirrhosis. Adequate study, no focal lesion. AFP 240 ng/mL, rising from 30 six months ago. The appropriate recommendation is:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>A markedly elevated and rising AFP triggers diagnostic imaging on its own; ultrasound's limited sensitivity means the negative scan is not reassuring.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Routine 6-month surveillance]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[No action]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Refer for multiphase CT or MRI despite the negative ultrasound]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Repeat AFP in 6 months]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q013</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A 38-year-old non-cirrhotic HBV carrier. Adequate study. A 1.6 cm lesion previously characterized as a hemangioma on contrast-enhanced CT or MRI, uniformly hyperechoic with posterior enhancement on ultrasound, unchanged over three years. The appropriate recommendation is:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Prior characterization as a hemangioma on appropriate diagnostic imaging, combined with documented multi-year B-mode stability, does not warrant recall. B-mode stability and appearance alone, without that prior cross-sectional characterization, would not be sufficient to call a lesion this size definitively benign.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Refer urgently for CT]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Biopsy]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Repeat in 1 month]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Document as a stable lesion with benign features and continue routine surveillance]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q014</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A cirrhotic patient's nodule measured 0.9 cm six months ago and now measures 1.5 cm. The appropriate recommendation is:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The lesion's new size of 15 mm has crossed the 10 mm threshold, which is what warrants diagnostic imaging. Growth alone would not independently trigger imaging if the lesion remained under 10 mm.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Return to 6-month surveillance]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Continue 3-month ultrasound follow-up]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Reassure]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Refer for multiphase CT or MRI]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q015</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A cirrhotic patient has an expansile filling defect in the main portal vein showing internal color flow, plus a 4 cm heterogeneous mass. The appropriate action is:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Suspected tumor thrombus with a mass is an advanced finding requiring prompt specialist evaluation, not interval follow-up.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[AFP only]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Routine surveillance]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Repeat ultrasound in 3 months]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Urgent referral for multiphase imaging and specialist assessment]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q016</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A screening study shows three discrete lesions of 1.2, 1.8, and 2.4 cm in a cirrhotic liver. The report should:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Multifocality changes staging and treatment options, so lesion count belongs in the report.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Recommend 6-month repeat]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Record the number of lesions and the size and location of the largest, and recommend diagnostic imaging]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Recommend AFP alone]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Record only the largest]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q017</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A patient with cirrhosis has a technically limited study and an AFP of 45 ng/mL. The appropriate recommendation is:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>A limited study cannot exclude disease, and the elevated AFP independently meets the recall threshold.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Refer for multiphase cross-sectional imaging, since neither the ultrasound nor AFP is reassuring]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Repeat ultrasound in 6 months]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Report as negative screen]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Repeat AFP only]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q018</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A 44-year-old with schistosomal periportal fibrosis and splenomegaly, no cirrhosis and no HBV. Adequate study, no focal lesion. The appropriate recommendation is:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Periportal fibrosis is not a guideline-listed standalone surveillance indication, but chronic schistosomiasis does carry increased HCC risk and can progress to cirrhosis. The next step is to establish HBV status and whether cirrhosis has developed - not to close the question.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Begin 6-month HCC surveillance immediately]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Refer for CT]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Repeat ultrasound in 3 months]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Manage the portal hypertension, and establish HBV status and whether cirrhosis has developed before deciding on surveillance]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q019</text></name>
+    <questiontext format="html"><text><![CDATA[<p>When a focal finding is seen on only one image and cannot be reproduced from a second window, the operator should:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Non-reproducibility does not prove a finding was artifactual. Recording the attempt and its outcome, and escalating for review when concern remains, protects both the patient and the next reader without generating a false positive.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Document that it was not reproducible, note the attempt, and escalate for review if concern remains]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Ignore it entirely without documentation]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Report it as a lesion]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Refer for CT]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q020</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Comparison with prior imaging is essential in screening interpretation primarily because:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>A stable lesion and a growing lesion of identical appearance carry entirely different implications.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It is required for billing]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It shortens the exam]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Stability versus interval change is often more decisive than appearance alone]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It replaces measurement]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q021</text></name>
+    <questiontext format="html"><text><![CDATA[<p>An operator is uncertain whether a heterogeneous area represents a lesion or background cirrhotic texture. The correct action is:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Escalation with stored images is the designed safety net; uncertainty resolved by guessing in either direction is unsafe.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Report as normal]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Delete and rescan next visit]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Report as HCC]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Store representative images and escalate for expert over-read before finalizing]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q022</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which describes the correct relationship between the screening operator and the diagnostic pathway?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Screening assigns a category and an action; it does not adjudicate diagnosis.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The operator selects the treatment]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The operator decides whether referral is worthwhile]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[The operator classifies the study and triggers a predefined next step; diagnosis occurs downstream]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The operator makes the final diagnosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q023</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Reporting a lesion's location by Couinaud segment rather than 'right lobe' matters because:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Vague localization breaks the interval comparison the whole surveillance model depends on.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It is required by AFP protocols]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It is more concise]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[It allows the same lesion to be re-identified on follow-up ultrasound and correlated with CT or MRI]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It changes the recall threshold]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q024</text></name>
+    <questiontext format="html"><text><![CDATA[<p>When counselling a patient after a negative screening study, the operator should convey that:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Interval adherence depends on patients understanding that a single negative scan is not an all-clear.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Cancer has been ruled out]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Further screening is unnecessary]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The result guarantees a good outcome]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[No lesion was seen today, the test has limits, and returning at the scheduled interval is what makes screening effective]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q025</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The most useful structure for a case-review teaching session is to:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Practising the actual reporting workflow, including the triage decision, is what transfers to clinical scanning.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Discuss only confirmed HCC cases]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Review images without reporting]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Have trainees complete the standard report form on each case before the answer is revealed]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Show the diagnosis first, then the images]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+</quiz>

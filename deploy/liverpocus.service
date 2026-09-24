@@ -1,0 +1,29 @@
+[Unit]
+Description=Liver POCUS Course webapp (gunicorn)
+After=network.target
+
+[Service]
+# Adjust these three lines to match where you actually deployed the app
+# and which user should own the process.
+User=liverpocus
+WorkingDirectory=/opt/liverpocus-webapp
+EnvironmentFile=/opt/liverpocus-webapp/.env
+
+ExecStart=/opt/liverpocus-webapp/venv/bin/gunicorn \
+    --workers 2 \
+    --bind 127.0.0.1:8000 \
+    --access-logfile /var/log/liverpocus/access.log \
+    --error-logfile /var/log/liverpocus/error.log \
+    wsgi:app
+
+Restart=on-failure
+RestartSec=5
+
+# Basic hardening — this process needs no elevated privileges at all.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/opt/liverpocus-webapp/app /var/log/liverpocus
+
+[Install]
+WantedBy=multi-user.target

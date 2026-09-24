@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/top/Section 3 - Diffuse Liver Pathology</text></category>
+    <info format="html"><text><![CDATA[Section 3 - Diffuse Liver Pathology]]></text></info>
+  </question>
+  <question type="multichoice">
+    <name><text>Q001</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Sonographic hepatic steatosis classically shows:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Increased echogenicity, blurred vessels, and deep attenuation form the classic triad.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Increased echogenicity relative to the kidney, blurred vascular margins, and posterior attenuation]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Decreased echogenicity with sharp vascular margins]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Nodular surface with ascites]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Multiple anechoic cysts]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q002</text></name>
+    <questiontext format="html"><text><![CDATA[<p>All of the following suggest cirrhosis EXCEPT:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>A smooth homogeneous liver describes a normal or non-cirrhotic organ.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Smooth enlarged liver with homogeneous echotexture]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Splenomegaly and ascites]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Nodular surface contour]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Coarse heterogeneous echotexture]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q003</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In advanced cirrhosis, the classic lobar redistribution pattern is:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Caudate and left-lobe hypertrophy with right-lobe atrophy is characteristic.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Caudate and left-lobe hypertrophy with right-lobe atrophy]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Right-lobe hypertrophy with caudate atrophy]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Isolated left-lobe atrophy]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Uniform atrophy of all segments]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q004</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which finding suggests portal hypertension?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Portal vein dilatation, splenomegaly, and collaterals are supportive signs, but diameter alone has limited specificity; a constellation of findings is more reliable than any single measurement.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Normal-caliber hepatic veins]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Portal vein under 10 mm with brisk hepatopetal flow]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Portal vein over 13 mm together with splenomegaly and/or a recanalized paraumbilical vein]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Collapsed IVC with normal respiratory variation]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q005</text></name>
+    <questiontext format="html"><text><![CDATA[<p>AASLD recommends AGAINST routine HCC ultrasound surveillance in:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Routine surveillance is not recommended in non-cirrhotic MASLD with advanced fibrosis.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Adults with HCV cirrhosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Adults with cirrhosis of any etiology]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Adults with chronic HBV meeting risk criteria]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Adults with MASLD and advanced fibrosis but without cirrhosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q006</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Hepatomegaly is commonly suggested when midclavicular craniocaudal span exceeds approximately:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Roughly 15-16 cm is the usual working threshold, varying with body habitus.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[20 cm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[25 cm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[10 cm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[15-16 cm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q007</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Thickened echogenic bands along the portal tracts producing a pipe-stem appearance suggests:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Schistosomal periportal fibrosis is an important regional cause of portal hypertension, distinct from cirrhosis.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Hepatic steatosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Hepatic congestion]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Simple cysts]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Periportal fibrosis, characteristically schistosomal]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q008</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A key distinction of schistosomal periportal fibrosis from cirrhosis is that:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Presinusoidal portal hypertension occurs with relatively preserved parenchyma.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Portal hypertension never develops]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Ascites is invariably present]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The liver is always small and nodular]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Parenchymal architecture and surface contour are typically preserved despite portal hypertension]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q009</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Dilated hepatic veins with a plethoric non-collapsing IVC most suggests:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Passive congestion distends hepatic veins and IVC, unlike cirrhotic portal hypertension.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Cirrhotic portal hypertension]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Hepatic congestion from right heart failure]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Schistosomiasis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Steatosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q010</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Ascites appears on ultrasound as:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Free fluid is anechoic and conforms to dependent spaces.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A shadowing structure]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Anechoic free fluid in dependent spaces outlining bowel and organs]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Echogenic material filling the peritoneum]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A solid perihepatic mass]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q011</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Hepatofugal portal venous flow indicates:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Flow away from the liver signals advanced portal hypertension.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Steatosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Normal physiology]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Acute hepatitis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Advanced portal hypertension]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q012</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Splenomegaly is generally suggested when splenic length exceeds approximately:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Roughly 12-13 cm is the common threshold and a useful indirect sign of portal hypertension.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[8 cm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[22 cm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[12-13 cm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[18 cm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q013</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Severe hepatic steatosis is suggested when:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Loss of the diaphragm and deep vessels marks severe steatosis and also degrades lesion detection.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The kidney appears brighter than the liver]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Only the near field is bright]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Deep attenuation obscures the diaphragm and deep vasculature]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The surface is nodular]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q014</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A high-frequency linear probe is useful in suspected cirrhosis specifically to:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The linear probe better resolves capsular irregularity in the near field.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Assess deep segment VIII]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Measure the portal vein]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Resolve fine surface nodularity of the capsule]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Detect ascites]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q015</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Because both steatosis and fibrosis increase echogenicity:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Overlapping echogenicity is why contour, texture, and portal hypertension signs matter.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Steatosis always causes nodularity]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[B-mode echogenicity alone cannot reliably separate them; contour and other signs must be assessed]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Ultrasound reliably separates them on B-mode alone]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Fibrosis always appears hypoechoic]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q016</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A regenerative nodule differs from HCC in that regenerative nodules:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Regenerative nodules typically blend with background liver and are usually stable. B-mode alone cannot reliably distinguish a truly stable nodule from one that is slowly enlarging; any new or enlarging discrete observation should be managed by the surveillance algorithm regardless.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Always demonstrate portal vein invasion]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Are always over 3 cm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Are typically isoechoic to background liver and are usually stable, though any enlarging observation still warrants the standard surveillance workup]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Always show a thin halo]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q017</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Cavernous transformation of the portal vein appears as:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Collateral formation after chronic portal vein thrombosis produces the cavernoma.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[An anechoic cyst at the porta]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A single dilated portal vein]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[A tangle of serpiginous collaterals replacing the portal vein]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Diffuse parenchymal brightening]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q018</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Aflatoxin exposure is relevant to HCC risk because it:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Aflatoxin-HBV synergy contributes materially to the regional HCC burden.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Protects against HBV carcinogenesis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Matters only in high-income settings]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Acts synergistically with chronic HBV to substantially increase risk]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Causes only benign lesions]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q019</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Chronic hepatitis B differs from most other HCC risk factors in that:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>HBV is directly oncogenic, so surveillance criteria include selected non-cirrhotic carriers.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[HCC can arise without established cirrhosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[HCC occurs only after cirrhosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It never causes HCC]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It requires coexisting steatosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q020</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The 'starry sky' appearance with prominent portal triads against hypoechoic parenchyma is associated with:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Parenchymal edema in acute hepatitis accentuates the portal triads. The sign is nonspecific and cannot diagnose acute hepatitis by itself; it must be interpreted alongside clinical and laboratory findings.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Metastatic disease]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Acute hepatitis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Severe steatosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Cirrhosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q021</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Occlusion of the hepatic veins with caudate hypertrophy and collateral formation suggests:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Hepatic venous outflow obstruction defines Budd-Chiari; the caudate drains separately and hypertrophies.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Portal vein thrombosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Schistosomiasis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Budd-Chiari syndrome]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Acute hepatitis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q022</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Gallbladder wall thickening in a cirrhotic patient with ascites most often reflects:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Wall thickening here is usually secondary; over-calling cholecystitis is a common error.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Gallbladder carcinoma]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Normal post-prandial state only]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Acute cholecystitis in every case]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Hypoalbuminemia and portal hypertension rather than primary gallbladder disease]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q023</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Bland portal vein thrombus differs from tumor thrombus in that bland thrombus:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Internal arterial vascularity and marked expansile change favor tumor thrombus; absence of these findings favors bland thrombus, but acute bland thrombus can still cause some expansion, so no single B-mode feature is definitive on its own.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Usually does not expand the vein and shows no internal arterial flow]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Always expands the vein]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Occurs only with HCC]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Always shows internal flow]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q024</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The portal vein should be measured:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Consistent site and perpendicular measurement make serial comparison meaningful.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[At the porta hepatis, perpendicular to its long axis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Only during expiration]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Anywhere within the liver]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[At the splenic hilum]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q025</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Effective antiviral therapy in chronic hepatitis B:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Residual risk persists on treatment, which is why treated patients remain in surveillance programs.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Increases HCC risk]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Reduces but does not eliminate HCC risk, so surveillance continues]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Eliminates HCC risk, so surveillance can stop]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Has no effect on HCC risk]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+</quiz>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Log in - Liver POCUS Course</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/static/favicon.png">
+<link rel="stylesheet" href="/static/css/site.css">
+</head>
+<body>
+<div class="site-auth-wrap">
+  <img src="/static/branding/logo-boot.gif" alt="Tanzania HCC Ultrasound Training" class="site-auth-logo" id="boot-logo">
+  <h1 class="sr-only">Liver POCUS Course</h1>
+  <p class="sub">Log in to continue your training.</p>
+  <div id="msg"></div>
+  <form id="login-form">
+    <div class="site-field">
+      <label for="email">Email</label>
+      <input type="email" id="email" required autocomplete="username">
+    </div>
+    <div class="site-field">
+      <label for="password">Password</label>
+      <input type="password" id="password" required autocomplete="current-password">
+    </div>
+    <button type="submit" class="site-btn" id="submit-btn">Log in</button>
+  </form>
+  <p class="site-switch">No account yet? <a href="/register.html">Register here</a></p>
+
+  <div class="site-divider" style="margin:1.4em 0;border-top:1px solid var(--site-rule)"></div>
+  <button type="button" class="site-btn site-btn-secondary" id="guest-btn">Continue as guest reviewer</button>
+  <p class="sub" style="font-size:.85rem;margin-top:.6em">No account needed. Quiz progress from this session is not kept once you log out or another reviewer starts a guest session.</p>
+</div>
+
+<script src="/static/js/api.js"></script>
+<script src="/static/js/boot-logo.js"></script>
+<script>
+(async () => {
+  // If already logged in, skip straight to where we were headed.
+  try {
+    const u = await Api.refreshMe();
+    if (u) { window.location.href = nextUrl(); return; }
+  } catch (_) { /* not logged in, stay on this page */ }
+})();
+
+function nextUrl() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get("next") || "/index.html";
+}
+
+function showMsg(text, kind) {
+  document.getElementById("msg").innerHTML = `<div class="site-msg ${kind}">${text}</div>`;
+}
+
+document.getElementById("login-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const btn = document.getElementById("submit-btn");
+  btn.disabled = true;
+  btn.textContent = "Logging in…";
+  try {
+    await Api.login(document.getElementById("email").value.trim(), document.getElementById("password").value);
+    window.location.href = nextUrl();
+  } catch (err) {
+    showMsg(err.message || "Login failed", "error");
+    btn.disabled = false;
+    btn.textContent = "Log in";
+  }
+});
+
+document.getElementById("guest-btn").addEventListener("click", async () => {
+  const btn = document.getElementById("guest-btn");
+  btn.disabled = true;
+  btn.textContent = "Starting guest session…";
+  try {
+    await Api.guestLogin();
+    window.location.href = nextUrl();
+  } catch (err) {
+    showMsg(err.message || "Could not start guest session", "error");
+    btn.disabled = false;
+    btn.textContent = "Continue as guest reviewer";
+  }
+});
+</script>
+</body>
+</html>

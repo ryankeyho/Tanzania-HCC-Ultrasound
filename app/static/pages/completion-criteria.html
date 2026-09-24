@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Course Completion Criteria - Liver POCUS Course</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/static/favicon.png">
+<link rel="stylesheet" href="/static/css/site.css">
+<link rel="stylesheet" href="/static/css/content-dark.css">
+</head>
+<body>
+<div class="site-header" id="site-header"></div>
+<div class="site-course-nav" id="course-nav"></div>
+<div class="site-shell" style="padding-top:1.6rem">
+<div class="lp-mod">
+
+<p class="lp-eyebrow">Assessment</p>
+<h2>Course Completion Criteria</h2>
+
+<p class="lp-lede">Three requirements. Passing two of them is not passing.</p>
+
+<div class="lp-obj">
+<p>A trainee completes the program on meeting all three</p>
+<ul>
+<li><strong>Posttest score of 80% or above</strong></li>
+<li><strong>10 completed and scored peer OSCE scans</strong> logged</li>
+<li><strong>Final OSCE total of 28/35 or above</strong>, with <strong>no single OSAUS domain scored below 3</strong></li>
+</ul>
+</div>
+
+<h3><span class="lp-num">01</span>OSCE minimum domain scores</h3>
+<p>The third criterion has two parts, and the second is doing real work. A trainee can reach 28 out of 35 while scoring excellent equipment handling, systematic technique, and thorough documentation, but display limited ability to recognize what is on the screen.</p>
+
+<p>That trainee should not be screening independently, and a total score alone would pass them. This is why we have a minimum score of 3 in every domain: it prevents a strong performance in six areas from outweighing limited ability in a different area.</p>
+
+<h3><span class="lp-num">02</span>Not meeting a criterion</h3>
+<p>The point of assessment in a training program is to direct the next stage of training, not to sort people. A trainee short of the scan count needs more peer OSCE sessions. A trainee failing one OSCE domain needs targeted work on that domain, then reassessment, not a repeat of the whole course. We can provide one-on-one remediation for those who need more time following the OSCE sessions.</p>
+
+<h3><span class="lp-num">03</span>After completion</h3>
+<p>Completion means ready to start POCUS in appropriate settings, with the caveat that there is access to expert over-read of stored images, a functioning referral pathway, and the option to escalate anything uncertain. It does not mean you are ready to work without those and function as a sole ultrasound screener for lesions. They are part of the model, not training wheels to be removed.</p>
+
+<p>The one criterion worth holding firm on is the interpretation domain. Everything else can be remediated with practice; a scanner who cannot recognize findings is the one whose negative reports carry the most risk.</p>
+</div>
+<div id="prevnext"></div>
+
+</div>
+<script src="/static/js/api.js"></script>
+<script src="/static/js/course-structure.js"></script>
+<script>
+(async () => {
+  await Api.requireAuth();
+  const here = window.location.pathname.split("/").pop();
+
+  // top course-nav strip: section titles only, current section highlighted
+  const navEl = document.getElementById("course-nav");
+  navEl.innerHTML = COURSE.map((s) => {
+    const active = s.items.some((it) => it.page && it.page.endsWith(here));
+    return `<a href="/index.html#" class="${active ? "active" : ""}">${s.section}</a>`;
+  }).join("");
+
+  // prev/next footer across content pages only
+  const flat = flatPages();
+  const idx = flat.findIndex((p) => p.page.endsWith(here));
+  const prev = idx > 0 ? flat[idx - 1] : null;
+  const next = idx >= 0 && idx < flat.length - 1 ? flat[idx + 1] : null;
+  document.getElementById("prevnext").innerHTML = `
+    <div class="site-prevnext">
+      <span>${prev ? `&larr; <a href="/${prev.page}">${prev.title}</a>` : ""}</span>
+      <span><a href="/index.html">Course Home</a></span>
+      <span>${next ? `<a href="/${next.page}">${next.title}</a> &rarr;` : ""}</span>
+    </div>`;
+})();
+</script>
+</body>
+</html>

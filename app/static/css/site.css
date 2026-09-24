@@ -1,0 +1,199 @@
+/* Site chrome, navigation, auth forms, layout, quiz UI, admin dashboard.
+   Dark theme matching the course logo: dark grey (never black, see
+   content-dark.css for why) with off-white text and neon accent colors
+   sampled directly from the logo (gold #FFFF03, cyan #00F6FE, green
+   #03FF3C), toned down for everyday UI and reserved at full intensity
+   for the header brand glow. */
+
+:root{
+  --site-bg:#14161A; --site-panel:#1C1F23; --site-raised:#262A2F; --site-rule:#33383E;
+  --site-ink:#F4F6F5; --site-body:#DADDE0; --site-muted:#9AA3AB;
+  --site-gold:#F2D93E; --site-gold-glow:#FFFF03;
+  --site-cyan:#3FD7E8; --site-cyan-glow:#00F6FE;
+  --site-green:#3ECF6E; --site-green-glow:#03FF3C;
+  --site-danger:#E8615D; --site-danger-bg:#2A1A1A;
+}
+*{box-sizing:border-box}
+html,body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--site-body);background:var(--site-bg)}
+a{color:var(--site-cyan);text-decoration:none}
+a:hover{color:var(--site-gold)}
+
+/* subtle CRT scanline texture, decorative only, kept to header/hero
+   surfaces so it never interferes with reading body text or quiz choices */
+.site-scan{
+  background-image:repeating-linear-gradient(to bottom, rgba(255,255,255,.025) 0px, rgba(255,255,255,.025) 1px, transparent 1px, transparent 3px);
+}
+
+.site-header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:.7rem 1.2rem;background:#0E1013;color:var(--site-ink);
+  font-size:.92rem;flex-wrap:wrap;gap:.6rem;border-bottom:1px solid var(--site-rule);
+}
+.site-header a{color:#C7CCD1;text-decoration:none;margin-right:1.1rem;font-weight:500}
+.site-header a:hover{color:var(--site-gold)}
+.site-header .site-brand{
+  display:flex;align-items:center;gap:.55rem;margin-right:1.6rem;
+  font-weight:800;letter-spacing:.03em;color:var(--site-gold);
+  text-transform:uppercase;font-size:.92rem;
+  animation:neon-pulse-text 3.2s ease-in-out infinite, neon-flicker 6.4s linear infinite;
+}
+@keyframes neon-pulse-text{
+  0%,100%{text-shadow:0 0 8px rgba(255,255,3,.45), 0 0 2px rgba(255,255,3,.6);}
+  50%{text-shadow:0 0 14px rgba(255,255,3,.75), 0 0 22px rgba(255,255,3,.35), 0 0 4px rgba(255,255,3,.8);}
+}
+@media (prefers-reduced-motion: reduce){
+  .site-header .site-brand{animation:none;text-shadow:0 0 12px rgba(255,255,3,.45);}
+}
+.site-header .site-brand img{
+  height:26px;width:auto;display:block;
+  animation-name: neon-pulse, neon-flicker;
+  animation-duration: 3.2s, 6.4s;
+  animation-iteration-count: infinite, infinite;
+  animation-timing-function: ease-in-out, linear;
+}
+@keyframes neon-pulse{
+  0%,100%{
+    filter:
+      drop-shadow(0 0 4px rgba(0,246,254,.55))
+      drop-shadow(0 0 10px rgba(0,246,254,.35))
+      drop-shadow(0 0 2px rgba(255,255,3,.3));
+  }
+  50%{
+    filter:
+      drop-shadow(0 0 7px rgba(0,246,254,.85))
+      drop-shadow(0 0 18px rgba(0,246,254,.55))
+      drop-shadow(0 0 24px rgba(3,255,60,.25))
+      drop-shadow(0 0 3px rgba(255,255,3,.5));
+  }
+}
+/* real neon has an occasional stutter, not a smooth breathe the whole time */
+@keyframes neon-flicker{
+  0%, 92%, 94%, 96%, 100% { opacity: 1; }
+  93%, 95% { opacity: .82; }
+}
+@media (prefers-reduced-motion: reduce){
+  .site-header .site-brand img{
+    animation:none;
+    filter:drop-shadow(0 0 6px rgba(0,246,254,.5));
+  }
+}
+.site-header .site-nav-links{display:flex;flex-wrap:wrap;align-items:center}
+.site-header .site-user{font-size:.85rem;color:var(--site-muted);display:flex;align-items:center;gap:.8rem}
+.site-header button.site-logout{
+  background:none;border:1px solid var(--site-rule);color:#C7CCD1;border-radius:4px;
+  padding:.3rem .7rem;font-size:.82rem;cursor:pointer;
+}
+.site-header button.site-logout:hover{border-color:var(--site-gold);color:var(--site-gold)}
+
+.site-shell{max-width:64rem;margin:0 auto;padding:0 1.2rem 4rem}
+.site-course-nav{
+  display:flex;flex-wrap:wrap;gap:.4rem .9rem;padding:.9rem 1.2rem;
+  background:var(--site-panel);border-bottom:1px solid var(--site-rule);
+  font-size:.83rem;
+}
+.site-course-nav a{color:var(--site-body);text-decoration:none}
+.site-course-nav a.active{color:var(--site-gold);font-weight:600}
+.site-course-nav a:hover{color:var(--site-cyan)}
+
+.site-prevnext{
+  display:flex;justify-content:space-between;margin:3rem 0 1rem;
+  padding-top:1.2rem;border-top:1px solid var(--site-rule);font-size:.92rem;
+  color:var(--site-body);
+}
+.site-prevnext a{text-decoration:none;font-weight:600}
+
+/* --- Auth pages --- */
+.site-auth-wrap{max-width:27rem;margin:3.5rem auto;padding:0 1.2rem}
+.site-auth-logo{display:block;max-width:100%;margin:0 auto 1.6rem;filter:drop-shadow(0 0 24px rgba(0,246,254,.25))}
+.site-auth-wrap h1{font-size:1.3rem;margin:0 0 .3rem;color:var(--site-ink);text-align:center}
+.site-auth-wrap p.sub{color:var(--site-muted);margin:0 0 1.6rem;font-size:.92rem;text-align:center}
+.site-field{margin-bottom:1rem}
+.site-field label{display:block;font-size:.85rem;font-weight:600;margin-bottom:.3rem;color:var(--site-body)}
+.site-field input{
+  width:100%;padding:.55rem .7rem;border:1px solid var(--site-rule);border-radius:4px;
+  font-size:.95rem;font-family:inherit;background:var(--site-raised);color:var(--site-ink);
+}
+.site-field input:focus{outline:2px solid var(--site-cyan);outline-offset:1px}
+.site-field input::placeholder{color:var(--site-muted)}
+.site-btn{
+  background:var(--site-gold);color:#14161A;border:none;border-radius:4px;
+  padding:.65rem 1.2rem;font-size:.95rem;font-weight:700;cursor:pointer;width:100%;
+  letter-spacing:.02em;
+}
+.site-btn:hover{background:var(--site-gold-glow);box-shadow:0 0 16px rgba(255,255,3,.35)}
+.site-btn:disabled{opacity:.5;cursor:default;box-shadow:none}
+.site-btn-secondary{
+  background:none;color:var(--site-ink);border:1px solid var(--site-rule);
+}
+.site-btn-secondary:hover{background:var(--site-panel);box-shadow:none}
+.site-msg{font-size:.88rem;padding:.6rem .8rem;border-radius:4px;margin-bottom:1rem}
+.site-msg.error{background:var(--site-danger-bg);color:#FF9B96;border:1px solid #5C2C2A}
+.site-msg.ok{background:#122922;color:#7CE8B0;border:1px solid #1F4A3A}
+.site-switch{margin-top:1.2rem;font-size:.88rem;text-align:center;color:var(--site-muted)}
+
+/* --- Course home --- */
+.site-section{margin:2.4rem 0}
+.site-section h2{font-family:Georgia,serif;font-size:1.3rem;border-bottom:1px solid var(--site-rule);padding-bottom:.4rem;color:var(--site-ink)}
+.site-item-list{list-style:none;padding:0;margin:.8rem 0 0}
+.site-item-list li{
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:.7rem .9rem;border:1px solid var(--site-rule);background:var(--site-panel);border-radius:4px;margin-bottom:.5rem;
+}
+.site-item-list a.site-item-title{text-decoration:none;color:var(--site-ink);font-weight:600;font-size:.95rem}
+.site-item-list a.site-item-title:hover{color:var(--site-cyan)}
+.site-item-list span.site-item-title{color:var(--site-body);font-weight:600;font-size:.95rem}
+.site-badge{font-size:.75rem;padding:.15rem .55rem;border-radius:10px;font-weight:600}
+.site-badge.exam{background:#2A2410;color:var(--site-gold);border:1px solid #5A4E1E}
+.site-badge.section{background:#0F2426;color:var(--site-cyan);border:1px solid #1F4A4E}
+.site-badge.done{background:#122922;color:var(--site-green);border:1px solid #1F4A3A}
+.site-badge.notdone{background:var(--site-raised);color:var(--site-muted);border:1px solid var(--site-rule)}
+
+/* --- Quiz runner --- */
+.site-quiz-wrap{max-width:44rem;margin:2rem auto;padding:0 1.2rem 5rem}
+.site-quiz-progress{font-size:.85rem;color:var(--site-muted);margin-bottom:1.4rem}
+.site-question{border:1px solid var(--site-rule);background:var(--site-panel);border-radius:6px;padding:1.3rem;margin-bottom:1.3rem}
+.site-question .q-stem{font-size:1.02rem;margin:0 0 1rem;font-weight:500;color:var(--site-ink)}
+.site-question .q-stem p{margin:0}
+.site-choice{
+  display:flex;align-items:flex-start;gap:.6rem;padding:.55rem .6rem;border-radius:4px;
+  cursor:pointer;font-size:.94rem;color:var(--site-body);
+}
+.site-choice:hover{background:var(--site-raised)}
+.site-choice input{margin-top:.2rem}
+.site-choice.correct{background:#122922;border:1px solid var(--site-green);color:#EDEFEF}
+.site-choice.incorrect{background:var(--site-danger-bg);border:1px solid var(--site-danger);color:#EDEFEF}
+.site-feedback{
+  margin-top:.9rem;padding:.8rem 1rem;border-radius:4px;font-size:.9rem;background:var(--site-raised);color:var(--site-body);
+}
+.site-feedback.correct{background:#122922;color:#9FEFC0}
+.site-feedback.incorrect{background:var(--site-danger-bg);color:#FFB3AF}
+.site-quiz-actions{display:flex;justify-content:flex-end;gap:.7rem;margin-top:1.5rem}
+.site-quiz-actions button{
+  padding:.6rem 1.3rem;border-radius:4px;font-size:.92rem;font-weight:700;cursor:pointer;border:none;
+}
+.site-quiz-actions button.primary{background:var(--site-gold);color:#14161A}
+.site-quiz-actions button.primary:hover{background:var(--site-gold-glow);box-shadow:0 0 16px rgba(255,255,3,.35)}
+.site-quiz-actions button:disabled{opacity:.4;cursor:default;box-shadow:none}
+.site-quiz-result{
+  text-align:center;padding:2.5rem 1.5rem;border:1px solid var(--site-rule);background:var(--site-panel);border-radius:8px;
+}
+.site-quiz-result .score{font-size:2.6rem;font-weight:800;color:var(--site-ink)}
+.site-quiz-result .score.pass{color:var(--site-green);text-shadow:0 0 18px rgba(3,255,60,.3)}
+.site-quiz-result .score.fail{color:var(--site-danger)}
+.site-quiz-result p{color:var(--site-body)}
+
+/* --- Admin dashboard --- */
+.site-admin-table{width:100%;border-collapse:collapse;font-size:.86rem}
+.site-admin-table th{background:#0E1013;color:var(--site-gold);text-align:left;padding:.5rem .7rem;border:1px solid var(--site-rule)}
+.site-admin-table td{border:1px solid var(--site-rule);padding:.5rem .7rem;vertical-align:top;color:var(--site-body)}
+.site-admin-table tr:hover td{background:var(--site-raised)}
+
+.site-loading{padding:3rem;text-align:center;color:var(--site-muted)}
+
+/* Visually hidden but still readable by screen readers, used where the
+   logo image visually replaces a heading but the heading text should
+   still be announced for accessibility and still exists for page structure. */
+.sr-only{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+}

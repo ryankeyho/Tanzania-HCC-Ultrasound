@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/top/Section 4a - Pancreas, Spleen, Nodes, Kidneys</text></category>
+    <info format="html"><text><![CDATA[Section 4a Quiz - Pancreas, Spleen, Nodes and Kidneys]]></text></info>
+  </question>
+  <question type="multichoice">
+    <name><text>Q001</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Dilatation of both the common bile duct and the main pancreatic duct is known as the double duct sign and suggests:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>This combination warrants prompt evaluation for an obstructing lesion at the pancreatic head or ampulla. Malignancy is the most concerning cause, but benign causes, including stones, chronic pancreatitis, and strictures, can also produce this pattern.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Gallbladder disease]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[An obstructing lesion at the pancreatic head or ampulla warranting prompt evaluation, most concerning for pancreatic cancer but also seen with stones, chronic pancreatitis, or benign strictures]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A normal variant in the elderly]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Chronic pancreatitis only]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q002</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A patient referred for liver screening is found to have a 9 mm CBD and a 5 mm pancreatic duct. The correct action is:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The double duct sign is not a finding to schedule a repeat scan for. It warrants prompt evaluation for an obstructing lesion, malignancy is the most concerning cause, though benign causes such as stones, chronic pancreatitis, or strictures are also possible.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Reassure, as the liver is normal]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Refer for cross-sectional imaging on the same urgency pathway as a suspicious liver lesion]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Repeat ultrasound in 6 months]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Measure again next visit]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q003</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The normal upper limit for the main pancreatic duct is approximately:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>About 3 mm. Above this warrants attention, particularly with a dilated CBD.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[8 mm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[12 mm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[1 mm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[3 mm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q004</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Normal pancreatic parenchyma compared with normal liver is typically:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The pancreas is iso- to slightly hyperechoic relative to liver and becomes more echogenic with fatty replacement over time.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Heavily shadowing]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Similar or slightly more echogenic, becoming brighter with age]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Markedly hypoechoic]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Anechoic]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q005</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The part of the pancreas most often inadequately visualized is the:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The tail is the hardest region to see, and bowel gas defeats pancreatic imaging more than any other abdominal organ.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Uncinate process]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Neck]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Tail]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Head]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q006</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Measuring the spleen from an anterior approach tends to:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>An anterior plane cuts obliquely through the spleen; this is a common source of false-positive splenomegaly.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Overestimate its size, because the plane is oblique to the true long axis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Underestimate its size]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Give the same result as a lateral approach]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Be the preferred technique]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q007</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The correct approach for measuring splenic length is:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>A left lateral intercostal window with rotation to the true long axis is the accurate technique.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Anterior subcostal]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Left lateral intercostal, rotated to the maximal longitudinal section between the poles]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Right lateral decubitus, anterior probe placement]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Posterior approach only]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q008</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Splenomegaly is generally suggested when splenic length exceeds approximately:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Roughly 12-13 cm, measured correctly on a true longitudinal section.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[12-13 cm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[22 cm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[8 cm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[18 cm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q009</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which lymph node dimension is most relevant when assessing for malignancy?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Short-axis diameter is the dimension that matters; a long node can be entirely normal.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Depth from skin]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Total volume]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Long axis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Short axis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q010</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A long-to-short axis ratio of less than 2 in a lymph node is:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Oval nodes with a ratio of 2 or more are more reassuring; rounded nodes with a ratio under 2 are a supportive, nonspecific feature raising suspicion. Normal short-axis thresholds also vary by nodal station.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Diagnostic of lymphoma]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Irrelevant]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[A supportive, nonspecific feature, since rounding of a node raises suspicion]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Reassuring]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q011</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Loss of the echogenic hilum in a lymph node is:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Rounded shape plus loss of the fatty hilum is a useful supportive pairing, though neither feature alone is diagnostic.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[A supportive, nonspecific concerning feature, particularly combined with a rounded shape]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Only relevant in cervical nodes]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A normal finding in all adults]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Diagnostic of infection]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q012</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which lymph node stations are most relevant to hepatobiliary and pancreatic malignancy, and already on your scanning route?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>You pass through both during the standard protocol, and nodal disease at these stations changes staging.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Mediastinal]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Porta hepatis and coeliac axis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Inguinal and popliteal]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Cervical and axillary]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q013</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A limitation of assessing deep abdominal lymph nodes with the Vscan Air CL is that:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Nodal morphology is a fine-detail assessment; at abdominal depth you lose that resolution, so the threshold to escalate should be lower.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Nodes cannot be seen at all]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[The linear probe cannot reach abdominal depth, so nodal detail is assessed with the coarser curved array]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Color Doppler is unavailable]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Measurements are not possible]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q014</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The primary role of the right kidney in this screening course is as:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The liver-kidney comparison is how steatosis is graded, and both must appear in the same frame. Renal parenchymal disease can alter renal cortical echogenicity and invalidate the comparison.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A target organ for cancer screening]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A landmark for the pancreas]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[The echogenicity reference for grading liver brightness]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A measure of hydration]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q015</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which renal finding during a liver screening study should be documented and referred?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Simple cysts are common and usually incidental; hydronephrosis, gross asymmetry, or a solid mass need referral.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A single small simple anechoic cyst]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Normal corticomedullary differentiation]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Hydronephrosis with a dilated collecting system]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A kidney measuring within normal limits]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q016</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A trainee spends ten minutes attempting to image a difficult pancreatic tail and rushes the hepatic dome. This is:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Complete the liver protocol to standard first; the neighbouring organs are context, not the target.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[A worse study overall, because the liver is the target and dome coverage is the priority]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Required by the protocol]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Acceptable if documented]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Good practice, since pancreatic cancer is aggressive]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q017</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The two features that together distinguish a gallstone from a gallbladder polyp are:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Mobility with repositioning and clean posterior shadowing strongly favor a stone; polyps typically show neither, though small stones may not shadow and mobility should still be confirmed by repositioning.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Size and echogenicity]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Posterior acoustic shadowing and mobility with repositioning]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Patient age and fasting state]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Color Doppler flow and wall thickness]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q018</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Gallbladder wall thickening in a cirrhotic patient with ascites most likely represents:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>In this population thickened walls are common and most often secondary. Over-calling cholecystitis on wall thickening alone, without clinical correlation, sends well patients down an acute surgical pathway.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Gallbladder carcinoma]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Secondary edema from hypoalbuminemia and portal hypertension]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Acute cholecystitis requiring surgical referral]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A normal post-prandial finding only]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q019</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Acute cholecystitis should not be diagnosed on wall thickening alone because:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Wall thickening has a wide differential including edema from ascites, hepatitis and heart failure. A sonographic Murphy sign (focal tenderness under the probe) is a supportive finding, not a mandatory one; its absence can be unreliable, and diagnosis relies on clinical findings together with multiple imaging features.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[The finding is non-specific; a sonographic Murphy sign is supportive but not mandatory, and diagnosis relies on clinical findings together with imaging]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Ultrasound cannot see the gallbladder wall]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Thickening only occurs after perforation]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Wall thickness cannot be measured accurately]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q020</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Normal gallbladder wall thickness in a distended, fasting gallbladder is approximately:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Under about 3 mm. Above that opens a differential, most of which is not cholecystitis.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Under 8 mm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Under 12 mm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Under 3 mm]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Any thickness, as it is not measurable]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q021</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A gallbladder cannot be identified during a screening study. Which explanation must be excluded before reporting anything about stones?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>A fasting rescan is required. Stone exclusion is only valid in a fasting, distended gallbladder.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Post-prandial contraction - a contracted gallbladder cannot exclude stones]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Prior cholecystectomy]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Agenesis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A stone-filled gallbladder]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q022</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Imaging the gallbladder in two planes and two patient positions roughly 90 degrees apart is recommended because:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Two planes plus two positions defeat artifact and test stone mobility in one maneuver.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[A single plane frequently contains an artifact that mimics or hides a stone, and repositioning also tests mobility]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It is faster]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It improves Doppler sensitivity]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It is required for billing]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q023</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which part of the gallbladder deserves deliberate attention because an impacted stone there is easily missed?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>A stone impacted at the neck is both the easiest to overlook and among the most clinically important.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The fundus]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The cystic artery]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[The neck and infundibulum]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The anterior wall]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q024</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A single sessile gallbladder polyp that has grown since the previous scan should be:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Most polyps are harmless cholesterol polyps, but size, sessile morphology and interval growth raise the question of gallbladder malignancy. Current guidance generally considers referral for polyps 10 mm or larger, or 6 to 9 mm with risk factors; growth of 2 mm or more is interpreted alongside current size and risk factors rather than triggering referral on growth alone.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Rescanned in five years]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Documented with size and morphology, and routed to the referral pathway]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Ignored, as polyps are benign]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Treated as a stone]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q025</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The distal (retropancreatic) bile duct is best approached by:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Finding the duct in cross-section within the head first, then rotating to follow it, works better than chasing it through duodenal gas.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Scanning from the left flank]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Chasing the duct downward from the hilum]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Using the linear probe]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Setting the pancreatic head in transverse section and finding the duct in cross-section, then rotating]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q026</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The oblique plane running roughly from the right shoulder toward the umbilicus is used to image:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>This oblique plane gives the long axis of the portal vein with the duct running anterior to it.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The splenic hilum]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The left kidney]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[The hilar segment of the bile duct, with the portal vein in long axis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The pancreatic tail]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q027</text></name>
+    <questiontext format="html"><text><![CDATA[<p>When the anterior approach to the pancreatic tail fails, a useful alternative is to:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The spleen provides an acoustic window to the tail when bowel gas defeats the anterior route.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Increase the gain]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Use a left intercostal window with the spleen as an acoustic window]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Scan from the right flank]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Abandon the pancreas]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q028</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Irregular, beaded 'string of pearls' dilatation of the pancreatic duct is more suggestive of:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Beaded, irregular dilatation suggests chronic pancreatitis; smooth uniform dilatation, especially with a dilated bile duct, points toward an obstructing tumor.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Normal ageing]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Chronic pancreatitis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Acute pancreatitis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[An obstructing tumor]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q029</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Chronic pancreatitis is relevant to a cancer screening course because it:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Mass-forming chronic pancreatitis and tumor can look very similar on B-mode, and the condition also raises cancer risk.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Only occurs after cancer treatment]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Never coexists with malignancy]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Excludes malignancy]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Is both a risk factor for pancreatic adenocarcinoma and its main imaging differential]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q030</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A normal-appearing pancreas on ultrasound in a patient with severe upper abdominal pain:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Ultrasound can be normal in the early hours. Diagnosis is clinical plus lipase; ultrasound looks for a biliary cause, differentials and complications.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Does not exclude acute pancreatitis, which may show no sonographic change early]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Indicates biliary obstruction]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Confirms chronic pancreatitis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Excludes acute pancreatitis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q031</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The principal role of ultrasound in suspected acute pancreatitis is to:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Diagnosis is clinical and biochemical; ultrasound contributes etiology, differential and complications.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Replace CT]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Grade severity definitively]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Establish the diagnosis]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Look for a biliary cause, check differentials such as aneurysm, and assess complications]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q032</text></name>
+    <questiontext format="html"><text><![CDATA[<p>To follow the pancreatic tail from the body view, the correct approach is to:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The splenic vein does not run flat across the abdomen; it rises toward the splenic hilum and the tail wraps with it. The goal is to keep following the vein toward the hilum, whichever rotation direction achieves that on your device and starting orientation; sliding straight left loses both.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Rotate the probe as needed to keep following the splenic vein as it climbs and wraps posteriorly toward the splenic hilum]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Slide caudally]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Slide straight to the patient's left]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Increase depth only]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q033</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The second look at the pancreatic tail is obtained:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The splenic window is part of the pancreatic exam, not just the splenic one, and the anterior route fails often enough that one attempt is not enough.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Through the spleen, on a left intercostal view]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[From the subxiphoid view]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[From a right intercostal window]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It is not routinely obtained]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q034</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The most common unimaged part of the pancreas on ultrasound is the:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Two deliberate looks at the tail, anteriorly along the vein and through the spleen, is the mitigation. Note that late presentation of tail tumors relates to tumor biology and symptom onset, not to how well ultrasound visualizes the tail.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Neck]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Uncinate process]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Head]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Tail]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q035</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which patient position and window is correct for measuring splenic length?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>An anterior plane cuts obliquely and overestimates length, generating false-positive splenomegaly.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Prone]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Subxiphoid]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Anterior approach, supine]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Left lateral intercostal, supine or right lateral decubitus, both poles in one plane]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q036</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Approximate splenic volume is calculated as:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The additional dimensions are worth taking where a spleen is borderline or where change is being tracked over time.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Length x depth x thickness x 0.5]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Length squared]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Length x 2]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Length x width]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q037</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A spleen that exceeds the probe's field of view should be:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Reporting a measurement you know is truncated is misleading; naming the limitation is not.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Measured from anteriorly instead]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Reported with a truncated measurement]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Documented as exceeding the field, or measured with a panoramic mode if available]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Ignored]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q038</text></name>
+    <questiontext format="html"><text><![CDATA[<p>How many deliberate views does the gallbladder require in the screening protocol?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Two planes plus two positions defeats artifact and tests mobility; the neck is where impacted stones hide.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[None, unless symptomatic]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Two, both supine]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Four - long axis, short axis, a repeat in a second position, and a deliberate look at the neck]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[One long-axis view]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q039</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which liver view specifically covers the region most often left unimaged?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The hepatic dome is the classic blind spot, and the intercostal view in partial expiration is what reaches it.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Right lobe intercostal, in quiet or partial expiration]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Left lobe transverse]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Porta hepatis oblique]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Midclavicular measurement]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q040</text></name>
+    <questiontext format="html"><text><![CDATA[<p>The liver-kidney echogenicity comparison requires:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Judging brightness across separate images taken at different gain settings is a guess, not an assessment.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Doppler]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A linear probe]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Separate images of each organ]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Both organs in the same frame at one gain setting]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Q041</text></name>
+    <questiontext format="html"><text><![CDATA[<p>If the pancreatic tail cannot be visualized despite both approaches, the correct action is to:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The next reader has no way to know what your study did and did not exclude unless you name the gap.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Record that the tail was not visualized and why]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Report the pancreas as normal]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Omit the pancreas from the report]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Report only the head]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+</quiz>

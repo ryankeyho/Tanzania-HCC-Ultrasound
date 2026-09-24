@@ -1,0 +1,101 @@
+/* Dark theme for course content pages (Sessions, references, etc).
+   Targets the exact same class names the Moodle-facing pages use
+   (.lp-mod, .lp-obj, .lp-key, .lp-field, .lp-drill, figure/figcaption,
+   details/summary) so no HTML had to change, only the values did.
+
+   Palette sampled directly from the course logo (see palette.py in this
+   repo for the extraction): gold #FFFF03, cyan #00F6FE, green #03FF3C.
+   UI text/border/link uses toned-down versions of the same hues, full
+   neon reads great for a logo, but is genuinely hard to read for body
+   text over a long study session. Full-intensity glow is reserved for
+   the header brand and section numbers, where it's decorative rather
+   than something you have to read carefully.
+
+   Background is dark grey, never black. Ultrasound images have their
+   own black borders and near-black anechoic regions; a black page
+   background sitting right up against that causes simultaneous
+   contrast, the image's blacks look artificially "lifted" because the
+   eye references them against an even-darker surround. A grey surround
+   is standard practice in PACS/DICOM viewers for the same reason. */
+
+.lp-mod{
+  --ink:#EDEFEF; --field:#0E1013; --panel:#1C1F23; --rule:#33383E;
+  --amber:#F2D93E; --teal:#3FD7E8; --body:#DADDE0; --muted:#9AA3AB;
+  --amber-glow:#FFFF03; --teal-glow:#00F6FE; --green:#3ECF6E; --green-glow:#03FF3C;
+  color:var(--body);background:#14161A;
+  font-family:Georgia,"Times New Roman",serif;font-size:1.02rem;line-height:1.62;max-width:52rem}
+
+.lp-mod h2,.lp-mod h3,.lp-mod h4{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);line-height:1.25}
+.lp-mod h2{font-size:1.7rem;letter-spacing:-.01em;margin:0 0 .2em}
+.lp-mod h3{font-size:1.18rem;letter-spacing:.01em;margin:2.4em 0 .5em;padding-top:.7em;border-top:1px solid var(--rule)}
+.lp-mod h4{font-size:1rem;margin:1.6em 0 .3em}
+
+.lp-mod .lp-eyebrow{font-family:system-ui,sans-serif;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);font-weight:700;margin:0 0 .4em;
+  text-shadow:0 0 10px rgba(255,255,3,.35)}
+.lp-mod .lp-num{font-family:system-ui,sans-serif;font-size:.74rem;letter-spacing:.1em;color:var(--teal);display:block;margin-bottom:.15em;
+  text-shadow:0 0 8px rgba(0,246,254,.4)}
+.lp-mod .lp-lede{font-size:1.1rem;color:var(--muted);border-left:3px solid var(--amber);padding-left:1em;margin:1.2em 0 2em}
+
+.lp-mod .lp-obj{background:var(--panel);border:1px solid var(--rule);padding:1.1em 1.3em;margin:1.5em 0}
+.lp-mod .lp-obj p{font-family:system-ui,sans-serif;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 .5em;font-weight:700}
+.lp-mod .lp-obj ul{margin:0;padding-left:1.2em}
+.lp-mod .lp-obj li{margin:.3em 0}
+
+.lp-mod figure{margin:1.8em 0;background:#14161A;padding:1.1em;border-radius:2px;border:1px solid var(--rule)}
+.lp-mod figure svg{width:100%;height:auto;display:block}
+.lp-mod figure img{border-radius:2px}
+.lp-mod figcaption{font-family:system-ui,sans-serif;font-size:.82rem;color:#9AA3AB;margin-top:.8em;line-height:1.5}
+.lp-mod figcaption strong{color:var(--ink)}
+
+.lp-mod .lp-slot{border:2px dashed var(--amber);background:#1A1D21;padding:2.2em 1.2em;text-align:center;font-family:system-ui,sans-serif;color:var(--amber);font-size:.86rem;letter-spacing:.06em}
+.lp-mod .lp-slot em{display:block;color:#7D8894;font-size:.78rem;margin-top:.5em;letter-spacing:0;font-style:normal}
+.lp-mod .lp-cite{display:block;margin-top:.6em;font-size:.74rem;color:#6E7A86;line-height:1.45}
+
+.lp-mod .lp-key{background:#241F14;border-left:3px solid var(--amber);padding:.9em 1.1em;margin:1.4em 0;font-size:.98rem;color:var(--body)}
+.lp-mod .lp-key strong{font-family:system-ui,sans-serif;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;display:block;color:var(--amber);margin-bottom:.25em}
+
+.lp-mod .lp-field{background:#152224;border-left:3px solid var(--teal);padding:.9em 1.1em;margin:1.4em 0;font-size:.96rem;color:var(--body)}
+.lp-mod .lp-field strong{font-family:system-ui,sans-serif;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;display:block;color:var(--teal);margin-bottom:.25em}
+.lp-mod .lp-check{list-style:none;padding-left:0;margin:0}
+.lp-mod .lp-check li{padding:.5em .2em .5em 1.9em;border-bottom:1px solid var(--rule);position:relative;font-size:.97rem;color:var(--body)}
+.lp-mod .lp-check li::before{content:"\2610";position:absolute;left:0;top:.45em;font-size:1.2rem;color:var(--teal)}
+.lp-mod .lp-check-group{font-family:system-ui,sans-serif;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);font-weight:700;margin:1.6em 0 .3em}
+
+.lp-mod details{border:1px solid var(--rule);border-left:3px solid var(--amber);background:var(--panel);margin:1.2em 0}
+.lp-mod details summary{cursor:pointer;padding:.8em 1.1em;font-family:system-ui,sans-serif;font-size:.95rem;font-weight:600;color:var(--ink);list-style:none;position:relative}
+.lp-mod details summary::-webkit-details-marker{display:none}
+.lp-mod details summary::after{content:"+";position:absolute;right:1.1em;color:var(--amber);font-size:1.3rem;line-height:1}
+.lp-mod details[open] summary::after{content:"\2212"}
+.lp-mod details summary span{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);display:block;margin-bottom:.15em}
+.lp-mod details .lp-ans{padding:0 1.1em 1em;border-top:1px solid var(--rule);margin-top:0;font-size:.97rem;color:var(--body)}
+.lp-mod details .lp-ans p strong{color:var(--ink)}
+
+.lp-mod table{border-collapse:collapse;width:100%;margin:1.4em 0;font-family:system-ui,sans-serif;font-size:.92rem}
+.lp-mod th{background:#0E1013;color:var(--amber);text-align:left;padding:.6em .8em;font-weight:600;font-size:.8rem;letter-spacing:.05em;border:1px solid var(--rule)}
+.lp-mod td{border:1px solid var(--rule);padding:.6em .8em;vertical-align:top;color:var(--body)}
+.lp-mod tr:hover td{background:#1A1D21}
+
+.lp-mod .lp-drill{background:#0E1013;color:#DADDE0;padding:1.4em 1.6em;margin:2em 0;border:1px solid var(--rule)}
+.lp-mod .lp-drill h4{color:var(--teal);margin-top:0}
+.lp-mod .lp-drill ol{padding-left:1.2em;margin:.5em 0 0}
+.lp-mod .lp-drill li{margin:.5em 0}
+
+.lp-mod code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em;background:#0E1013;color:var(--teal);padding:.1em .35em;border-radius:2px}
+.lp-mod a{color:var(--teal)}
+.lp-mod a:hover{color:var(--amber)}
+
+/* image credits block */
+.lp-mod .lp-credits{border-top:1px solid var(--rule);margin-top:2.5em;padding-top:1em;font-family:system-ui,sans-serif;font-size:.8rem;color:var(--muted);line-height:1.5}
+.lp-mod .lp-credits h4{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 .5em}
+.lp-mod .lp-credits ul{margin:0;padding-left:1.1em}
+.lp-mod .lp-credits li{margin:.3em 0}
+.lp-mod .lp-credits .todo{color:#E0B94A}
+
+/* views-reference page's compact tables */
+.lp-mod .lp-ref th{font-size:.74rem;letter-spacing:.04em}
+.lp-mod .lp-ref td{padding:.5em .7em;font-size:.88rem}
+.lp-mod .lp-ref td:first-child{font-weight:600;color:var(--ink);width:23%}
+.lp-mod .lp-breath{color:var(--teal);font-weight:600}
+.lp-mod .lp-organ{background:#0E1013;color:var(--amber);padding:.55em .9em;font-family:system-ui,sans-serif;
+  font-size:.95rem;font-weight:600;letter-spacing:.04em;margin:2.2em 0 0;border:1px solid var(--rule)}
+.lp-mod .lp-count{float:right;font-weight:400;color:var(--muted);font-size:.85rem}

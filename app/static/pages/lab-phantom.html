@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Simulation Lab: The Bovine Liver Phantom - Liver POCUS Course</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/static/favicon.png">
+<link rel="stylesheet" href="/static/css/site.css">
+<link rel="stylesheet" href="/static/css/content-dark.css">
+</head>
+<body>
+<div class="site-header" id="site-header"></div>
+<div class="site-course-nav" id="course-nav"></div>
+<div class="site-shell" style="padding-top:1.6rem">
+<div class="lp-mod">
+
+<p class="lp-eyebrow">Weeks 2&ndash;3</p>
+<h2>Simulation Lab: The Bovine Liver Phantom</h2>
+
+<p>You will scan prepared bovine livers containing nodules at recorded sizes and positions, and find out immediately how many you found, how many you missed, and how close your measurements were.</p>
+
+<div class="lp-obj">
+<p>By the end of the lab you should be able to</p>
+<ul>
+<li>Run the full sweep protocol from Session 2b on a fixed target, without prompting</li>
+<li>Detect and measure nodules of 5&ndash;20 mm and locate them within the specimen</li>
+<li>Estimate your own detection sensitivity honestly, before it matters clinically</li>
+</ul>
+</div>
+
+<h3><span class="lp-num">01</span>How the session runs</h3>
+<ol>
+<li>Nodules are injected at known sizes and positions. The map is kept from you.</li>
+<li>You scan the specimen using the same column-and-sweep protocol you would use on a patient, not a shortcut version.</li>
+<li>You document every nodule found: estimated size in two planes, and position within the specimen.</li>
+<li>The instructor compares your findings against the injection map <em>immediately</em>, and debriefs one to one.</li>
+</ol>
+
+<h3><span class="lp-num">02</span>What the sizes are chosen and why</h3>
+<p>The 5&ndash;20 mm range is not arbitrary. Remember the <strong>1 cm threshold</strong> from Sessions 4 and 5, which is the size at which a nodule stops being short-interval follow-up and becomes a referral for cross-sectional imaging.</p>
+
+<p>So when you measure a phantom nodule at 9 mm and the map says 12 mm, that is not a rounding error in an exercise. On a patient, those two numbers produce different management. Measure in two planes, every time, exactly as you would clinically.</p>
+
+<h3><span class="lp-num">03</span>Logging</h3>
+<p>Record each session in the <strong>Phantom Lab Log</strong>. Enter the number of nodules in the specimen and the number you correctly detected, and the sheet calculates your detection sensitivity. Also record false positives, nodules you reported that were not there. Both numbers matter: a scanner with high sensitivity but many false positives can do as much harm as good.</p>
+
+<p>After scanning for practice, practice writing a report on the lesion as you would document it in real life, including how you would communicate the finding to another provider.</p>
+
+<h3><span class="lp-num">04</span>Before you leave the lab</h3>
+<p>You should be able to complete the sweep protocol without referring to the Views Reference, and your detection sensitivity should have improved across sessions. If it has not, the problem is usually the cranial fan at the top of each column, the same omission that makes a clinical study fast and incomplete in real life.</p>
+</div>
+<div id="prevnext"></div>
+
+</div>
+<script src="/static/js/api.js"></script>
+<script src="/static/js/course-structure.js"></script>
+<script>
+(async () => {
+  await Api.requireAuth();
+  const here = window.location.pathname.split("/").pop();
+
+  // top course-nav strip: section titles only, current section highlighted
+  const navEl = document.getElementById("course-nav");
+  navEl.innerHTML = COURSE.map((s) => {
+    const active = s.items.some((it) => it.page && it.page.endsWith(here));
+    return `<a href="/index.html#" class="${active ? "active" : ""}">${s.section}</a>`;
+  }).join("");
+
+  // prev/next footer across content pages only
+  const flat = flatPages();
+  const idx = flat.findIndex((p) => p.page.endsWith(here));
+  const prev = idx > 0 ? flat[idx - 1] : null;
+  const next = idx >= 0 && idx < flat.length - 1 ? flat[idx + 1] : null;
+  document.getElementById("prevnext").innerHTML = `
+    <div class="site-prevnext">
+      <span>${prev ? `&larr; <a href="/${prev.page}">${prev.title}</a>` : ""}</span>
+      <span><a href="/index.html">Course Home</a></span>
+      <span>${next ? `<a href="/${next.page}">${next.title}</a> &rarr;` : ""}</span>
+    </div>`;
+})();
+</script>
+</body>
+</html>

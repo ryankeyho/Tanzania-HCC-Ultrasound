@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Instructor Dashboard - Liver POCUS Course</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/static/favicon.png">
+<link rel="stylesheet" href="/static/css/site.css">
+</head>
+<body>
+<div class="site-header" id="site-header"></div>
+<div class="site-shell">
+  <div class="site-section" style="margin-top:2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
+    <h2 style="border:none">Instructor Dashboard</h2>
+    <a href="/api/admin/export.csv" class="site-btn" style="width:auto;display:inline-block;padding:.55rem 1.1rem;text-decoration:none">Export all results (CSV)</a>
+  </div>
+  <div id="admin-msg"></div>
+  <div id="admin-root"><div class="site-loading">Loading…</div></div>
+</div>
+
+<script src="/static/js/api.js"></script>
+<script>
+(async () => {
+  const me = await Api.requireAuth();
+  if (me.role !== "admin" && me.role !== "instructor") {
+    document.getElementById("admin-root").innerHTML =
+      `<div class="site-msg error">This page is for instructors and admins only.</div>`;
+    return;
+  }
+  await loadUsers();
+})();
+
+async function loadUsers() {
+  const root = document.getElementById("admin-root");
+  try {
+    const { users } = await Api.call("/api/admin/users");
+    let html = `<table class="site-admin-table">
+      <tr><th>Name</th><th>Email</th><th>Cohort</th><th>Role</th><th>Completed quizzes</th><th></th></tr>`;
+    users.forEach((u) => {
+      const summary = u.attempts.length
+        ? u.attempts.map((a) => `${a.quiz_id}: ${a.score}/${a.total}`).join("<br>")
+        : "<em>none yet</em>";
+      html += `<tr>
+        <td>${u.name}</td><td>${u.email}</td><td>${u.cohort || "N/A"}</td><td>${u.role}</td>
+        <td style="font-size:.82rem">${summary}</td>
+        <td><button class="reset-btn" data-id="${u.id}" data-name="${u.name}"
+              style="font-size:.8rem;padding:.3rem .6rem;cursor:pointer">Reset password</button></td>
+      </tr>`;
+    });
+    html += `</table>`;
+    root.innerHTML = html;
+    document.querySelectorAll(".reset-btn").forEach((btn) =>
+      btn.addEventListener("click", () => resetPassword(btn.dataset.id, btn.dataset.name)));
+  } catch (err) {
+    root.innerHTML = `<div class="site-msg error">${err.message}</div>`;
+  }
+}
+
+async function resetPassword(userId, name) {
+  const pw = prompt(`New password for ${name} (8+ characters). They will need to be told this directly, there is no email reset flow.`);
+  if (!pw) return;
+  const msg = document.getElementById("admin-msg");
+  try {
+    await Api.call("/api/admin/reset-password", { method: "POST", body: { user_id: Number(userId), new_password: pw } });
+    msg.innerHTML = `<div class="site-msg ok">Password reset for ${name}.</div>`;
+  } catch (err) {
+    msg.innerHTML = `<div class="site-msg error">${err.message}</div>`;
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Register - Liver POCUS Course</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/static/favicon.png">
+<link rel="stylesheet" href="/static/css/site.css">
+</head>
+<body>
+<div class="site-auth-wrap">
+  <img src="/static/branding/logo-boot.gif" alt="Tanzania HCC Ultrasound Training" class="site-auth-logo" id="boot-logo">
+  <h1 class="sr-only">Create your account</h1>
+  <p class="sub">Trainee accounts only. Instructor and admin roles are set up by the course administrator.</p>
+  <div id="msg"></div>
+  <form id="register-form">
+    <div class="site-field">
+      <label for="name">Full name</label>
+      <input type="text" id="name" required autocomplete="name">
+    </div>
+    <div class="site-field">
+      <label for="email">Email</label>
+      <input type="email" id="email" required autocomplete="username">
+    </div>
+    <div class="site-field">
+      <label for="cohort">Cohort (optional)</label>
+      <input type="text" id="cohort" placeholder="e.g. Cohort 2026-A">
+    </div>
+    <div class="site-field">
+      <label for="password">Password (8+ characters)</label>
+      <input type="password" id="password" required minlength="8" autocomplete="new-password">
+    </div>
+    <button type="submit" class="site-btn" id="submit-btn">Create account</button>
+  </form>
+  <p class="site-switch">Already registered? <a href="/login.html">Log in</a></p>
+</div>
+
+<script src="/static/js/api.js"></script>
+<script src="/static/js/boot-logo.js"></script>
+<script>
+function showMsg(text, kind) {
+  document.getElementById("msg").innerHTML = `<div class="site-msg ${kind}">${text}</div>`;
+}
+
+document.getElementById("register-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const btn = document.getElementById("submit-btn");
+  btn.disabled = true;
+  btn.textContent = "Creating account…";
+  try {
+    await Api.register(
+      document.getElementById("name").value.trim(),
+      document.getElementById("email").value.trim(),
+      document.getElementById("password").value,
+      document.getElementById("cohort").value.trim()
+    );
+    showMsg("Account created. Redirecting to login…", "ok");
+    setTimeout(() => window.location.href = "/login.html", 900);
+  } catch (err) {
+    showMsg(err.message || "Registration failed", "error");
+    btn.disabled = false;
+    btn.textContent = "Create account";
+  }
+});
+</script>
+</body>
+</html>

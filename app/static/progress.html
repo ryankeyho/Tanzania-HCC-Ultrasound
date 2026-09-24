@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>My Progress - Liver POCUS Course</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/static/favicon.png">
+<link rel="stylesheet" href="/static/css/site.css">
+</head>
+<body>
+<div class="site-header" id="site-header"></div>
+<div class="site-shell">
+  <div class="site-section" style="margin-top:2rem">
+    <h2 style="border:none">My Progress</h2>
+  </div>
+  <div id="progress-root"><div class="site-loading">Loading…</div></div>
+</div>
+
+<script src="/static/js/api.js"></script>
+<script>
+(async () => {
+  await Api.requireAuth();
+  const root = document.getElementById("progress-root");
+  try {
+    const [{ progress }, { quizzes }] = await Promise.all([
+      Api.call("/api/progress"), Api.call("/api/quizzes"),
+    ]);
+    const doneIds = new Set(progress.map((p) => p.quiz_id));
+    const notDone = quizzes.filter((q) => !doneIds.has(q.id));
+
+    let html = "";
+    if (progress.length) {
+      html += `<table class="site-admin-table"><tr><th>Quiz</th><th>Type</th><th>Best score</th><th>Attempts</th><th>Last completed</th></tr>`;
+      progress.forEach((p) => {
+        const pct = p.best_score != null ? Math.round(100 * p.best_score / p.total) : "N/A";
+        html += `<tr><td>${p.title}</td><td>${p.mode}</td>
+          <td>${p.best_score ?? "N/A"} / ${p.total ?? "N/A"} (${pct}%)</td>
+          <td>${p.attempts}</td><td>${p.last_completed || "N/A"}</td></tr>`;
+      });
+      html += `</table>`;
+    } else {
+      html += `<p>No completed quizzes yet.</p>`;
+    }
+    if (notDone.length) {
+      html += `<div class="site-section"><h2>Not yet attempted</h2><ul class="site-item-list">`;
+      notDone.forEach((q) => {
+        html += `<li><a class="site-item-title" href="/quiz.html?quiz=${q.id}">${q.title}</a>
+          <span class="site-badge ${q.mode}">${q.mode}</span></li>`;
+      });
+      html += `</ul></div>`;
+    }
+    root.innerHTML = html;
+  } catch (err) {
+    root.innerHTML = `<div class="site-msg error">${err.message}</div>`;
+  }
+})();
+</script>
+</body>
+</html>

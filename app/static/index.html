@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Liver POCUS Course</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/static/favicon.png">
+<link rel="stylesheet" href="/static/css/site.css">
+</head>
+<body>
+<div class="site-header" id="site-header"></div>
+<div class="site-shell">
+  <div class="site-section" style="margin-top:2rem;text-align:center">
+    <h1 class="sr-only">Liver POCUS for HCC Screening</h1>
+    <img src="/static/branding/logo-boot.gif" alt="Tanzania HCC Ultrasound Training" id="boot-logo" style="max-width:420px;width:100%;margin:0 auto 1rem;display:block;filter:drop-shadow(0 0 24px rgba(0,246,254,.2))">
+  </div>
+  <div id="course-root"><div class="site-loading">Loading…</div></div>
+</div>
+
+<script src="/static/js/api.js"></script>
+<script src="/static/js/boot-logo.js"></script>
+<script src="/static/js/course-structure.js"></script>
+<script>
+(async () => {
+  await Api.requireAuth();
+  let quizStatus = {};
+  try {
+    const data = await Api.call("/api/quizzes");
+    data.quizzes.forEach((q) => { quizStatus[q.id] = q; });
+  } catch (e) { /* render without status rather than fail the page */ }
+
+  const root = document.getElementById("course-root");
+  root.innerHTML = "";
+  COURSE.forEach((section) => {
+    const sec = document.createElement("div");
+    sec.className = "site-section";
+    const list = section.items.map((item) => {
+      let quizBadge = "";
+      if (item.quiz) {
+        const st = quizStatus[item.quiz];
+        const doneBadge = st && st.best_score
+          ? `<span class="site-badge done">${st.best_score.score}/${st.best_score.total}</span>`
+          : `<span class="site-badge notdone">not attempted</span>`;
+        const modeBadge = st ? `<span class="site-badge ${st.mode}">${st.mode}</span>` : "";
+        quizBadge = `
+          <a href="/quiz.html?quiz=${item.quiz}" style="text-decoration:none;font-size:.88rem;font-weight:600">Take quiz &rarr;</a>
+          ${modeBadge} ${doneBadge}`;
+      }
+      const pageLink = item.page
+        ? `<a class="site-item-title" href="/${item.page}">${item.title}</a>`
+        : `<span class="site-item-title">${item.title}</span>`;
+      return `<li>${pageLink}<span>${quizBadge}</span></li>`;
+    }).join("");
+    sec.innerHTML = `<h2>${section.section}</h2><ul class="site-item-list">${list}</ul>`;
+    root.appendChild(sec);
+  });
+})();
+</script>
+</body>
+</html>
