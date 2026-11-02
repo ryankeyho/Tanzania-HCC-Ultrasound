@@ -1,0 +1,1115 @@
+{
+ "version": "1.17",
+ "statuses": {
+  "fix": "Needs correction",
+  "source": "Source / permission unconfirmed",
+  "check": "Ryan to check",
+  "decision": "Decision needed",
+  "local": "Local confirmation needed",
+  "video": "Vscan video to add"
+ },
+ "pages": {
+  "session1-physics.html": [
+   {
+    "id": "F02",
+    "status": "local",
+    "anchor": {
+     "text": "Then disinfect the probe"
+    },
+    "note": "Your wording is in: \"disinfect the probe\" with no wipe type. It still does not point to the Vscan Air CL manual or local policy; the earlier review (F02) asked for that. Local lead to confirm the product in use."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-liver-mirror-artifact-labeled.png"
+    },
+    "note": "Image provenance: Lucius deck. Confirm reuse permission."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "none": true
+    },
+    "note": "The optional reading section was removed on 14 Oct, so the frequency, disinfection and preset-name statements that sat in it are gone. The remaining unchecked item is the MHz ranges in your new frequency figure (6-12 MHz linear, 2-5 MHz curvilinear): not compared to a source."
+   },
+   {
+    "id": "12 Oct",
+    "status": "check",
+    "anchor": {
+     "none": true
+    },
+    "note": "Videos placed from your notes. Your note order was ambiguous, so I read it as: tour = 3bzb + T2JK; depth/gain and presets = Qkze + t6Cg; TGC placeholder removed; color Doppler = uxua; saving images = pjN3 + wAp_. Captions come from the old placeholder names. Confirm each video matches its caption. No TGC video is left on the page."
+   },
+   {
+    "id": "14 Oct",
+    "status": "decision",
+    "anchor": {
+     "none": true
+    },
+    "note": "With the optional reading, the hands-on task list and the slice thickness row gone, these quiz questions test material this page no longer teaches: Q008 axial resolution, Q015 aliasing, Q018 ALARA, Q022 slice thickness, Q023 power Doppler, Q024 depth and sector width. Q003, Q009, Q012, Q013 are only touched on. Keep, remove, or add a short sourced section?"
+   },
+   {
+    "id": "14 Oct",
+    "status": "check",
+    "anchor": {
+     "img": "s1-depth-brightness.png"
+    },
+    "note": "New figure supplied by you. Content matches the verified statements (depth = speed x time / 2, 1,540 m/s). Please confirm you own it or its source."
+   },
+   {
+    "id": "14 Oct",
+    "status": "check",
+    "anchor": {
+     "img": "s1-common-artifacts.png"
+    },
+    "note": "New figure supplied by you. Replaces the hand-drawn four-panel diagram. Please confirm you own it or its source."
+   },
+   {
+    "id": "14 Oct",
+    "status": "check",
+    "anchor": {
+     "img": "s1-tgc-vscan-screen.png"
+    },
+    "note": "Vscan screen showing the TGC sliders. The TGC step now has no text, as you asked."
+   },
+   {
+    "id": "26 Oct",
+    "status": "video",
+    "anchor": {
+     "text": "Suggested additional videos to watch"
+    },
+    "note": "Moved to the end of the module as you asked. It holds the three links that were in Before you scan. Add further videos or tell me which to use."
+   },
+   {
+    "id": "26 Oct",
+    "status": "check",
+    "anchor": {
+     "text": "Core concepts of ultrasound"
+    },
+    "note": "Section 02 text is yours. I removed the old intro line (Five ideas carry you...) because it was not in your revision, and read 'reeve' as 'receive', 'essieintaly' as 'essentially'. Quiz Q003, Q009, Q012, Q013 unchanged."
+   },
+   {
+    "id": "26 Oct",
+    "status": "check",
+    "anchor": {
+     "text": "Source:"
+    },
+    "note": "Per your rule, table source lines now read Source: [n] and the full source text moved to references.html. Check the moved text, in particular the artifact table wording note, the GE data sheet (no title/year) and the unnamed EFSUMB slides."
+   }
+  ],
+  "session2-anatomy.html": [
+   {
+    "id": "Log 4",
+    "status": "source",
+    "anchor": {
+     "img": "couinaud-segments-illustration.png"
+    },
+    "note": "Segment positions are correct but where the illustration came from is unconfirmed (radiologykey not readable). Decision: confirm source or replace."
+   },
+   {
+    "id": "Log 4",
+    "status": "decision",
+    "anchor": {
+     "img": "efs-liver-3d-orientation.png"
+    },
+    "note": "Thieme/viamedici artwork on Lucius's slide. Does her permission cover it?"
+   },
+   {
+    "id": "F19",
+    "status": "fix",
+    "anchor": {
+     "none": true
+    },
+    "note": "Quiz Q022 tests a concept this page does not teach. Teach it or relabel as advanced. Q010 is also not checked against a source."
+   },
+   {
+    "id": "18 Oct source",
+    "status": "source",
+    "anchor": {
+     "img": "s2-portal-hepatic-labeled.png"
+    },
+    "note": "Your labeled version of the Schallware simulator frame (reference [88]); the old unlabeled frame is gone from this figure. The labels are yours."
+   },
+   {
+    "id": "18 Oct source",
+    "status": "source",
+    "anchor": {
+     "img": "s2-liver-planes-four.png"
+    },
+    "note": "Four-plane liver figure supplied by you. I could not tell its source from the PDF, so reference [93] says \"to be identified\". Needs the source and reuse permission."
+   },
+   {
+    "id": "26 Oct",
+    "status": "source",
+    "anchor": {
+     "text": "A short tour of the liver on ultrasound"
+    },
+    "note": "Video caption no longer names POCUS 101; it cites a reference. Video unchecked (YouTube not reachable)."
+   },
+   {
+    "id": "28 Oct (2)",
+    "status": "check",
+    "anchor": {
+     "text": "Use the umbilical fissure and the umbilical portion of the left portal vein"
+    },
+    "note": "Review comment F01: replaced the 'left hepatic vein is the formal boundary' bullet with the reviewer's wording. Quiz Q006 rationale updated."
+   }
+  ],
+  "session2a-roadmap.html": [
+   {
+    "id": "F12",
+    "status": "source",
+    "anchor": {
+     "img": "efs-portal-vein-matched-approaches.jpg"
+    },
+    "note": "Chin et al. (VExUS review) Figure 6: confirm exact frame and reuse terms."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-ascites-cirrhotic-liver.png"
+    },
+    "note": "SAGE journal PDF not read; caption unconfirmed against the source."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-free-fluid-morisons-pouch.png"
+    },
+    "note": "ResearchGate (FAST in the developing world) not read; caption unconfirmed."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-free-fluid-perisplenic.png"
+    },
+    "note": "Maimonides VOTW blog not read; caption notes the trauma source."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-free-fluid-pelvic.png"
+    },
+    "note": "UCSF presentation (Lu, March 2026) is internal. Confirm permission to reuse."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-spine-sign-normal.png"
+    },
+    "note": "NephroPOCUS page not found. The concept is verified; the pair's source is not."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-spine-sign-effusion.png"
+    },
+    "note": "NephroPOCUS page not found. The concept is verified; the pair's source is not."
+   },
+   {
+    "id": "12 Oct",
+    "status": "source",
+    "anchor": {
+     "img": "celiac-seagull-wong-li-2018.jpg"
+    },
+    "note": "Wong and Li, Abdom Radiol 2018 (Springer), verified as the source and figure. Copyright is Springer Nature: reuse permission not confirmed."
+   },
+   {
+    "id": "12 Oct",
+    "status": "source",
+    "anchor": {
+     "img": "pancreas-transverse-labeled.gif"
+    },
+    "note": "radiologykey Figure 8-2, Ultrasound of the Pancreas. Book and authors not named on the page. Reuse permission not confirmed. Only some labels are defined in the page's caption."
+   },
+   {
+    "id": "12 Oct",
+    "status": "check",
+    "anchor": {
+     "text": "Below: a transverse view at the level of the SMA"
+    },
+    "note": "Three videos added in the order you listed: celiac, SMA, celiac. I could not check what they show; labels are from your note."
+   },
+   {
+    "id": "12 Oct",
+    "status": "check",
+    "anchor": {
+     "text": "Walkthrough of the transverse epigastric view"
+    },
+    "note": "Caption is yours (14 Oct wording). The earlier \"mantis head\" and \"clock-face\" terms are gone because I could not verify them. I still could not check the caption against the video."
+   },
+   {
+    "id": "14 Oct fix",
+    "status": "fix",
+    "anchor": {
+     "text": "Normally you will see the spine seem to stop"
+    },
+    "note": "Your rewrite drops the earlier sentence \"Confirm a pleural effusion by seeing the fluid itself.\" (review item F10). Add it back if you still want it."
+   },
+   {
+    "id": "14 Oct decision",
+    "status": "decision",
+    "anchor": {
+     "text": "Before you leave this session"
+    },
+    "note": "Check yourself and Other aortic branches were removed. Quiz questions now untaught: Q013 (renal arteries), Q014 (IMA), Q015 (GDA). Q004 still names only the common hepatic and splenic arteries but the caption now adds the left gastric. Quiz not changed."
+   },
+   {
+    "id": "14 Oct decision",
+    "status": "decision",
+    "anchor": {
+     "text": "Include the inferior liver tip"
+    },
+    "note": "RUQ, LUQ and pelvis rows follow your reviewer notes. Quiz items about the caudal tip or the splenorenal ligament may no longer match; check against qbank-02a-roadmap.xml."
+   },
+   {
+    "id": "14 Oct source",
+    "status": "source",
+    "anchor": {
+     "text": "Small amounts can be physiological in reproductive-age women"
+    },
+    "note": "ACEP Sonoguide says a trace of fluid can be normal depending on the menstrual cycle and that fluid lies posterior to the uterus. It does not say \"reproductive-age\", so that phrase is your wording."
+   },
+   {
+    "id": "26 Oct",
+    "status": "source",
+    "anchor": {
+     "text": "What fusiform and saccular aneurysms look like"
+    },
+    "note": "Video caption no longer names POCUS 101; it cites a reference. Same for the eFAST video. Videos unchecked."
+   },
+   {
+    "id": "28 Oct (2)",
+    "status": "check",
+    "anchor": {
+     "text": "Identify the vessel by its course"
+    },
+    "note": "Review comment F17: compression and the under-20 mm rule removed. IVC is identified by course, relationships and respiratory behavior, and size is not used to estimate pressure. Roadmap Q001 and Q003 rewritten."
+   },
+   {
+    "id": "2 Nov",
+    "status": "source",
+    "anchor": {
+     "text": "eFAST transducer positions and the matching normal views"
+    },
+    "note": "New side-by-side grid from your PDF, cited as [136] (iEM eFAST, CC BY-NC-SA 4.0). The images carry an iEM watermark; please confirm the license terms suit course use."
+   },
+   {
+    "id": "2 Nov",
+    "status": "source",
+    "anchor": {
+     "text": "Abdominal aortic aneurysm on ultrasound"
+    },
+    "note": "Video replaced with your link (UMN3b90TD1Q). Reference [118] title and channel were read from your screenshot (Loma Linda Family Medicine); please check it."
+   }
+  ],
+  "session2b-technique.html": [
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "survey-right-lobe-1.png"
+    },
+    "note": "Source of this survey frame unknown; neutral caption kept."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "survey-right-lobe-2.png"
+    },
+    "note": "Source of this survey frame unknown; neutral caption kept."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "survey-right-inferior.png"
+    },
+    "note": "Source of this survey frame unknown; neutral caption kept."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "s2b-gallbladder-video-frame.png"
+    },
+    "note": "Frame from the video you named (oxR_3GAkQ6M). I could not open YouTube, so I have not confirmed that the frame comes from it, nor the video title or channel. Reference [29] now points to the video URL only."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "survey-pancreas.png"
+    },
+    "note": "Source of this survey image unknown."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "survey-cbd-doppler.png"
+    },
+    "note": "Source of this survey image unknown."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-porta-full-anatomy-labeled.png"
+    },
+    "note": "Emory case of the month / radiologykey not read. Caption unconfirmed."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-porta-pv-ivc-cbd-labeled.png"
+    },
+    "note": "Emory case of the month / radiologykey not read. Caption unconfirmed."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "s2b-emergency-view-english.png"
+    },
+    "note": "Your English-labeled version replaces the German-labeled Lucius image (reference [24]). Confirm that relabeling the slide is covered by the permission you hold. The old one is no longer in the build."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-bileduct-emergency-view.jpg"
+    },
+    "note": "Lucius citation: image not found in the uploaded decks (bile duct views)."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-bileduct-pancreatic-head-view.png"
+    },
+    "note": "Lucius citation: image not found in the uploaded decks (bile duct views)."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-liver-right-transverse.png"
+    },
+    "note": "Jang and Park (Korean health-policy paper) not read; caption unconfirmed."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-liver-high-flank.png"
+    },
+    "note": "Jang and Park (Korean health-policy paper) not read; caption unconfirmed."
+   },
+   {
+    "id": "F16",
+    "status": "check",
+    "anchor": {
+     "none": true
+    },
+    "note": "The course's own sweep method and the 6-8 minute estimate are teaching choices, not sourced facts. Q011, Q014 unchecked; Q024 tests an untaught concept (F19)."
+   },
+   {
+    "id": "12 Oct",
+    "status": "check",
+    "anchor": {
+     "none": true
+    },
+    "note": "Two liver sweep videos (zuob, CMxw) replace the placeholder, captioned video 1 and 2 of 2. Confirm they show the sweep in protocol order."
+   },
+   {
+    "id": "18 Oct source",
+    "status": "source",
+    "anchor": {
+     "img": "s2b-five-movements.gif"
+    },
+    "note": "Replaced on 26 Oct by your animated GIF (64 frames). Authorship and source unknown; reference [95] says to be confirmed."
+   },
+   {
+    "id": "18 Oct source",
+    "status": "source",
+    "anchor": {
+     "img": "s2b-portal-triad-diagram.png"
+    },
+    "note": "Portal triad schematic: the credit line is exactly as you supplied (ESR, Modern Radiology: Bile Ducts 2025, Fig. 5, Varnay, CC BY-NC-ND 4.0), not checked against the source. ND means no adaptations, and these look annotated; confirm what you may do."
+   },
+   {
+    "id": "18 Oct source",
+    "status": "source",
+    "anchor": {
+     "img": "s2b-mickey-mouse-labeled.png"
+    },
+    "note": "Mickey Mouse labeled ultrasound: the credit line is exactly as you supplied (ESR, Modern Radiology: Bile Ducts 2025, Fig. 5, Varnay, CC BY-NC-ND 4.0), not checked against the source. ND means no adaptations, and these look annotated; confirm what you may do."
+   },
+   {
+    "id": "18 Oct source",
+    "status": "source",
+    "anchor": {
+     "img": "s2b-olive-sandwich-labeled.png"
+    },
+    "note": "Olive sandwich labeled ultrasound: the credit line is exactly as you supplied (ESR, Modern Radiology: Bile Ducts 2025, Fig. 5, Varnay, CC BY-NC-ND 4.0), not checked against the source. ND means no adaptations, and these look annotated; confirm what you may do."
+   },
+   {
+    "id": "18 Oct check",
+    "status": "check",
+    "anchor": {
+     "text": "Gallbladder ultrasound, video 1 of 2"
+    },
+    "note": "Videos oxR_3GAkQ6M and p2KfEng2u3Y are as you listed; I could not open YouTube to check what they show, so the captions are neutral labels only."
+   },
+   {
+    "id": "18 Oct decision",
+    "status": "decision",
+    "anchor": {
+     "text": "Fanning is important to cover the liver completely"
+    },
+    "note": "Your rewrite removes the venous star confirmation sentence and the \"record cine sweeps, have a supervisor watch\" paragraph, and \"more stored images; note it in the report\" from the breath-hold row. Quiz items on stored images, one-image sweeps and breath-hold adaptation (02b Q5, Q14, Q17) may no longer match; quiz not changed."
+   },
+   {
+    "id": "18 Oct decision",
+    "status": "decision",
+    "anchor": {
+     "text": "Perform a scan of the liver and measure liver size"
+    },
+    "note": "Objectives no longer list \"Recognize an incomplete study and report it honestly\", but section 08 still teaches it. The two-measurement liver size method and EFSUMB checklist wording are gone; quiz items on them (if any) may be untaught."
+   },
+   {
+    "id": "18 Oct check",
+    "status": "check",
+    "anchor": {
+     "text": "Hand positioning"
+    },
+    "note": "Typos fixed: \"tall\" to \"all\", \"V scan\" to \"Vscan\", \"Slighty\", \"abomdinal\", \"checks\", \"comeplelty\", \"helps confirms\", \"the the\", \"onfirms\". Wording otherwise exactly yours."
+   },
+   {
+    "id": "21 Oct decision",
+    "status": "decision",
+    "anchor": {
+     "text": "Vscan Air tutorial: basic measurements"
+    },
+    "note": "The spleen measuring video was moved here from Session 4a, next to the calipers and liver size section, because Session 1 has no measuring section. Tell me if you meant a different place. I could not open YouTube, so the video is unchecked. The caption is the title visible in your screenshot."
+   },
+   {
+    "id": "26 Oct",
+    "status": "source",
+    "anchor": {
+     "text": "Official AIUM Liver Ultrasound Checklist"
+    },
+    "note": "Rebuilt as a table from your screenshot. Reference [116] names the AIUM abdominal practice parameter but title, year and permission are unconfirmed."
+   },
+   {
+    "id": "26 Oct",
+    "status": "source",
+    "anchor": {
+     "text": "LI-RADS suggested longitudinal and transverse views"
+    },
+    "note": "Rebuilt as tables from your screenshots. Reference [115] cites ACR LI-RADS US Surveillance; version, page and permission are unconfirmed."
+   },
+   {
+    "id": "26 Oct",
+    "status": "decision",
+    "anchor": {
+     "text": "Suggested scanning technique, views, and images"
+    },
+    "note": "Your table is in with typos fixed and your dash lists turned into bullet lists. The old numbered liver protocol 1 to 8 is gone, but How to sweep stays after the new tables; tell me if it should go too. Quiz items on the old list may be untaught."
+   },
+   {
+    "id": "26 Oct",
+    "status": "decision",
+    "anchor": {
+     "text": "Fanning is important to cover the liver completely"
+    },
+    "note": "How to sweep removed as you asked. This paragraph still talks about fanning in every transverse sweep and the venous star; keep, reword or remove?"
+   },
+   {
+    "id": "26 Oct",
+    "status": "source",
+    "anchor": {
+     "text": "Slide, tilt (fan), rotate, rock and compress"
+    },
+    "note": "Video caption no longer names POCUS 101; it cites a reference. Video unchecked."
+   },
+   {
+    "id": "28 Oct",
+    "status": "source",
+    "anchor": {
+     "text": "Match the probe position to the view"
+    },
+    "note": "New matching activity (9 pairs) built from your PDF. Images carry a Dr. Sam's Imaging Library watermark; reference [135] now cites the YouTube video you gave (permission to reuse not confirmed). Items 7 and 8 share one probe position, so either probe card is accepted for either image. Explanation text under each full image was typed from the images (titles and steps); please check it. Not saved or graded."
+   },
+   {
+    "id": "28 Oct (2)",
+    "status": "decision",
+    "anchor": {
+     "text": "Suggested scanning technique, views, and images"
+    },
+    "note": "Review comment F03: this table is now the single authoritative acquisition checklist. The three-column protocol is removed from quizzes (Q027 to Q031, Q040), peer practice, phantom lab and the peer OSCE. Please confirm this is the checklist you want scored."
+   },
+   {
+    "id": "28 Oct (2)",
+    "status": "check",
+    "anchor": {
+     "text": "Unexpected dilation needs further clinical assessment"
+    },
+    "note": "Review comment F08: blanket reassurance removed from the post-cholecystectomy row; wording follows the reviewer's text. Roadmap table row and quiz rationale changed to match."
+   },
+   {
+    "id": "28 Oct (2)",
+    "status": "check",
+    "anchor": {
+     "text": "use the umbilical fissure and the umbilical portion of the left portal vein"
+    },
+    "note": "Review comment F01: left hepatic vein no longer called the formal boundary. Wording follows the reviewer."
+   },
+   {
+    "id": "2 Nov",
+    "status": "decision",
+    "anchor": {
+     "text": "Portal bifurcation, transverse"
+    },
+    "note": "Matching Dr. Sam figures added to each scanning-table row (click to enlarge). No portal bifurcation figure was supplied, so that row has none. The dome row uses the hepatic veins figure, which does not show the full dome sweep."
+   }
+  ],
+  "session3-diffuse.html": [
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "liver-surface-linear-probe.png"
+    },
+    "note": "Source of this linear-probe image unknown. Keep with neutral caption, or replace?"
+   },
+   {
+    "id": "F21",
+    "status": "source",
+    "anchor": {
+     "img": "schisto-periportal-fibrosis-trans1.png"
+    },
+    "note": "Original owner, frame and permission record needed."
+   },
+   {
+    "id": "F21",
+    "status": "source",
+    "anchor": {
+     "img": "schisto-periportal-fibrosis-trans2.png"
+    },
+    "note": "Original owner, frame and permission record needed."
+   },
+   {
+    "id": "F19",
+    "status": "fix",
+    "anchor": {
+     "none": true
+    },
+    "note": "Quiz Q016 and Q017 depend on material this page does not teach (regenerative nodules). Teach or relabel as advanced. Q011 unchecked."
+   },
+   {
+    "id": "F01",
+    "status": "check",
+    "anchor": {
+     "text": "Murphy"
+    },
+    "note": "Reworded: a positive sonographic Murphy sign supports acute cholecystitis; absence does not exclude it. Please re-read."
+   },
+   {
+    "id": "12 Oct",
+    "status": "source",
+    "anchor": {
+     "img": "liver-3d-ct-normal-vs-cirrhotic.png"
+    },
+    "note": "From your PMC4870102 link. I could not open the article (blocked), so the title, authors, figure number, license and the meaning of the green and yellow overlays are unconfirmed. The caption says only what the image shows."
+   },
+   {
+    "id": "12 Oct",
+    "status": "check",
+    "anchor": {
+     "img": "efs-liver-contour-smooth-nearfield.png"
+    },
+    "note": "Source label Leber was changed to Liver in the image file (also used in Session 6). The caption says so."
+   },
+   {
+    "id": "12 Oct",
+    "status": "check",
+    "anchor": {
+     "text": "Liver ultrasound, normal versus cirrhosis"
+    },
+    "note": "Video yycO starts at 1:47 and the caption follows your wording. I could not check the video."
+   },
+   {
+    "id": "26 Oct",
+    "status": "source",
+    "anchor": {
+     "img": "efs-liver-echo-normal.png"
+    },
+    "note": "Replaced with your English-labeled image (Liver, Right kidney). Source and permission as for the original; see its reference number."
+   },
+   {
+    "id": "26 Oct",
+    "status": "check",
+    "anchor": {
+     "text": "A fatty liver: bright parenchyma"
+    },
+    "note": "Removed \"from the EFSUMB fatty-liver slide\". I kept the sentence about the German label being replaced; tell me if that should go too."
+   },
+   {
+    "id": "26 Oct",
+    "status": "check",
+    "anchor": {
+     "text": "The five criteria are:"
+    },
+    "note": "Was \"The EFSUMB course lists five criteria.\" Now cites the POCUS 101 / EFSUMB liver slides reference. Confirm the criteria came from that source."
+   },
+   {
+    "id": "26 Oct",
+    "status": "source",
+    "anchor": {
+     "text": "Schistosomiasis is an important cause"
+    },
+    "note": "Radiopaedia and the Medical Journal of Australia case report are now in the reference list, not in the text."
+   },
+   {
+    "id": "27 Oct",
+    "status": "check",
+    "anchor": {
+     "text": "Suggested additional reading"
+    },
+    "note": "The Watch and read first box moved to the end and retitled as you asked; sections renumbered 01 to 07."
+   }
+  ],
+  "session4-focal.html": [
+   {
+    "id": "F03",
+    "status": "check",
+    "anchor": {
+     "img": "s4-surveillance-summary-diagram.png"
+    },
+    "note": "Your summary diagram replaces my redrawn flowchart. It says \"Author summary based on ACR LI-RADS US Surveillance v2024 Core\". Please check it against the ACR tables above it, and confirm you are the author."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "hemangioma-seg7-dual-plane.png"
+    },
+    "note": "Radiopaedia case 152887 not found; identity unconfirmed. Diagnosis marked source-reported."
+   },
+   {
+    "id": "F21",
+    "status": "source",
+    "anchor": {
+     "img": "hcc-bmode-multifocal-435cm.png"
+    },
+    "note": "Original owner, frame and permission record needed."
+   },
+   {
+    "id": "F21",
+    "status": "source",
+    "anchor": {
+     "img": "hcc-bmode-lesion-469cm.png"
+    },
+    "note": "Original owner, frame and permission record needed."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-hydatid-cyst.png"
+    },
+    "note": "Alshoabi et al., Diagnostics 2023 not read; caption gives the source's WHO stage (CE3b) but is unconfirmed."
+   },
+   {
+    "id": "F17",
+    "status": "decision",
+    "anchor": {
+     "none": true
+    },
+    "note": "Quiz Q006, Q015, Q016, Q024 test target sign, FNH, cholangiocarcinoma and post-ablation appearance, which this page does not teach. Add sourced sections, or remove the questions?"
+   },
+   {
+    "id": "Removed",
+    "status": "decision",
+    "anchor": {
+     "none": true
+    },
+    "note": "Abscess and calcified granuloma images were removed. Replacements from The POCUS Atlas are listed in the log."
+   },
+   {
+    "id": "20 Oct source",
+    "status": "source",
+    "anchor": {
+     "img": "s4-acr-us-category-vis-tables.png"
+    },
+    "note": "ACR tables and management flowchart (\"(c) 2024 American College of Radiology, all rights reserved\") are used as you supplied. Reuse permission is not confirmed. Reference [97] says so."
+   },
+   {
+    "id": "20 Oct source",
+    "status": "source",
+    "anchor": {
+     "img": "s4-acr-us-surveillance-management.png"
+    },
+    "note": "Same ACR copyright and permission question as the tables above."
+   },
+   {
+    "id": "20 Oct source",
+    "status": "source",
+    "anchor": {
+     "img": "s4-liver-abscess-cerevisae.png"
+    },
+    "note": "Credited as you gave it (Cerevisae, Wikimedia Commons, CC BY-SA 4.0). I could not open the Commons file page, so the exact file name and license are not checked. Labels on the image are yours; CC BY-SA requires the same license on adaptations."
+   },
+   {
+    "id": "20 Oct check",
+    "status": "check",
+    "anchor": {
+     "text": "meta-analysis cited in"
+    },
+    "note": "Your revised paragraph dropped the earlier caveat \"(not handheld devices or this program)\", and the Kamaya citation is now inline. Confirm you are happy with that, since these numbers come from conventional ultrasound."
+   },
+   {
+    "id": "20 Oct check",
+    "status": "check",
+    "anchor": {
+     "text": "Portal vein thrombus: Tumor vs bland"
+    },
+    "note": "New table wording is yours (arterial waveform, recanalization, caliber). I did not check it against Radiopaedia or Kamaya, and the old \"From Radiopaedia\" line under it was not on your removal list, so it stays."
+   },
+   {
+    "id": "20 Oct decision",
+    "status": "decision",
+    "anchor": {
+     "text": "Any new thrombus should be referred"
+    },
+    "note": "Objective 4 (tumor vs bland thrombus with color Doppler) is gone, and so is the \"set the color gain\" advice. Quiz item \"A feature distinguishing tumor from bland portal vein thrombus\" may now be untaught, as may any item on choosing the more worrying category. Quiz not changed."
+   },
+   {
+    "id": "20 Oct decision",
+    "status": "decision",
+    "anchor": {
+     "text": "Escalate for over-read"
+    },
+    "note": "The \"choose the more worrying category\" instruction was removed in both places. The \"Check yourself\" and the old caption for the surveillance diagram are unchanged except that the diagram caption went with the old figure."
+   },
+   {
+    "id": "28 Oct (2)",
+    "status": "video",
+    "anchor": {
+     "text": "Not a standard handheld color-Doppler image"
+    },
+    "note": "Review comment F14: figure labeled as SMI. Please check which imaging modes the Vscan Air CL offers before any replication task is assigned."
+   }
+  ],
+  "session4a-neighbours.html": [
+   {
+    "id": "F26",
+    "status": "check",
+    "anchor": {
+     "text": "Measure the length between the ribs from the left side"
+    },
+    "note": "Spleen table: rows were checked against Lucius's slide reproducing the source table, not the original Chow paper."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-gallbladder-sidelobe-artifact.png"
+    },
+    "note": "radiologykey not readable; caption unconfirmed."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-ln-shape-a.png"
+    },
+    "note": "Schematic drawing (F13). Source unconfirmed."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-ln-shape-b.png"
+    },
+    "note": "Schematic drawing (F13). Source unconfirmed."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "efs-spleen-oblique-technique.png"
+    },
+    "note": "Lucius spleen images: 2 spleen images cited were not found in the uploaded decks. Confirm which these are."
+   },
+   {
+    "id": "F19",
+    "status": "fix",
+    "anchor": {
+     "none": true
+    },
+    "note": "Quiz Q014, Q015, Q039 not checked against a source. Double duct image removed (decision on replacement)."
+   },
+   {
+    "id": "21 Oct source",
+    "status": "source",
+    "anchor": {
+     "img": "s4a-chronic-pancreatitis-dimcevski.png"
+    },
+    "note": "Credit line is exactly as you supplied (Dimcevski et al., WJG 2013, Figure 7, CC BY-NC 4.0). I did not open the paper, so the figure content, and whether it shows chronic pancreatitis, is unchecked. The caption is the source line only."
+   },
+   {
+    "id": "21 Oct source",
+    "status": "source",
+    "anchor": {
+     "img": "s4a-acute-pancreatitis-ren.png"
+    },
+    "note": "Credit line as you supplied (Ren et al., QIMS 2023, Figure 2, CC BY-NC-ND 4.0). Panel key is yours (A to D). I did not open the paper. ND means no adaptations; I only resized the image."
+   },
+   {
+    "id": "21 Oct check",
+    "status": "check",
+    "anchor": {
+     "text": "Echogenicity often increases with age and fatty infiltration"
+    },
+    "note": "Pancreas text is yours. I cited the EFSUMB course book [99] and the Lucius slides [100] only on the size table, because those were the removed source lines. The new text under the bright pancreas, double duct sign, pancreatitis and gallbladder sections has no citations, and I did not check it against a source."
+   },
+   {
+    "id": "21 Oct decision",
+    "status": "decision",
+    "anchor": {
+     "text": "Document suspicious findings and escalate as needed"
+    },
+    "note": "The \"Do not schedule a repeat scan\" box and the \"Not a screening patient\" box are gone, and so is the referral sentence for debris or septations in a pseudocyst and the \"Your job\" paragraph for acute pancreatitis. Quiz items on the double duct sign (same-day referral), SPOMSET, dengue thick wall, nodes and the \"refer, do not write a report\" advice may now be untaught. Quiz not changed."
+   },
+   {
+    "id": "21 Oct check",
+    "status": "check",
+    "anchor": {
+     "text": "congenital absence"
+    },
+    "note": "You wrote \"Raley congenital absence\"; I read it as \"rarely, congenital absence\" (the old text said \"rarely, it never formed\")."
+   },
+   {
+    "id": "21 Oct check",
+    "status": "check",
+    "anchor": {
+     "text": "Suggested additional reading"
+    },
+    "note": "The old \"Sources for this session\" list moved here, unchanged, so it still names sources such as the EFSUMB course book and Radiopaedia. Check you want all six kept."
+   },
+   {
+    "id": "26 Oct",
+    "status": "source",
+    "anchor": {
+     "text": "The age risk factor was raised from 50 to 60"
+    },
+    "note": "Guideline names removed from the text; the reference has no authors or full citation yet."
+   },
+   {
+    "id": "27 Oct",
+    "status": "source",
+    "anchor": {
+     "img": "s4a-double-duct-mota.jpg"
+    },
+    "note": "Placed under The double duct sign. Citation is in reference [134] as you supplied it (Mota et al., ECR 2022, EPOS license: attribution, noncommercial, share-alike). Not checked against the source; the image was reduced in size."
+   },
+   {
+    "id": "27 Oct",
+    "status": "check",
+    "anchor": {
+     "text": "Side-lobe artifact."
+    },
+    "note": "Removed 'A third possibility:' as you asked; the caption now starts with Side-lobe artifact."
+   },
+   {
+    "id": "28 Oct (2)",
+    "status": "check",
+    "anchor": {
+     "text": "Evidence of advanced chronic pancreatitis"
+    },
+    "note": "Review comment F12: caption added as written by the reviewer."
+   }
+  ],
+  "session5-protocol.html": [
+   {
+    "id": "F18",
+    "status": "local",
+    "anchor": {
+     "text": "Child-Pugh C cirrhosis, transplant eligible"
+    },
+    "note": "Eligibility table replaced per Session 5 edits. Reconcile transplant-eligibility and HBV group wording with the program's referral eligibility; pre/post eligibility items not changed. Q015, Q022 unchecked."
+   },
+   {
+    "id": "S5b",
+    "status": "check",
+    "anchor": {
+     "text": "HCC Surveillance Eligibility based on AASLD Recommendations"
+    },
+    "note": "Table rows and footnotes (PAGE-B, age thresholds, HBV/HDV, HBV/HIV, post-HBsAg loss, F3 statements) entered as supplied, not checked against Singal 2023 or Ghany 2025. Kamaya and AASLD/IDSA links from the old source lines are no longer on the page."
+   },
+   {
+    "id": "S5c",
+    "status": "check",
+    "anchor": {
+     "text": "warrants diagnostic multiphasic contrast-enhanced CT or MRI"
+    },
+    "note": "AFP threshold, VIS-C three-month repeat and US-1 example wording not checked against ACR US LI-RADS v2024. The old 'Words to avoid' box (no 'no evidence of malignancy') was removed."
+   },
+   {
+    "id": "S5d",
+    "status": "check",
+    "anchor": {
+     "text": "Hepatitis B is the leading cause of HCC in SSA."
+    },
+    "note": "55%, 46 vs 58 years, 95% advanced, 3% treated (Yang 2017) and 7x/3x/59x aflatoxin figures (Qian 1994) not verified against the papers. The aflatoxin review link was removed from the source line."
+   },
+   {
+    "id": "S5e",
+    "status": "check",
+    "anchor": {
+     "text": "Double duct sign (dilated CBD and pancreatic duct)"
+    },
+    "note": "Referral table and guideline basis (ACR, ACC/AHA, ASGE) not verified. AAA 3.0 to 3.9 cm every 3 years: confirm against ACC/AHA and match the Roadmap page."
+   },
+   {
+    "id": "S5f",
+    "status": "check",
+    "anchor": {
+     "text": "Interpretation and supervision should also be provided"
+    },
+    "note": "PDF sentence was garbled; smoothed to read 'Interpretation and supervision should also be provided by appropriately qualified clinicians.' Confirm intended wording."
+   },
+   {
+    "id": "S5g",
+    "status": "check",
+    "anchor": {
+     "text": "Program success should be measured"
+    },
+    "note": "Quiz bank qbank-05-protocol.xml not changed. Items on objective 4, 'the number that matters most', adherence, operator volume and the 6-month doubling rationale may no longer be taught."
+   },
+   {
+    "id": "26 Oct",
+    "status": "source",
+    "anchor": {
+     "text": "Sources:"
+    },
+    "note": "Source lines now show [n] only. References for Yang 2017, Qian 1994 and AIUM have incomplete citation details."
+   }
+  ],
+  "session6-reporting.html": [
+   {
+    "id": "Diagram",
+    "status": "check",
+    "anchor": {
+     "sel": "figure svg"
+    },
+    "note": "Hand-drawn seven-field report diagram: please check."
+   },
+   {
+    "id": "Log 3",
+    "status": "source",
+    "anchor": {
+     "img": "hemangioma-seg7-dual-plane.png"
+    },
+    "note": "Radiopaedia case 152887 identity unconfirmed."
+   },
+   {
+    "id": "F21",
+    "status": "source",
+    "anchor": {
+     "img": "hcc-bmode-lesion-262cm.png"
+    },
+    "note": "Original owner, frame and permission record needed."
+   }
+  ],
+  "completion-criteria.html": [
+   {
+    "id": "F20",
+    "status": "decision",
+    "anchor": {
+     "none": true
+    },
+    "note": "Thresholds are labeled as this program's rules. Approve the wording and the supervised assessment and quality review before any independent role."
+   }
+  ],
+  "trainer-of-trainers.html": [
+   {
+    "id": "F22",
+    "status": "decision",
+    "anchor": {
+     "none": true
+    },
+    "note": "One schedule across navigation and pages; decide whether this page is in or out of the navigation. Supply the confidence survey, PhantomLabLog and OSCE checklist."
+   }
+  ],
+  "supervised-scanning.html": [
+   {
+    "id": "F22",
+    "status": "decision",
+    "anchor": {
+     "none": true
+    },
+    "note": "Supply the OSCE checklist and confirm the schedule matches the navigation."
+   }
+  ],
+  "lab-phantom.html": [
+   {
+    "id": "F22",
+    "status": "decision",
+    "anchor": {
+     "none": true
+    },
+    "note": "Supply the PhantomLabLog form."
+   },
+   {
+    "id": "28 Oct (2)",
+    "status": "check",
+    "anchor": {
+     "text": "Why these sizes were chosen"
+    },
+    "note": "Heading fixed (F47). The lab now refers to the Session 2b scanning table instead of three columns (F03)."
+   }
+  ],
+  "references.html": [
+   {
+    "id": "F25",
+    "status": "check",
+    "anchor": {
+     "none": true
+    },
+    "note": "[55], [56], [70] are marked archived. Hand-drawn diagrams are described honestly as unsourced drawings."
+   }
+  ],
+  "basic-peer-practice.html": [
+   {
+    "id": "2 Nov",
+    "status": "decision",
+    "anchor": {
+     "text": "Scanning volunteers: consent and incidental findings"
+    },
+    "note": "Section rewritten for volunteers, not peers. The page title, navigation and checklist still say peer practice and peer OSCE; tell me if you want those renamed too."
+   },
+   {
+    "id": "2 Nov (2)",
+    "status": "decision",
+    "anchor": {
+     "text": "Foundational Small Group Practice"
+    },
+    "note": "Renamed as requested (navigation and heading). Body text on this page, the OSCE page and completion criteria still says peer-to-peer and peer OSCE. Say if you want those changed to match."
+   }
+  ]
+ }
+}

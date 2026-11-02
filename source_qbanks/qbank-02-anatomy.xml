@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
   <question type="category">
-    <category><text>$course$/top/Section 2 - Anatomy and Scanning Technique</text></category>
-    <info format="html"><text><![CDATA[Section 2 - Anatomy and Scanning Technique]]></text></info>
+    <category><text>$course$/top/Session 2a - Liver Anatomy</text></category>
+    <info format="html"><text><![CDATA[Session 2a - Liver Anatomy]]></text></info>
   </question>
   <question type="multichoice">
     <name><text>Q001</text></name>
@@ -142,7 +142,7 @@
   <question type="multichoice">
     <name><text>Q006</text></name>
     <questiontext format="html"><text><![CDATA[<p>The ligamentum teres and falciform ligament mark the boundary between:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>They divide the lateral left liver (II/III) from the medial left liver (IV).</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>Segments II/III lie to the left of the umbilical fissure, which holds the ligamentum teres and falciform ligament. Use the umbilical fissure and the umbilical portion of the left portal vein to distinguish segment IV from II/III; the left hepatic vein and the left portal vein are related landmarks (Radiopaedia).</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -331,7 +331,7 @@
   <question type="multichoice">
     <name><text>Q013</text></name>
     <questiontext format="html"><text><![CDATA[<p>The hepatorenal recess (Morison's pouch) matters because it:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>It is the most sensitive right-upper-quadrant window for free fluid.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>It is a dependent space where free fluid collects. Also check the caudal tip of the liver, the most sensitive spot (POCUS 101).</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -447,7 +447,7 @@
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text><![CDATA[The gallbladder fossa to the right portal vein]]></text>
+      <text><![CDATA[The gallbladder to the portal vein]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">

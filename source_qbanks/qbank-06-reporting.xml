@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
   <question type="category">
-    <category><text>$course$/top/Section 6 - Structured Reporting and Interpretation</text></category>
+    <category><text>$course$/top/Session 6 - Structured Reporting and Interpretation</text></category>
     <info format="html"><text><![CDATA[Structured reporting and interpretation practice.]]></text></info>
   </question>
   <question type="multichoice">
@@ -357,7 +357,7 @@
   </question>
   <question type="multichoice">
     <name><text>Q016</text></name>
-    <questiontext format="html"><text><![CDATA[<p>A screening study shows three discrete lesions of 1.2, 1.8, and 2.4 cm in a cirrhotic liver. The report should:</p>]]></text></questiontext>
+    <questiontext format="html"><text><![CDATA[<p>A screening study shows three discrete observations of 1.2, 1.8, and 2.4 cm in a cirrhotic liver, none of them definitely benign. The report should:</p>]]></text></questiontext>
     <generalfeedback format="html"><text><![CDATA[<p>Multifocality changes staging and treatment options, so lesion count belongs in the report.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
@@ -411,8 +411,8 @@
   </question>
   <question type="multichoice">
     <name><text>Q018</text></name>
-    <questiontext format="html"><text><![CDATA[<p>A 44-year-old with schistosomal periportal fibrosis and splenomegaly, no cirrhosis and no HBV. Adequate study, no focal lesion. The appropriate recommendation is:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Periportal fibrosis is not a guideline-listed standalone surveillance indication, but chronic schistosomiasis does carry increased HCC risk and can progress to cirrhosis. The next step is to establish HBV status and whether cirrhosis has developed - not to close the question.</p>]]></text></generalfeedback>
+    <questiontext format="html"><text><![CDATA[<p>A 44-year-old with schistosomal periportal fibrosis and splenomegaly. Hepatitis B status and cirrhosis status are not yet known. Adequate study, no focal lesion. The appropriate recommendation is:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Periportal fibrosis is not a surveillance indication on its own (AASLD 2023). Hepatitis B and C are common in the same populations, so the next step is to establish viral status and whether cirrhosis has developed, not to close the question.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>

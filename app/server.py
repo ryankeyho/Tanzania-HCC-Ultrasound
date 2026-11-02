@@ -231,7 +231,7 @@ def list_quizzes():
     uid = current_user()["id"]
     out = []
     for q in quizzes:
-        count = db.execute("SELECT COUNT(*) c FROM questions WHERE quiz_id=?", (q["id"],)).fetchone()["c"]
+        count = db.execute("SELECT COUNT(*) c FROM questions WHERE quiz_id=? AND retired=0", (q["id"],)).fetchone()["c"]
         best = db.execute(
             "SELECT score, total, completed_at FROM attempts "
             "WHERE user_id=? AND quiz_id=? AND completed_at IS NOT NULL "
@@ -263,7 +263,7 @@ def start_quiz(quiz_id):
             return jsonify(error="this quiz allows only one attempt, and you have already completed it"), 409
 
     rows = db.execute("SELECT id, stem, choice_a, choice_b, choice_c, choice_d FROM questions "
-                       "WHERE quiz_id=? ORDER BY sort_order", (quiz_id,)).fetchall()
+                       "WHERE quiz_id=? AND retired=0 ORDER BY sort_order", (quiz_id,)).fetchall()
     if not rows:
         return jsonify(error="quiz has no questions"), 500
 
@@ -307,12 +307,24 @@ def answer_question(attempt_id):
     if not attempt:
         return jsonify(error="no such attempt"), 404
     quiz = db.execute("SELECT * FROM quizzes WHERE id=?", (attempt["quiz_id"],)).fetchone()
+    # Per-question feedback exists only for formative section quizzes. Exam
+    # attempts must not be able to learn correctness before final submission.
+    if quiz["mode"] != "section":
+        return jsonify(error="per-question answers are only accepted for section quizzes"), 403
+    if attempt["completed_at"] is not None:
+        return jsonify(error="attempt already finished"), 409
 
     data = request.get_json(force=True, silent=True) or {}
     qid = data.get("question_id")
+    if qid not in json.loads(attempt["order_json"]):
+        return jsonify(error="question is not part of this attempt"), 400
     selected_original_index = data.get("selected")  # 0-3, already mapped back to a/b/c/d by the client using position_map
 
     q = db.execute("SELECT * FROM questions WHERE id=? AND quiz_id=?", (qid, attempt["quiz_id"])).fetchone()
+    if q is not None and db.execute(
+        "SELECT 1 FROM attempt_answers WHERE attempt_id=? AND question_id=?", (attempt_id, qid)
+    ).fetchone():
+        return jsonify(error="question already answered in this attempt"), 409
     if not q or selected_original_index not in (0, 1, 2, 3):
         return jsonify(error="invalid question or answer"), 400
 
@@ -347,6 +359,9 @@ def finish_section_attempt(attempt_id):
     attempt = db.execute("SELECT * FROM attempts WHERE id=? AND user_id=?", (attempt_id, uid)).fetchone()
     if not attempt:
         return jsonify(error="no such attempt"), 404
+    quiz = db.execute("SELECT mode FROM quizzes WHERE id=?", (attempt["quiz_id"],)).fetchone()
+    if quiz["mode"] != "section":
+        return jsonify(error="exam attempts are finished with /submit"), 403
     if attempt["completed_at"] is not None:
         return jsonify(ok=True)  # already finished; idempotent
 
@@ -383,6 +398,9 @@ def submit_attempt(attempt_id):
         return jsonify(error="no such attempt"), 404
     if attempt["completed_at"] is not None:
         return jsonify(error="attempt already submitted"), 409
+    quiz = db.execute("SELECT mode FROM quizzes WHERE id=?", (attempt["quiz_id"],)).fetchone()
+    if quiz["mode"] != "exam":
+        return jsonify(error="section attempts are answered one question at a time"), 403
 
     data = request.get_json(force=True, silent=True) or {}
     answers = data.get("answers", [])  # [{question_id, selected}], selected already mapped to original a/b/c/d index
@@ -392,8 +410,11 @@ def submit_attempt(attempt_id):
     if set(answered.keys()) != set(order):
         return jsonify(error="all questions must be answered before submitting"), 400
 
+    # Look questions up by the IDs fixed in this attempt, so an attempt started
+    # before a question bank update is still graded on the version it showed.
+    marks = ",".join("?" * len(order))
     questions = {r["id"]: r for r in db.execute(
-        "SELECT * FROM questions WHERE quiz_id=?", (attempt["quiz_id"],)
+        f"SELECT * FROM questions WHERE quiz_id=? AND id IN ({marks})", (attempt["quiz_id"], *order)
     ).fetchall()}
 
     score = 0
@@ -414,7 +435,16 @@ def submit_attempt(attempt_id):
     )
     db.commit()
 
-    return jsonify(score=score, total=total, percent=round(100 * score / total, 1))
+    resp = {"score": score, "total": total, "percent": round(100 * score / total, 1)}
+    # The posttest shows the key and rationales once it has been submitted.
+    # The pretest does not: it is a baseline that stays sealed.
+    if attempt["quiz_id"] == "posttest":
+        resp["review"] = [
+            {"question_id": qid, "selected": answered[qid], "correct_index": questions[qid]["correct"],
+             "rationale": questions[qid]["rationale"]}
+            for qid in order
+        ]
+    return jsonify(resp)
 
 
 @app.get("/api/progress")
@@ -500,11 +530,237 @@ def admin_reset_password():
 # session yet to hold a token) and logout (no meaningful CSRF target).
 @app.before_request
 def csrf_gate():
-    if request.method in ("POST", "PUT", "DELETE"):
+    if request.method in ("POST", "PUT", "PATCH", "DELETE"):
         exempt = {"/api/login", "/api/register", "/api/logout", "/api/guest-login"}
         if request.path not in exempt:
             require_csrf()
 
+
+# ---------------------------------------------------------------- review flags
+@app.get("/api/admin/review-flags")
+def review_flags():
+    """Open review items shown as highlights on course pages. Kept outside the
+    static folder and limited to instructors and admins, so trainees never
+    receive it."""
+    # Instructors and admins always. Set LIVERPOCUS_REVIEW_FOR_ALL=1 only on
+    # your own review copy to show highlights to any logged-in account.
+    u = current_user()
+    if not u:
+        return jsonify(error="Login required."), 401
+    if u["role"] not in ("instructor", "admin") and os.environ.get("LIVERPOCUS_REVIEW_FOR_ALL") != "1":
+        return jsonify(error="Forbidden."), 403
+    with open(os.path.join(BASE_DIR, "review", "review_flags.json"), encoding="utf-8") as fh:
+        return jsonify(json.load(fh))
+
+
+
+# ---------------------------------------------------------------- reviewer comments
+COMMENT_CATEGORIES = {
+    "needs_revision": "Needs revision",
+    "confusing": "Confusing",
+    "diagram": "Diagram or image unclear",
+    "factual": "Possible factual error",
+    "typo": "Typo or wording",
+    "source": "Source or citation",
+    "good": "Works well",
+    "other": "Other",
+}
+COMMENT_STATUSES = ("open", "resolved", "declined")
+PAGE_RE = __import__("re").compile(r"^[a-z0-9][a-z0-9\-]{0,60}\.html$")
+
+
+def ensure_comments_table():
+    """Adds the comments table to an existing database without touching
+    anything else, so a server upgraded in place keeps all learner data."""
+    if not os.path.exists(DB_PATH):
+        return
+    con = sqlite3.connect(DB_PATH)
+    try:
+        con.executescript(open(os.path.join(BASE_DIR, "schema.sql"), encoding="utf-8").read().split(
+            "-- Reviewer comments", 1)[1].split("\n", 1)[1])
+        con.execute("CREATE TABLE IF NOT EXISTS settings (key TEXT PRIMARY KEY, value TEXT NOT NULL)")
+        con.commit()
+    finally:
+        con.close()
+
+
+ensure_comments_table()
+
+
+def comments_enabled():
+    """Reviewer comments can be switched off once the course goes to students
+    (Reviewer Comments page, or LIVERPOCUS_COMMENTS=0 in the environment)."""
+    if os.environ.get("LIVERPOCUS_COMMENTS") == "0":
+        return False
+    try:
+        row = get_db().execute("SELECT value FROM settings WHERE key = 'comments_enabled'").fetchone()
+    except sqlite3.Error:
+        return True
+    return row is None or row["value"] != "0"
+
+
+def is_staff(u):
+    return u is not None and u["role"] in ("instructor", "admin")
+
+
+def comment_row(r, with_author):
+    d = {k: r[k] for k in ("id", "page", "kind", "quote", "prefix", "suffix", "category",
+                           "comment", "status", "admin_note", "created_at", "updated_at")}
+    d["category_label"] = COMMENT_CATEGORIES.get(r["category"], r["category"])
+    if with_author:
+        d["author"] = r["author_name"]
+        d["author_email"] = r["author_email"]
+        d["user_id"] = r["user_id"]
+    return d
+
+
+COMMENT_SELECT = ("SELECT c.*, u.name AS author_name, u.email AS author_email "
+                  "FROM comments c JOIN users u ON u.id = c.user_id ")
+
+
+@app.get("/api/comments")
+@login_required
+def list_page_comments():
+    u = current_user()
+    page = request.args.get("page", "")
+    if not PAGE_RE.match(page):
+        return jsonify(error="bad page"), 400
+    if not comments_enabled():
+        return jsonify(comments=[], me=u["id"], staff=is_staff(u), categories=COMMENT_CATEGORIES, enabled=False)
+    db = get_db()
+    if is_staff(u):
+        rows = db.execute(COMMENT_SELECT + "WHERE c.page = ? AND u.email != ? ORDER BY c.id", (page, GUEST_EMAIL)).fetchall()
+    else:
+        rows = db.execute(COMMENT_SELECT + "WHERE c.page = ? AND c.user_id = ? ORDER BY c.id", (page, u["id"])).fetchall()
+    return jsonify(comments=[comment_row(r, is_staff(u)) for r in rows], me=u["id"],
+                   staff=is_staff(u), categories=COMMENT_CATEGORIES, enabled=True)
+
+
+@app.post("/api/comments")
+@login_required
+def add_comment():
+    u = current_user()
+    if not comments_enabled():
+        return jsonify(error="Commenting is closed."), 403
+    if u["email"] == GUEST_EMAIL:
+        return jsonify(error="Guest sessions cannot leave comments. Please create an account."), 403
+    d = request.get_json(force=True, silent=True) or {}
+    page = d.get("page", "")
+    kind = d.get("kind", "text")
+    quote = (d.get("quote") or "").strip()
+    comment = (d.get("comment") or "").strip()
+    category = d.get("category", "other")
+    if not PAGE_RE.match(page) or kind not in ("text", "figure") or not quote:
+        return jsonify(error="Select some text or a figure first."), 400
+    if not comment:
+        return jsonify(error="Please write a comment."), 400
+    if category not in COMMENT_CATEGORIES:
+        category = "other"
+    db = get_db()
+    cur = db.execute(
+        "INSERT INTO comments (user_id, page, kind, quote, prefix, suffix, category, comment) "
+        "VALUES (?,?,?,?,?,?,?,?)",
+        (u["id"], page, kind, quote[:1200], (d.get("prefix") or "")[:120], (d.get("suffix") or "")[:120],
+         category, comment[:3000]))
+    db.commit()
+    row = db.execute(COMMENT_SELECT + "WHERE c.id = ?", (cur.lastrowid,)).fetchone()
+    return jsonify(ok=True, comment=comment_row(row, True))
+
+
+@app.put("/api/comments/<int:cid>")
+@login_required
+def update_comment(cid):
+    u = current_user()
+    db = get_db()
+    row = db.execute("SELECT * FROM comments WHERE id = ?", (cid,)).fetchone()
+    if not row:
+        return jsonify(error="not found"), 404
+    d = request.get_json(force=True, silent=True) or {}
+    own = row["user_id"] == u["id"]
+    if not own and not is_staff(u):
+        return jsonify(error="forbidden"), 403
+    comment, category, status, note = row["comment"], row["category"], row["status"], row["admin_note"]
+    if own and "comment" in d:
+        comment = (d.get("comment") or "").strip()[:3000]
+        if not comment:
+            return jsonify(error="Please write a comment."), 400
+    if own and d.get("category") in COMMENT_CATEGORIES:
+        category = d["category"]
+    if is_staff(u):
+        if d.get("status") in COMMENT_STATUSES:
+            status = d["status"]
+        if "admin_note" in d:
+            note = (d.get("admin_note") or "").strip()[:2000]
+    db.execute("UPDATE comments SET comment=?, category=?, status=?, admin_note=?, updated_at=datetime('now') WHERE id=?",
+               (comment, category, status, note, cid))
+    db.commit()
+    out = db.execute(COMMENT_SELECT + "WHERE c.id = ?", (cid,)).fetchone()
+    return jsonify(ok=True, comment=comment_row(out, True))
+
+
+@app.delete("/api/comments/<int:cid>")
+@login_required
+def delete_comment(cid):
+    u = current_user()
+    db = get_db()
+    row = db.execute("SELECT user_id FROM comments WHERE id = ?", (cid,)).fetchone()
+    if not row:
+        return jsonify(error="not found"), 404
+    if row["user_id"] != u["id"] and u["role"] != "admin":
+        return jsonify(error="forbidden"), 403
+    db.execute("DELETE FROM comments WHERE id = ?", (cid,))
+    db.commit()
+    return jsonify(ok=True)
+
+
+@app.get("/api/admin/comments-enabled")
+@role_required("instructor", "admin")
+def get_comments_enabled():
+    return jsonify(enabled=comments_enabled(), forced_off=os.environ.get("LIVERPOCUS_COMMENTS") == "0")
+
+
+@app.put("/api/admin/comments-enabled")
+@role_required("instructor", "admin")
+def set_comments_enabled():
+    d = request.get_json(force=True, silent=True) or {}
+    db = get_db()
+    db.execute("INSERT INTO settings (key, value) VALUES ('comments_enabled', ?) "
+               "ON CONFLICT(key) DO UPDATE SET value = excluded.value", ("1" if d.get("enabled") else "0",))
+    db.commit()
+    return jsonify(ok=True, enabled=comments_enabled())
+
+
+def _filtered_comments():
+    a = request.args
+    sql = COMMENT_SELECT + "WHERE u.email != ? "
+    params = [GUEST_EMAIL]
+    for key, col in (("status", "c.status"), ("category", "c.category"), ("page", "c.page"), ("user_id", "c.user_id")):
+        if a.get(key):
+            sql += "AND %s = ? " % col
+            params.append(a[key])
+    sql += "ORDER BY c.page, c.id"
+    return get_db().execute(sql, params).fetchall()
+
+
+@app.get("/api/admin/comments")
+@role_required("instructor", "admin")
+def admin_comments():
+    rows = _filtered_comments()
+    return jsonify(comments=[comment_row(r, True) for r in rows], categories=COMMENT_CATEGORIES)
+
+
+@app.get("/api/admin/comments.csv")
+@role_required("instructor", "admin")
+def admin_comments_csv():
+    buf = io.StringIO()
+    w = csv.writer(buf)
+    w.writerow(["ID", "Reviewer", "Email", "Page", "Category", "Highlighted text", "Comment", "Status", "Your note", "Created (UTC)"])
+    for r in _filtered_comments():
+        w.writerow([r["id"], r["author_name"], r["author_email"], r["page"],
+                    COMMENT_CATEGORIES.get(r["category"], r["category"]), r["quote"], r["comment"],
+                    r["status"], r["admin_note"], r["created_at"]])
+    return Response(buf.getvalue(), mimetype="text/csv",
+                    headers={"Content-Disposition": "attachment; filename=reviewer-comments.csv"})
 
 # ---------------------------------------------------------------- static site
 @app.get("/")

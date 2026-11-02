@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Reviewer Comments - Liver POCUS Course</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/static/favicon.png">
+<link rel="stylesheet" href="/static/css/site.css">
+<style>
+.rc-filters{display:flex;gap:.6rem;flex-wrap:wrap;margin:1rem 0}
+.rc-filters select{padding:.4rem .5rem}
+.rc-row{border:1px solid var(--site-border,#3a4a5e);border-radius:8px;padding:.8rem 1rem;margin:.7rem 0}
+.rc-meta{font-size:.82rem;opacity:.8}
+.rc-quote{border-left:3px solid #ffd666;padding:.2rem .6rem;margin:.4rem 0;font-size:.9rem;opacity:.9;white-space:pre-wrap}
+.rc-body{white-space:pre-wrap;margin:.4rem 0}
+.rc-acts{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin-top:.5rem}
+.rc-acts input{flex:1;min-width:160px;padding:.35rem}
+.rc-st-resolved{border-left:4px solid #78c896}.rc-st-declined{border-left:4px solid #9a9aa6}.rc-st-open{border-left:4px solid #ffd666}
+</style>
+</head>
+<body>
+<div class="site-header" id="site-header"></div>
+<div class="site-shell">
+  <div class="site-section" style="margin-top:2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
+    <h2 style="border:none">Reviewer Comments</h2>
+    <a id="rc-csv" href="/api/admin/comments.csv" class="site-btn" style="width:auto;display:inline-block;padding:.55rem 1.1rem;text-decoration:none">Export (CSV)</a>
+  </div>
+  <div id="rc-switch" style="margin:.8rem 0;padding:.7rem 1rem;border:1px solid var(--site-border,#3a4a5e);border-radius:8px;display:flex;gap:1rem;align-items:center;flex-wrap:wrap">
+    <span id="rc-switch-text"></span><button id="rc-switch-btn" style="padding:.4rem .8rem;cursor:pointer"></button>
+  </div>
+  <div class="rc-filters">
+    <select id="f-status"><option value="">All statuses</option><option value="open">Open</option><option value="resolved">Resolved</option><option value="declined">Declined</option></select>
+    <select id="f-category"><option value="">All categories</option></select>
+    <select id="f-page"><option value="">All pages</option></select>
+    <select id="f-user"><option value="">All reviewers</option></select>
+  </div>
+  <div id="rc-count" class="rc-meta"></div>
+  <div id="rc-root"><div class="site-loading">Loading…</div></div>
+</div>
+<script src="/static/js/api.js"></script>
+<script>
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+var all=[], cats={};
+(async()=>{
+  const me=await Api.requireAuth();
+  if(me.role!=="admin"&&me.role!=="instructor"){document.getElementById("rc-root").innerHTML='<div class="site-msg error">This page is for instructors and admins only.</div>';return;}
+  const d=await Api.call("/api/admin/comments"); all=d.comments; cats=d.categories;
+  const fc=document.getElementById("f-category"); Object.keys(cats).forEach(k=>fc.insertAdjacentHTML("beforeend",`<option value="${k}">${esc(cats[k])}</option>`));
+  const pages=[...new Set(all.map(c=>c.page))].sort(), fp=document.getElementById("f-page"); pages.forEach(p=>fp.insertAdjacentHTML("beforeend",`<option>${esc(p)}</option>`));
+  const users={}; all.forEach(c=>users[c.user_id]=c.author); const fu=document.getElementById("f-user"); Object.keys(users).forEach(id=>fu.insertAdjacentHTML("beforeend",`<option value="${id}">${esc(users[id])}</option>`));
+  ["f-status","f-category","f-page","f-user"].forEach(id=>document.getElementById(id).addEventListener("change",render));
+  render();
+  await loadSwitch();
+})();
+async function loadSwitch(){
+  const s=await Api.call("/api/admin/comments-enabled"), t=document.getElementById("rc-switch-text"), b=document.getElementById("rc-switch-btn");
+  t.textContent=s.enabled?"Commenting is ON. Reviewers can highlight and comment on course pages.":"Commenting is OFF. Course pages show no comment tools. Existing comments are kept here.";
+  b.textContent=s.enabled?"Turn commenting off":"Turn commenting on";
+  b.disabled=!!s.forced_off; if(s.forced_off) t.textContent+=" (forced off by the server setting LIVERPOCUS_COMMENTS=0)";
+  b.onclick=async()=>{await Api.call("/api/admin/comments-enabled",{method:"PUT",body:{enabled:!s.enabled}});loadSwitch();};
+}
+function filt(){const g=id=>document.getElementById(id).value;return all.filter(c=>(!g("f-status")||c.status===g("f-status"))&&(!g("f-category")||c.category===g("f-category"))&&(!g("f-page")||c.page===g("f-page"))&&(!g("f-user")||String(c.user_id)===g("f-user")));}
+function render(){
+  const g=id=>document.getElementById(id).value, qs=new URLSearchParams();
+  [["status","f-status"],["category","f-category"],["page","f-page"],["user_id","f-user"]].forEach(([k,i])=>{if(g(i))qs.set(k,g(i));});
+  document.getElementById("rc-csv").href="/api/admin/comments.csv"+(qs.toString()?"?"+qs:"");
+  const rows=filt(); document.getElementById("rc-count").textContent=rows.length+" comment"+(rows.length===1?"":"s");
+  const root=document.getElementById("rc-root");
+  if(!rows.length){root.innerHTML='<p>No comments yet.</p>';return;}
+  root.innerHTML=rows.map(c=>`<div class="rc-row rc-st-${c.status}" data-id="${c.id}">
+    <div class="rc-meta"><strong>${esc(c.author)}</strong> (${esc(c.author_email)}) &middot; ${esc(c.category_label)} &middot; <a href="/pages/${esc(c.page)}#comment-${c.id}">${esc(c.page)}</a> &middot; ${esc(c.created_at)} UTC</div>
+    <div class="rc-quote">${c.kind==="figure"?"Figure: ":""}${esc(c.quote)}</div>
+    <div class="rc-body">${esc(c.comment)}</div>
+    <div class="rc-acts">
+      <select class="st">${["open","resolved","declined"].map(s=>`<option ${s===c.status?"selected":""}>${s}</option>`).join("")}</select>
+      <input class="nt" type="text" placeholder="Reply or note (reviewer sees this)" value="${esc(c.admin_note)}">
+      <button class="sv">Save</button>
+    </div></div>`).join("");
+  root.querySelectorAll(".rc-row").forEach(r=>r.querySelector(".sv").addEventListener("click",async()=>{
+    const id=r.dataset.id;
+    try{const o=await Api.call("/api/comments/"+id,{method:"PUT",body:{status:r.querySelector(".st").value,admin_note:r.querySelector(".nt").value}});
+      const i=all.findIndex(c=>String(c.id)===id); all[i]=o.comment; render();}catch(e){alert(e.message);}
+  }));
+}
+</script>
+</body>
+</html>

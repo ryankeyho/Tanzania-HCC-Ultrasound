@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
   <question type="category">
-    <category><text>$course$/top/Section 4a - Pancreas, Spleen, Nodes, Kidneys</text></category>
-    <info format="html"><text><![CDATA[Section 4a Quiz - Pancreas, Spleen, Nodes and Kidneys]]></text></info>
+    <category><text>$course$/top/Session 4a - Pancreas, Spleen, Nodes, Kidneys</text></category>
+    <info format="html"><text><![CDATA[Session 4a Quiz - Pancreas, Spleen, Nodes and Kidneys]]></text></info>
   </question>
   <question type="multichoice">
     <name><text>Q001</text></name>
@@ -60,8 +60,8 @@
   </question>
   <question type="multichoice">
     <name><text>Q003</text></name>
-    <questiontext format="html"><text><![CDATA[<p>The normal upper limit for the main pancreatic duct is approximately:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>About 3 mm. Above this warrants attention, particularly with a dilated CBD.</p>]]></text></generalfeedback>
+    <questiontext format="html"><text><![CDATA[<p>In a middle-aged adult, the main pancreatic duct measured in the body of the pancreas is normally about:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>About 2 mm in the body is a practical reference, widening somewhat with age; the head and neck can measure more. Record the site, the method and the patient&#39;s age.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -77,11 +77,11 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[1 mm]]></text>
+      <text><![CDATA[6 mm]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[3 mm]]></text>
+      <text><![CDATA[2 mm]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
   </question>
@@ -141,8 +141,8 @@
   </question>
   <question type="multichoice">
     <name><text>Q006</text></name>
-    <questiontext format="html"><text><![CDATA[<p>Measuring the spleen from an anterior approach tends to:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>An anterior plane cuts obliquely through the spleen; this is a common source of false-positive splenomegaly.</p>]]></text></generalfeedback>
+    <questiontext format="html"><text><![CDATA[<p>When you measure splenic length, the image should show:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Rotate until the image shows the longest distance between the two poles; that length is what you compare with the height-based table.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -150,19 +150,19 @@
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text><![CDATA[Overestimate its size, because the plane is oblique to the true long axis]]></text>
+      <text><![CDATA[Both poles of the spleen in one longitudinal plane]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[Underestimate its size]]></text>
+      <text><![CDATA[Only the lower pole]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[Give the same result as a lateral approach]]></text>
+      <text><![CDATA[The splenic hilum in cross section]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[Be the preferred technique]]></text>
+      <text><![CDATA[The left kidney beside the spleen]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
   </question>
@@ -196,7 +196,7 @@
   <question type="multichoice">
     <name><text>Q008</text></name>
     <questiontext format="html"><text><![CDATA[<p>Splenomegaly is generally suggested when splenic length exceeds approximately:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Roughly 12-13 cm, measured correctly on a true longitudinal section.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>About 12 cm is a common general limit, but normal length depends on height and sex; use the height-based table or SplenoCalc (Session 3).</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -316,7 +316,7 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[Porta hepatis and coeliac axis]]></text>
+      <text><![CDATA[Porta hepatis and celiac axis]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
@@ -478,7 +478,7 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[Secondary edema from hypoalbuminemia and portal hypertension]]></text>
+      <text><![CDATA[Secondary wall thickening, for example from ascites, rather than cholecystitis]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
@@ -493,7 +493,7 @@
   <question type="multichoice">
     <name><text>Q019</text></name>
     <questiontext format="html"><text><![CDATA[<p>Acute cholecystitis should not be diagnosed on wall thickening alone because:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Wall thickening has a wide differential including edema from ascites, hepatitis and heart failure. A sonographic Murphy sign (focal tenderness under the probe) is a supportive finding, not a mandatory one; its absence can be unreliable, and diagnosis relies on clinical findings together with multiple imaging features.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>Wall thickening has a wide differential, including ascites, hepatitis and heart failure. A positive sonographic Murphy sign supports acute cholecystitis, but its absence does not exclude it, including in gangrenous cholecystitis (ACEP Sonoguide).</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -501,7 +501,7 @@
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text><![CDATA[The finding is non-specific; a sonographic Murphy sign is supportive but not mandatory, and diagnosis relies on clinical findings together with imaging]]></text>
+      <text><![CDATA[The finding is nonspecific; it must be interpreted with stones, distension, fluid around the gallbladder, the sonographic Murphy sign and the clinical picture]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
@@ -546,7 +546,7 @@
   </question>
   <question type="multichoice">
     <name><text>Q021</text></name>
-    <questiontext format="html"><text><![CDATA[<p>A gallbladder cannot be identified during a screening study. Which explanation must be excluded before reporting anything about stones?</p>]]></text></questiontext>
+    <questiontext format="html"><text><![CDATA[<p>A patient with a known intact gallbladder (no previous cholecystectomy) says they ate shortly before the screening study, and the gallbladder cannot be identified. Which explanation must be excluded before reporting anything about stones?</p>]]></text></questiontext>
     <generalfeedback format="html"><text><![CDATA[<p>A fasting rescan is required. Stone exclusion is only valid in a fasting, distended gallbladder.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
@@ -653,33 +653,6 @@
     </answer>
   </question>
   <question type="multichoice">
-    <name><text>Q025</text></name>
-    <questiontext format="html"><text><![CDATA[<p>The distal (retropancreatic) bile duct is best approached by:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Finding the duct in cross-section within the head first, then rotating to follow it, works better than chasing it through duodenal gas.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0000000</defaultgrade>
-    <penalty>0.0000000</penalty>
-    <hidden>0</hidden>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answernumbering>abc</answernumbering>
-    <answer fraction="0" format="html">
-      <text><![CDATA[Scanning from the left flank]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="0" format="html">
-      <text><![CDATA[Chasing the duct downward from the hilum]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="0" format="html">
-      <text><![CDATA[Using the linear probe]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="100" format="html">
-      <text><![CDATA[Setting the pancreatic head in transverse section and finding the duct in cross-section, then rotating]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-  </question>
-  <question type="multichoice">
     <name><text>Q026</text></name>
     <questiontext format="html"><text><![CDATA[<p>The oblique plane running roughly from the right shoulder toward the umbilicus is used to image:</p>]]></text></questiontext>
     <generalfeedback format="html"><text><![CDATA[<p>This oblique plane gives the long axis of the portal vein with the duct running anterior to it.</p>]]></text></generalfeedback>
@@ -736,7 +709,7 @@
   <question type="multichoice">
     <name><text>Q028</text></name>
     <questiontext format="html"><text><![CDATA[<p>Irregular, beaded 'string of pearls' dilatation of the pancreatic duct is more suggestive of:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Beaded, irregular dilatation suggests chronic pancreatitis; smooth uniform dilatation, especially with a dilated bile duct, points toward an obstructing tumor.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>Beaded, irregular dilatation suggests chronic pancreatitis; a dilated duct that ends abruptly is the key warning sign for pancreatic cancer.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -763,7 +736,7 @@
   <question type="multichoice">
     <name><text>Q029</text></name>
     <questiontext format="html"><text><![CDATA[<p>Chronic pancreatitis is relevant to a cancer screening course because it:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Mass-forming chronic pancreatitis and tumor can look very similar on B-mode, and the condition also raises cancer risk.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>A mass in chronic pancreatitis can look very similar to pancreatic cancer on B-mode, so any focal mass is referred.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -783,7 +756,7 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[Is both a risk factor for pancreatic adenocarcinoma and its main imaging differential]]></text>
+      <text><![CDATA[Can form a mass that looks very similar to pancreatic cancer]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
   </question>
@@ -898,7 +871,7 @@
   <question type="multichoice">
     <name><text>Q034</text></name>
     <questiontext format="html"><text><![CDATA[<p>The most common unimaged part of the pancreas on ultrasound is the:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Two deliberate looks at the tail, anteriorly along the vein and through the spleen, is the mitigation. Note that late presentation of tail tumors relates to tumor biology and symptom onset, not to how well ultrasound visualizes the tail.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>Two deliberate looks at the tail, anteriorly along the vein and through the spleen, is the mitigation. Gas in the stomach often hides the tail.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -924,8 +897,8 @@
   </question>
   <question type="multichoice">
     <name><text>Q035</text></name>
-    <questiontext format="html"><text><![CDATA[<p>Which patient position and window is correct for measuring splenic length?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>An anterior plane cuts obliquely and overestimates length, generating false-positive splenomegaly.</p>]]></text></generalfeedback>
+    <questiontext format="html"><text><![CDATA[<p>Which window is correct for measuring splenic length?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Measure from the left side between the ribs, rotating until both poles are in one plane.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -945,7 +918,7 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[Left lateral intercostal, supine or right lateral decubitus, both poles in one plane]]></text>
+      <text><![CDATA[Left intercostal, with both poles in one plane]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
   </question>
@@ -1005,7 +978,7 @@
   </question>
   <question type="multichoice">
     <name><text>Q038</text></name>
-    <questiontext format="html"><text><![CDATA[<p>How many deliberate views does the gallbladder require in the screening protocol?</p>]]></text></questiontext>
+    <questiontext format="html"><text><![CDATA[<p>Which gallbladder views does the screening protocol require?</p>]]></text></questiontext>
     <generalfeedback format="html"><text><![CDATA[<p>Two planes plus two positions defeats artifact and tests mobility; the neck is where impacted stones hide.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
@@ -1014,19 +987,19 @@
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="0" format="html">
-      <text><![CDATA[None, unless symptomatic]]></text>
+      <text><![CDATA[No dedicated views unless the patient has symptoms]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[Two, both supine]]></text>
+      <text><![CDATA[Long axis only, supine]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[Four - long axis, short axis, a repeat in a second position, and a deliberate look at the neck]]></text>
+      <text><![CDATA[Long and short axes in the first position and again after repositioning, with a deliberate look at the neck]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[One long-axis view]]></text>
+      <text><![CDATA[Short axis only, after repositioning]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
   </question>

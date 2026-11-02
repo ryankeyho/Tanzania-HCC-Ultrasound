@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
   <question type="category">
-    <category><text>$course$/top/Section 4 - Focal Lesions and HCC Findings</text></category>
-    <info format="html"><text><![CDATA[Section 4 - Focal Lesions and HCC Findings]]></text></info>
+    <category><text>$course$/top/Session 4 - Focal Lesions and HCC Findings</text></category>
+    <info format="html"><text><![CDATA[Session 4 - Focal Lesions and HCC Findings]]></text></info>
   </question>
   <question type="multichoice">
     <name><text>Q001</text></name>
@@ -114,8 +114,8 @@
   </question>
   <question type="multichoice">
     <name><text>Q005</text></name>
-    <questiontext format="html"><text><![CDATA[<p>A thick-walled complex hypoechoic collection with internal debris in a febrile patient most suggests:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Clinical context plus a complex walled collection points to abscess, pyogenic or amoebic.</p>]]></text></generalfeedback>
+    <questiontext format="html"><text><![CDATA[<p>A complex hypoechoic collection with internal debris in a febrile, unwell patient most suggests:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Clinical context plus a complex collection points to abscess, pyogenic or amoebic. Appearance varies (amoebic abscesses often show no visible wall), and a necrotic tumor can mimic an abscess.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -357,8 +357,8 @@
   </question>
   <question type="multichoice">
     <name><text>Q014</text></name>
-    <questiontext format="html"><text><![CDATA[<p>Detection of multiple discrete lesions in a cirrhotic liver should prompt:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Multifocality affects staging and treatment options.</p>]]></text></generalfeedback>
+    <questiontext format="html"><text><![CDATA[<p>A cirrhotic liver contains several discrete observations, at least one 10 mm or larger and not definitely benign. This should prompt:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>This is LI-RADS US-3: the exam is categorized by its most suspicious observation. The number of lesions alone does not decide referral, and definitely benign observations, such as simple cysts, do not count. Record the number and the largest size, because multifocality matters for staging.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -573,8 +573,8 @@
   </question>
   <question type="multichoice">
     <name><text>Q022</text></name>
-    <questiontext format="html"><text><![CDATA[<p>A cyst containing thin internal septations without solid components or nodularity is best managed by:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>A septated cyst is not strictly a simple cyst. Thin, smooth septations without nodularity, solid components, or increased vascularity are reassuring, but management should still consider septal thickness, any enhancement, symptoms, and expert or local review rather than being decided by septation alone.</p>]]></text></generalfeedback>
+    <questiontext format="html"><text><![CDATA[<p>In a patient under surveillance, a cyst with thin internal septations, without solid parts or nodules, is best managed by:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Under LI-RADS US Surveillance v2024 only simple cysts count as definitely benign. A septated cyst is categorized by its size like any other observation (Kamaya et al., Radiology 2024).</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -582,7 +582,7 @@
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="0" format="html">
-      <text><![CDATA[Immediate referral for CT]]></text>
+      <text><![CDATA[Ignoring it, because septations are always benign]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
@@ -590,7 +590,7 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[Documentation and routine surveillance, with expert or local review if the septations are thick, nodular, or vascular]]></text>
+      <text><![CDATA[Treating it as an observation that is not definitely benign: US-2 if under 10 mm, US-3 if 10 mm or more]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">

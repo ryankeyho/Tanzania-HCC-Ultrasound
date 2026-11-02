@@ -200,17 +200,40 @@ async function onSubmitExam() {
       <div class="site-quiz-result">
         <div class="score ${passClass}">${result.score} / ${result.total}</div>
         <p>${result.percent}% correct</p>
-        <p style="color:var(--site-muted);font-size:.88rem">This assessment allows one attempt. Your result has been recorded.</p>
+        <p style="color:var(--site-muted);font-size:.88rem">This assessment allows one attempt. Your result has been recorded.${result.review ? " Your answers and the explanations are below." : ""}</p>
         <div class="site-quiz-actions" style="justify-content:center">
           <a href="/progress.html" class="site-btn" style="width:auto;display:inline-block;padding:.6rem 1.3rem;text-decoration:none;border-radius:4px">My Progress</a>
           <a href="/index.html" class="site-btn" style="width:auto;background:var(--site-raised);border:1px solid var(--site-rule);display:inline-block;padding:.6rem 1.3rem;text-decoration:none;border-radius:4px;color:var(--site-ink);font-weight:700">Back to course</a>
         </div>
-      </div>`;
+      </div>
+      ${result.review ? renderExamReview(result.review) : ""}`;
   } catch (err) {
     alert(err.message || "Submission failed");
     btn.disabled = false;
     btn.textContent = "Submit exam";
   }
+}
+
+/* After submission some exams (the posttest) show the key and rationales. */
+function renderExamReview(review) {
+  const items = review.map((r, i) => {
+    const q = STATE.questions.find((x) => x.question_id === r.question_id);
+    if (!q) return "";
+    const correctPos = q.position_map.indexOf(r.correct_index);
+    const chosenPos = q.position_map.indexOf(r.selected);
+    const ok = r.selected === r.correct_index;
+    const choices = q.choices.map((text, pos) => {
+      const cls = pos === correctPos ? "correct" : (pos === chosenPos ? "incorrect" : "");
+      const tag = pos === correctPos ? " (correct answer)" : (pos === chosenPos ? " (your answer)" : "");
+      return `<div class="site-choice ${cls}"><span>${text}${tag}</span></div>`;
+    }).join("");
+    return `<div class="site-question">
+      <div class="q-stem">${i + 1}. ${q.stem}</div>
+      ${choices}
+      <div class="site-feedback ${ok ? "correct" : "incorrect"}">${ok ? "Correct." : "Not quite."} ${r.rationale || ""}</div>
+    </div>`;
+  }).join("");
+  return `<h3 style="margin-top:2rem">Review your answers</h3>${items}`;
 }
 
 main();

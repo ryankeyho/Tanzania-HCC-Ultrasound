@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
   <question type="category">
-    <category><text>$course$/top/Section 3 - Diffuse Liver Pathology</text></category>
-    <info format="html"><text><![CDATA[Section 3 - Diffuse Liver Pathology]]></text></info>
+    <category><text>$course$/top/Session 3 - Diffuse Liver Pathology</text></category>
+    <info format="html"><text><![CDATA[Session 3 - Diffuse Liver Pathology]]></text></info>
   </question>
   <question type="multichoice">
     <name><text>Q001</text></name>
@@ -33,8 +33,8 @@
   </question>
   <question type="multichoice">
     <name><text>Q002</text></name>
-    <questiontext format="html"><text><![CDATA[<p>All of the following suggest cirrhosis EXCEPT:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>A smooth homogeneous liver describes a normal or non-cirrhotic organ.</p>]]></text></generalfeedback>
+    <questiontext format="html"><text><![CDATA[<p>A smooth, enlarged liver with homogeneous echotexture is best interpreted as:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Ultrasound morphology has limits. A smooth, enlarged liver does not exclude early cirrhosis, and cirrhotic and non-cirrhotic features (for example steatosis plus fibrosis) can coexist. Use the whole picture: clinical risk, surface contour, echotexture, spleen size and other signs.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -42,26 +42,26 @@
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text><![CDATA[Smooth enlarged liver with homogeneous echotexture]]></text>
+      <text><![CDATA[Not specific: early cirrhosis is not excluded by morphology alone, and cirrhotic and non-cirrhotic features can coexist]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[Splenomegaly and ascites]]></text>
+      <text><![CDATA[Proof that the liver is normal]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[Nodular surface contour]]></text>
+      <text><![CDATA[Proof of steatosis]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[Coarse heterogeneous echotexture]]></text>
+      <text><![CDATA[Proof of portal hypertension]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
   </question>
   <question type="multichoice">
     <name><text>Q003</text></name>
     <questiontext format="html"><text><![CDATA[<p>In advanced cirrhosis, the classic lobar redistribution pattern is:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Caudate and left-lobe hypertrophy with right-lobe atrophy is characteristic.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>The right lobe shrinks while the caudate and the left lateral segments (II, III) enlarge.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -69,7 +69,7 @@
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text><![CDATA[Caudate and left-lobe hypertrophy with right-lobe atrophy]]></text>
+      <text><![CDATA[Caudate and left lateral segment (II, III) hypertrophy with right-lobe atrophy]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
@@ -142,7 +142,7 @@
   <question type="multichoice">
     <name><text>Q006</text></name>
     <questiontext format="html"><text><![CDATA[<p>Hepatomegaly is commonly suggested when midclavicular craniocaudal span exceeds approximately:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Roughly 15-16 cm is the usual working threshold, varying with body habitus.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>POCUS 101 uses 16 cm or more in the midclavicular line; the number varies with body build and breath-hold.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -196,7 +196,7 @@
   <question type="multichoice">
     <name><text>Q008</text></name>
     <questiontext format="html"><text><![CDATA[<p>A key distinction of schistosomal periportal fibrosis from cirrhosis is that:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Presinusoidal portal hypertension occurs with relatively preserved parenchyma.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>Liver function is usually preserved until late (Radiopaedia). Note the liver surface can still look irregular, so contour alone can mimic cirrhosis.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -216,14 +216,14 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[Parenchymal architecture and surface contour are typically preserved despite portal hypertension]]></text>
+      <text><![CDATA[Liver function is usually preserved until late, despite marked portal hypertension]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
   </question>
   <question type="multichoice">
     <name><text>Q009</text></name>
     <questiontext format="html"><text><![CDATA[<p>Dilated hepatic veins with a plethoric non-collapsing IVC most suggests:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Passive congestion distends hepatic veins and IVC, unlike cirrhotic portal hypertension.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>Dilated hepatic veins with a plethoric IVC are the typical pattern of raised right-sided pressure. Cirrhosis can coexist and ultrasound cannot fully separate the causes, so interpret with the clinical picture.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -235,7 +235,7 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[Hepatic congestion from right heart failure]]></text>
+      <text><![CDATA[Raised right-sided pressure with venous congestion, for example from right heart failure]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
@@ -249,8 +249,8 @@
   </question>
   <question type="multichoice">
     <name><text>Q010</text></name>
-    <questiontext format="html"><text><![CDATA[<p>Ascites appears on ultrasound as:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Free fluid is anechoic and conforms to dependent spaces.</p>]]></text></generalfeedback>
+    <questiontext format="html"><text><![CDATA[<p>Simple ascites appears on ultrasound as:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Simple ascites is anechoic and conforms to dependent spaces. Blood, infection and other complex fluid may contain echoes, septations or debris, so echoes in free fluid need clinical correlation.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -277,7 +277,7 @@
   <question type="multichoice">
     <name><text>Q011</text></name>
     <questiontext format="html"><text><![CDATA[<p>Hepatofugal portal venous flow indicates:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Flow away from the liver signals advanced portal hypertension.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>Flow away from the liver is abnormal and is most often seen with advanced portal hypertension. Direction alone does not establish a single cause: check your Doppler technique and interpret it with the clinical picture and other findings.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -297,14 +297,14 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[Advanced portal hypertension]]></text>
+      <text><![CDATA[An abnormal finding, most often seen with advanced portal hypertension]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
   </question>
   <question type="multichoice">
     <name><text>Q012</text></name>
     <questiontext format="html"><text><![CDATA[<p>Splenomegaly is generally suggested when splenic length exceeds approximately:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Roughly 12-13 cm is the common threshold and a useful indirect sign of portal hypertension.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>About 12 cm is a common general limit, but normal spleen length depends on height and sex; use a height-based table or SplenoCalc.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -412,7 +412,7 @@
   <question type="multichoice">
     <name><text>Q016</text></name>
     <questiontext format="html"><text><![CDATA[<p>A regenerative nodule differs from HCC in that regenerative nodules:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Regenerative nodules typically blend with background liver and are usually stable. B-mode alone cannot reliably distinguish a truly stable nodule from one that is slowly enlarging; any new or enlarging discrete observation should be managed by the surveillance algorithm regardless.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>Regenerative nodules vary in appearance, and B-mode cannot reliably tell them from HCC. Echogenicity is not a reliable discriminator, so any discrete observation is categorized and managed by LI-RADS US Surveillance.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -428,7 +428,7 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[Are typically isoechoic to background liver and are usually stable, though any enlarging observation still warrants the standard surveillance workup]]></text>
+      <text><![CDATA[Vary in appearance and overlap with HCC on B-mode, so any discrete observation is managed by the surveillance rules]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
@@ -574,7 +574,7 @@
   <question type="multichoice">
     <name><text>Q022</text></name>
     <questiontext format="html"><text><![CDATA[<p>Gallbladder wall thickening in a cirrhotic patient with ascites most often reflects:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Wall thickening here is usually secondary; over-calling cholecystitis is a common error.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>Ascites, heart failure and hepatitis can all thicken the wall, so thickening alone is nonspecific. A positive sonographic Murphy sign supports acute cholecystitis, but its absence does not exclude it (ACEP Sonoguide).</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -594,7 +594,7 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[Hypoalbuminemia and portal hypertension rather than primary gallbladder disease]]></text>
+      <text><![CDATA[Secondary causes such as ascites rather than primary gallbladder disease]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
   </question>

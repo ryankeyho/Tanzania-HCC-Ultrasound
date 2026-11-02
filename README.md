@@ -1,7 +1,7 @@
 # Liver POCUS Course, Web Application
 
 A self-contained account-based training platform: registration/login,
-server-side-graded quizzes (all 337 questions from the verified Moodle
+server-side-graded quizzes (all 331 questions from the Moodle
 banks), progress tracking, and an instructor dashboard with CSV export.
 
 Built to replace a static-site + Moodle approach with something you
@@ -143,3 +143,22 @@ session, which is exactly where a "boot up" moment belongs.
   job is yours to add.
 - The visual design is functional, not the retro branded look you've
   shown me, by design, pending the pass noted above.
+
+## Reviewer accounts and comments
+
+Anyone can create an account at /register.html. Signed-in reviewers can select
+text on any course page (or press "Comment on figure"), choose a category
+(needs revision, confusing, diagram unclear, and so on), write a note, and save.
+Each reviewer sees only their own comments. Instructors and admins see every
+comment, on the page itself (panel at bottom left) and in one list at
+/review-comments.html (filter by status, category, page or reviewer; mark
+resolved or declined; leave a reply the reviewer can see; export CSV).
+The guest login cannot comment. The comments table is added to an existing
+database automatically when the server starts, so upgrading keeps all quiz data.
+
+### Turning reviewer comments off
+
+When the course goes to students, open /review-comments.html (admin or instructor) and press
+"Turn commenting off". Course pages then show no comment tools to anyone and new comments are
+refused; existing comments stay in the dashboard and CSV export. It can be turned back on at any time.
+Setting the environment variable LIVERPOCUS_COMMENTS=0 forces it off regardless of the switch.

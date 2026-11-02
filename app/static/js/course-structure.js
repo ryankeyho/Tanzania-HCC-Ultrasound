@@ -12,7 +12,6 @@ const COURSE = [
     { title: "Session 2: The Upper Abdominal Roadmap", page: "pages/session2a-roadmap.html", quiz: "section-02a" },
     { title: "Session 2a: Liver Anatomy and Landmarks", page: "pages/session2-anatomy.html", quiz: "section-02" },
     { title: "Session 2b: Scanning Technique, Controls and the Protocol", page: "pages/session2b-technique.html", quiz: "section-02b" },
-    { title: "Reference: Required Views by Organ", page: "pages/views-reference.html" },
   ]},
   { section: "2. Week 2: Pathology & Screening", items: [
     { title: "Session 3: Diffuse Liver Pathology", page: "pages/session3-diffuse.html", quiz: "section-03" },
@@ -23,9 +22,9 @@ const COURSE = [
     { title: "Posttest: End of Course", quiz: "posttest" },
   ]},
   { section: "3. Week 3: In Person, Days 1 to 3", items: [
-    { title: "Foundational Peer-to-Peer Practice", page: "pages/basic-peer-practice.html" },
+    { title: "Foundational Small Group Practice", page: "pages/basic-peer-practice.html" },
     { title: "Simulation Lab: The Bovine Liver Phantom", page: "pages/lab-phantom.html" },
-    { title: "Peer OSCE Scanning", page: "pages/supervised-scanning.html" },
+    { title: "OSCE Scanning", page: "pages/supervised-scanning.html" },
     { title: "Course Completion Criteria", page: "pages/completion-criteria.html" },
   ]},
   { section: "4. References", items: [

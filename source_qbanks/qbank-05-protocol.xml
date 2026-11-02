@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
   <question type="category">
-    <category><text>$course$/top/Section 5 - Screening Protocol and Context</text></category>
-    <info format="html"><text><![CDATA[Section 5 - Screening Protocol and Context]]></text></info>
+    <category><text>$course$/top/Session 5 - Screening Protocol and Context</text></category>
+    <info format="html"><text><![CDATA[Session 5 - Screening Protocol and Context]]></text></info>
   </question>
   <question type="multichoice">
     <name><text>Q001</text></name>
@@ -385,7 +385,7 @@
   <question type="multichoice">
     <name><text>Q015</text></name>
     <questiontext format="html"><text><![CDATA[<p>Infection prevention between screening patients in outreach requires at minimum:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>These are the minimum steps for intact-skin scanning.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>Use the cleaning and disinfection process in the current device manual and local policy, with a validated product and its contact time, plus hand hygiene.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -393,7 +393,7 @@
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text><![CDATA[Gel removal, low-level probe disinfection with an approved agent, and hand hygiene]]></text>
+      <text><![CDATA[Gel removal, probe cleaning and disinfection as specified in the device manual, and hand hygiene]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">

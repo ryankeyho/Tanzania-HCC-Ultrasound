@@ -86,7 +86,7 @@ const Api = (() => {
     const el = document.getElementById("site-header");
     if (!el) return;
     const dashLink = (u.role === "admin" || u.role === "instructor")
-      ? `<a href="/admin.html">Instructor Dashboard</a>` : "";
+      ? `<a href="/admin.html">Instructor Dashboard</a><a href="/review-comments.html">Reviewer Comments</a>` : "";
     el.innerHTML = `
       <div class="site-nav-links">
         <span class="site-brand"><img src="/static/branding/logo-icon.png" alt="" onerror="this.style.display='none'"> Tanzania HCC</span>

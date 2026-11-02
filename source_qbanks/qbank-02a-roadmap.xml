@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
   <question type="category">
-    <category><text>$course$/top/Section 2a - Upper Abdominal Roadmap</text></category>
-    <info format="html"><text><![CDATA[Section 2a Quiz - Upper Abdominal Roadmap]]></text></info>
+    <category><text>$course$/top/Session 2 - Upper Abdominal Roadmap</text></category>
+    <info format="html"><text><![CDATA[Session 2 Quiz - Upper Abdominal Roadmap]]></text></info>
   </question>
   <question type="multichoice">
     <name><text>Q001</text></name>
     <questiontext format="html"><text><![CDATA[<p>The most reliable first structure to identify on a transverse epigastric view is:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>The spine is unmistakable even on a poor image, and everything else is anterior to it.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>The spine is a useful posterior landmark when visible, and the other structures lie anterior to it. On a poor-quality image it may not be seen, so use the other relationships as well.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -27,7 +27,7 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[The spine, with the aorta immediately anterior to it]]></text>
+      <text><![CDATA[The spine, a useful posterior landmark when visible, with the aorta immediately anterior to it]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
   </question>
@@ -60,8 +60,8 @@
   </question>
   <question type="multichoice">
     <name><text>Q003</text></name>
-    <questiontext format="html"><text><![CDATA[<p>The fastest way to distinguish the IVC from the aorta, without changing any machine setting, is to:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Compression is instant and needs no settings change. Color Doppler works too but is slower.</p>]]></text></generalfeedback>
+    <questiontext format="html"><text><![CDATA[<p>The IVC is best identified on a transverse epigastric view by:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Identify the IVC by its course, its relationship to the aorta and liver, and how it behaves with respiration. Compressibility alone is not a robust identifier, and the IVC appearance does not by itself estimate pressure; the aorta is pulsatile and lies nearer the spine.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -69,7 +69,7 @@
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text><![CDATA[Apply probe compression - the IVC compresses, the aorta does not]]></text>
+      <text><![CDATA[Its course and relationships (to the right of the aorta, running up into the liver) together with its respiratory behavior]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
@@ -88,7 +88,7 @@
   <question type="multichoice">
     <name><text>Q004</text></name>
     <questiontext format="html"><text><![CDATA[<p>The 'seagull' appearance on a transverse epigastric view represents:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>The coeliac trunk's immediate bifurcation produces the seagull or whale's-tail appearance.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>The celiac trunk's immediate bifurcation produces the seagull or whale's-tail appearance.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -100,7 +100,7 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[The coeliac trunk dividing into common hepatic and splenic arteries]]></text>
+      <text><![CDATA[The celiac trunk dividing into common hepatic and splenic arteries]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
@@ -185,7 +185,7 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[The coeliac trunk]]></text>
+      <text><![CDATA[The celiac trunk]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
@@ -370,7 +370,7 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[A branch of the coeliac trunk]]></text>
+      <text><![CDATA[A branch of the celiac trunk]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
@@ -378,7 +378,7 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[Small, with a lumen of only 2-4 mm, arising anterolaterally to the left above the bifurcation]]></text>
+      <text><![CDATA[Small, arising from the front left of the lower aorta above the bifurcation]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
   </question>
@@ -412,7 +412,7 @@
   <question type="multichoice">
     <name><text>Q016</text></name>
     <questiontext format="html"><text><![CDATA[<p>The abdominal aorta should be measured:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>An oblique cut through a normal aorta reads falsely wide. Outer-to-outer is the usual screening standard; state which convention you used.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>An oblique cut through a normal aorta reads falsely wide. Conventions differ (outer wall to outer wall in POCUS 101, leading edge to leading edge in other protocols), so state which one you used.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -438,7 +438,7 @@
   </question>
   <question type="multichoice">
     <name><text>Q017</text></name>
-    <questiontext format="html"><text><![CDATA[<p>Aortic diameter varies by approximately 2 to 4 mm through the cardiac cycle. This matters mainly:</p>]]></text></questiontext>
+    <questiontext format="html"><text><![CDATA[<p>Aortic diameter varies by up to about 5 mm through the cardiac cycle. This matters mainly:</p>]]></text></questiontext>
     <generalfeedback format="html"><text><![CDATA[<p>It is why a single measurement close to a threshold should not be treated as definitive.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
@@ -465,8 +465,8 @@
   </question>
   <question type="multichoice">
     <name><text>Q018</text></name>
-    <questiontext format="html"><text><![CDATA[<p>The most sensitive right-sided window for free fluid, and one you already scan for the liver-kidney comparison, is:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>You are there anyway for the echogenicity comparison, so noticing fluid costs nothing.</p>]]></text></generalfeedback>
+    <questiontext format="html"><text><![CDATA[<p>Which right upper quadrant space should you check for free fluid, and already see during the liver-kidney comparison?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>You are there anyway for the echogenicity comparison. Also check the caudal tip of the liver, the most sensitive spot for free fluid (POCUS 101).</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -493,7 +493,7 @@
   <question type="multichoice">
     <name><text>Q019</text></name>
     <questiontext format="html"><text><![CDATA[<p>The 'spine sign' indicates:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Normally the spine appears to stop at the diaphragm; visible spine above it means fluid is transmitting sound.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>Normally aerated lung hides the spine above the diaphragm. A visible spine there means fluid or non-aerated (for example consolidated) lung is carrying sound. Confirm an effusion by seeing the fluid itself.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -513,7 +513,7 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[A pleural effusion, because fluid transmits sound where aerated lung would normally hide the spine]]></text>
+      <text><![CDATA[Sound is passing through something other than aerated lung above the diaphragm, most often pleural fluid]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
   </question>

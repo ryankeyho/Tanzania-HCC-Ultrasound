@@ -14,146 +14,83 @@
 <div class="site-shell" style="padding-top:1.6rem">
 <div class="lp-mod">
 
-
 <p class="lp-eyebrow">Week 1 &middot; Session 1</p>
 <h2>Physics &amp; the Vscan Air CL</h2>
-
 
 <div class="lp-obj">
 <p>By the end of this session you should be able to</p>
 <ul>
-<li>Explain how a B-mode image is formed, and what the brightness of a pixel actually represents</li>
-<li>Choose probe and frequency for a given depth, and say why</li>
-<li>Set depth and gain deliberately before scanning</li>
-<li>Recognize the five artifacts you will meet repeatedly in the liver, and use two of them diagnostically</li>
+<li>Understand the basic physics of ultrasound</li>
+<li>Set the appropriate preset, depth, gain and TGC on the Vscan Air CL to get a diagnostic liver image</li>
+<li>Recognize that you will encounter artifacts during scanning and how they can help aid in recognizing the etiology of potential lesions</li>
 </ul>
 </div>
 
-<h3><span class="lp-num">01</span>How the image is made</h3>
-
-<p>The probe does two jobs, alternating thousands of times per second. Piezoelectric elements in its face deform when voltage is applied, producing a brief pulse of high-frequency sound. When that pulse meets a boundary between two tissues, part of it reflects and returns. The same elements convert the returning pressure wave back into voltage.</p>
-
-<p>The machine essentially interprets two things about each returning echo: <em>how long it took to come back</em>, and <em>how strong it was</em>. From those two numbers it builds the image you see on the screen.</p>
-
-<figure>
-<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of the pulse-echo principle showing a transmitted pulse, a reflecting interface, and the returning echo used to calculate depth">
-<rect width="720" height="300" fill="#0E1319"/>
-<rect x="60" y="40" width="120" height="26" rx="3" fill="#C8892B"/>
-<text x="120" y="58" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#0E1319" font-weight="700">TRANSDUCER</text>
-<line x1="120" y1="66" x2="120" y2="250" stroke="#2C6A68" stroke-width="1" stroke-dasharray="3 4"/>
-<path d="M120 80 l-9 0 l9 -14 l9 14 z" fill="#E8EDE9" transform="rotate(180 120 73)"/>
-<text x="140" y="105" font-family="system-ui,sans-serif" font-size="13" fill="#E8EDE9">Pulse transmitted</text>
-<line x1="40" y1="175" x2="330" y2="175" stroke="#E8EDE9" stroke-width="2.5"/>
-<text x="40" y="196" font-family="system-ui,sans-serif" font-size="12" fill="#9AA6B2">Tissue interface, impedance change</text>
-<path d="M120 150 l-9 0 l9 -14 l9 14 z" fill="#C8892B"/>
-<text x="140" y="145" font-family="system-ui,sans-serif" font-size="13" fill="#C8892B">Echo returns</text>
-<line x1="118" y1="66" x2="118" y2="175" stroke="#C8892B" stroke-width="1.5"/>
-<text x="60" y="130" font-family="system-ui,sans-serif" font-size="12" fill="#C8892B" text-anchor="end">depth</text>
-<line x1="400" y1="60" x2="400" y2="250" stroke="#3A4550" stroke-width="1"/>
-<text x="425" y="80" font-family="system-ui,sans-serif" font-size="13" fill="#E8EDE9" font-weight="600">The machine measures:</text>
-<circle cx="432" cy="112" r="4" fill="#C8892B"/>
-<text x="448" y="117" font-family="system-ui,sans-serif" font-size="13" fill="#9AA6B2">Time of flight → depth on screen</text>
-<circle cx="432" cy="145" r="4" fill="#C8892B"/>
-<text x="448" y="150" font-family="system-ui,sans-serif" font-size="13" fill="#9AA6B2">Echo amplitude → pixel brightness</text>
-<text x="425" y="195" font-family="system-ui,sans-serif" font-size="13" fill="#E8EDE9" font-weight="600">The machine assumes:</text>
-<text x="448" y="222" font-family="system-ui,sans-serif" font-size="13" fill="#9AA6B2">sound travels at 1540 m/s</text>
-<text x="448" y="242" font-family="system-ui,sans-serif" font-size="13" fill="#9AA6B2">in all soft tissue</text>
-</svg>
-<figcaption>Depth is calculated, not measured. The machine divides the echo's round-trip time by an assumed speed of sound. Every depth and every caliper measurement you take rests on that assumption.</figcaption>
-</figure>
-
-<p>Echoes are produced at <strong>acoustic impedance mismatches</strong>, boundaries where tissue density and stiffness change. A large mismatch reflects almost everything (soft tissue to gas, soft tissue to bone); a small mismatch reflects a little and lets the rest continue deeper.</p>
+<h3><span class="lp-num">01</span>Core concepts of ultrasound</h3>
 
 <ul>
-<li>The skin&ndash;air mismatch is so large that essentially no sound crosses it. A dry probe produces a blank screen, not a faint image, which is why gel is needed.</li>
-<li><strong>Why bowel gas defeats you.</strong> Gas reflects nearly everything at its surface, leaving nothing to image the tissue behind it.</li>
-<li><strong>Why the liver images so well.</strong> Homogeneous soft tissue with small internal mismatches lets the beam travel deep while still generating the fine mid-gray texture that lets you notice when a patch of it looks wrong.</li>
+<li>The ultrasound probe sends pulses and essentially listens to receive them back and determine the image you receive:
+<ul><li>The machine places each echo by how long it took to return, assuming sound travels at a fixed speed in soft tissue. Depth on the screen is calculated.</li></ul></li>
+<li>Echoes are produced from boundaries between tissues:
+<ul><li>Gas and bone reflect almost everything, so you cannot see behind them. This same concept explains why you need gel between the probe and the skin, and why bowel gas and ribs block your view.</li></ul></li>
+<li>Brightness correlates to echo strength:
+<ul><li>Hyperechoic and hypoechoic are comparisons, i.e. brighter or darker than the tissue around the structure. Anechoic means no detectable echoes inside it at appropriate settings. Bright does not mean solid or hard, which can be a common misconception.</li></ul></li>
+<li>Higher frequency produces a &ldquo;sharper&rdquo; image but is limited due to it reaching a shallower depth:
+<ul><li>The low-frequency curved end reaches the whole liver while the high-frequency linear end only reaches the surface.</li></ul></li>
+<li>The beam is narrowest near its focus and diverges beyond it:
+<ul><li>Past the focal region the beam spreads, so detail is lost. This is one reason a lesion at 15 cm can look blurrier than the same lesion at 5 cm.</li></ul></li>
 </ul>
 
-<p>Brightness on the screen therefore means <em>echo strength</em>, nothing more. "Hyperechoic" means more sound came back from there than from the tissue around it. It does not mean solid, dense, or hard; a hemangioma and a rib both look bright for entirely different reasons.</p>
-
+<figure>
+<img src="/static/images/s1-depth-brightness.png" alt="Diagram titled How ultrasound determines depth and brightness: a transducer sends an outgoing pulse to a tissue interface and receives the returning echo. The machine measures round-trip travel time to calculate depth and echo amplitude for B-mode brightness. It assumes a sound speed of 1,540 m/s in soft tissue. Depth equals assumed sound speed times round-trip travel time, divided by 2." style="width:100%;height:auto;display:block;margin-bottom:.6em">
+</figure>
+<figure>
+<img src="/static/images/s1-frequency-resolution.png" alt="Diagram titled Frequency, resolution and penetration: a high-frequency (6 to 12 MHz) linear probe gives finer detail but less penetration; a low-frequency (2 to 5 MHz) curvilinear probe gives less fine detail and greater penetration. Use the highest frequency that adequately reaches the structures of interest. A low-frequency curvilinear probe is generally preferred for surveying the adult liver." style="width:100%;height:auto;display:block;margin-bottom:.6em">
+</figure>
 <details>
-<summary><span>Check yourself</span>A patient's liver looks uniformly bright and you cannot see the diaphragm at all. Name two quite different explanations.</summary>
+<summary><span>Check yourself</span>A liver looks uniformly bright and you cannot see the diaphragm. Name two different explanations.</summary>
 <div class="lp-ans">
-<p><strong>Overall gain set too high</strong>, you have amplified everything, including noise, and lost the deep signal in the glare. Fixable in two seconds.</p>
-<p><strong>Severe hepatic steatosis</strong>, fat attenuates the beam, so genuinely little sound reaches the diaphragm to return. Not fixable, and it matters clinically: this study has reduced sensitivity for focal lesions and should be scored as limited.</p>
-<p>Before you accept a bright liver as pathology, turn the gain down and look again. Before you accept it as a gain problem, check whether the deep vasculature has also disappeared.</p>
+<p>Gain may be set too high resulting in increased noise. The first step you should take is to adjust the gain to see if it helps.</p>
+<p>In the case of a severely fatty liver the fat absorbs the beam, so less sound reaches the diaphragm. Given this is an inherent patient factor, it is not fixable on your end and you should note that the study is less sensitive for focal lesions.</p>
 </div>
 </details>
 
-<h3><span class="lp-num">02</span>Frequency</h3>
+<h3><span class="lp-num">02</span>Your device: the Vscan Air CL</h3>
 
-<p>Higher-frequency sound has a shorter wavelength, and shorter wavelengths resolve finer detail. But higher-frequency sound is also absorbed faster as it travels, so it does not reach as deep. You cannot have both.</p>
+<figure class="lp-video"><iframe src="https://www.youtube-nocookie.com/embed/3bzbICPP-Wk?rel=0" title="Vscan Air CL: tour, video 1 of 2" loading="lazy" allowfullscreen></iframe><figcaption><strong>Vscan Air CL tour, video 1 of 2.</strong></figcaption></figure>
+<figure class="lp-video"><iframe src="https://www.youtube-nocookie.com/embed/T2JK3eI2SmM?rel=0" title="Vscan Air CL: tour, video 2 of 2" loading="lazy" allowfullscreen></iframe><figcaption><strong>Vscan Air CL tour, video 2 of 2.</strong></figcaption></figure>
 
+<table>
+<tr><th style="width:18%">End</th><th style="width:22%">Depth</th><th>Use it for</th></tr>
+<tr><td>Curved</td><td>Up to 24 cm</td><td>The whole liver survey. Your working end for nearly all of screening.</td></tr>
+<tr><td>Linear</td><td>Up to 8 cm</td><td>The liver surface only, when you are looking for the nodular contour of cirrhosis.</td></tr>
+</table>
+<p class="lp-src">Source:<a href="references.html#ref103" style="font-size:.68em;color:#7D8894;vertical-align:super;margin-left:1px;text-decoration:none">[103]</a></p>
+
+<ul>
+<li>Battery: GE quotes about 50 minutes of scanning on a full charge. Charge the probe and the phone or tablet overnight, and close the app between patients.</li>
+<li>Cleaning: Wipe gel off the patient as well as the probe. Then disinfect the probe.</li>
+<li>Patient data: Attach every stored image to the correct patient and follow your program's de-identification rules.</li>
+</ul>
+
+<h3><span class="lp-num">03</span>The controls, in order</h3>
+
+<p>Set them in this order every time and make it second nature.</p>
+
+<ol class="lp-steps">
+<li>Preset: Choose the abdominal preset using the curved end of the probe. This allows the Vscan to load the preset focus and harmonics.</li>
+<li>Depth: Increase or decrease depth so that the whole organ or structures of interest fill the screen. You can also adjust as needed later on.</li>
+<li>Gain: Increase or decrease the gain as needed. You can observe structures such as the hepatic veins to get an index of the appropriate level, as veins should appear black on the screen. If the gain is too high or too low you may miss subtle hyperechoic or hypoechoic lesions.</li>
+</ol>
+<figure class="lp-video"><iframe src="https://www.youtube-nocookie.com/embed/QkzeuAaA3Ko?rel=0" title="Vscan Air CL: depth and gain" loading="lazy" allowfullscreen></iframe><figcaption><strong>Depth and gain.</strong></figcaption></figure>
+<figure class="lp-video"><iframe src="https://www.youtube-nocookie.com/embed/t6CgMf1JxaA?rel=0" title="Vscan Air CL: presets" loading="lazy" allowfullscreen></iframe><figcaption><strong>Presets.</strong></figcaption></figure>
+
+<ol class="lp-steps" start="4">
+<li>TGC: Can be turned on as needed to fix depth-related darkening. Essentially, use TGC when deeper structures appear progressively darker or fainter than superficial layers, which occurs because sound energy is lost over distance.</li>
+</ol>
 <figure>
-<svg viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparison of high frequency and low frequency beams showing the trade-off between resolution and penetration">
-<rect width="800" height="320" fill="#0E1319"/>
-<text x="30" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#C8892B" font-weight="700" letter-spacing="1.5">HIGH FREQUENCY · 3–12 MHz · LINEAR</text>
-<rect x="30" y="45" width="290" height="14" fill="#C8892B"/>
-<path d="M30 59 L320 59 L320 150 L30 150 Z" fill="#1B2530" stroke="#2C6A68" stroke-width="1"/>
-<path d="M30 150 L320 150 L320 250 L30 250 Z" fill="#12161C" stroke="#232C36" stroke-width="1" stroke-dasharray="4 4"/>
-<circle cx="90" cy="90" r="3" fill="#E8EDE9"/><circle cx="110" cy="100" r="3" fill="#E8EDE9"/><circle cx="130" cy="88" r="3" fill="#E8EDE9"/>
-<circle cx="160" cy="110" r="3" fill="#E8EDE9"/><circle cx="200" cy="95" r="3" fill="#E8EDE9"/><circle cx="240" cy="115" r="3" fill="#E8EDE9"/>
-<text x="175" y="140" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#2C6A68">fine detail, to about 8 cm</text>
-<text x="175" y="205" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#4A5563">signal lost</text>
-<text x="175" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#4A5563">most of the liver lives here</text>
-
-<text x="400" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#C8892B" font-weight="700" letter-spacing="1.5">LOW FREQUENCY · 2–5 MHz · CURVED</text>
-<rect x="400" y="45" width="290" height="14" fill="#C8892B"/>
-<path d="M400 59 L690 59 L660 250 L430 250 Z" fill="#1B2530" stroke="#2C6A68" stroke-width="1"/>
-<circle cx="470" cy="95" r="5" fill="#8E9AA6"/><circle cx="520" cy="120" r="5" fill="#8E9AA6"/><circle cx="570" cy="100" r="5" fill="#8E9AA6"/>
-<circle cx="500" cy="180" r="5" fill="#8E9AA6"/><circle cx="580" cy="200" r="5" fill="#8E9AA6"/><circle cx="620" cy="160" r="5" fill="#8E9AA6"/>
-<text x="545" y="240" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#2C6A68">coarser detail, to about 24 cm</text>
-<line x1="360" y1="45" x2="360" y2="270" stroke="#3A4550" stroke-width="1"/>
-<text x="30" y="290" font-family="system-ui,sans-serif" font-size="13" fill="#9AA6B2">Same anatomy, different probe. The linear probe resolves more, but not where the liver actually is.</text>
-</svg>
-<figcaption>The right-hand fan is the shape you will spend this course looking at. Note the sector widens with depth: lateral resolution degrades as the scan lines diverge, which is why a lesion at 15 cm looks blurrier than the same lesion at 5 cm.</figcaption>
+<img src="/static/images/s1-tgc-vscan-screen.png" alt="Vscan Air CL screen with the six time-gain compensation sliders shown as horizontal bars down the image, with the ultrasound, freeze and clip icons at the left." style="width:100%;height:auto;display:block;margin-bottom:.6em">
 </figure>
-
-<p>Resolution itself has two directions, and they behave differently:</p>
-
-<table>
-<tr><th style="width:30%">Type</th><th>What it means</th><th style="width:30%">Governed by</th></tr>
-<tr><td><strong>Axial</strong></td><td>Separating two structures lying one behind the other, along the beam</td><td>Pulse length, improves with higher frequency</td></tr>
-<tr><td><strong>Lateral</strong></td><td>Separating two structures lying side by side, across the beam</td><td>Beam width, improves at the focal zone, degrades with depth</td></tr>
-</table>
-
-<div class="lp-key">
-<strong>Working rule</strong>
-Use the lowest frequency that still gives you an interpretable image at the depth you need. Reaching for more resolution than your depth allows just produces a sharper picture of nothing.
-</div>
-
-<h3><span class="lp-num">03</span>The Vscan Air CL in your hand</h3>
-
-<p>The CL is a dual-headed wireless probe: a curved array at one end, a linear array at the other, with no cart, no cable, and no power cord. It pairs to a phone or tablet running the Vscan Air app, which is where the controls are.</p>
-
-<table>
-<tr><th>End</th><th>Frequency</th><th>Depth</th><th>Use it for</th></tr>
-<tr><td><strong>Curved</strong></td><td>2&ndash;5 MHz</td><td>to ~24 cm</td><td>The entire liver survey. This is your working end for essentially all of screening.</td></tr>
-<tr><td><strong>Linear</strong></td><td>3&ndash;12 MHz</td><td>to ~8 cm</td><td>One liver task only: resolving fine surface nodularity of the capsule when you suspect cirrhosis.</td></tr>
-</table>
-
-<div class="lp-field">
-<strong>Notes about portable ultrasound devices</strong>
-Battery life is the constraint that will actually interrupt in clinic. Charge the probe and the tablet overnight, carry a power bank, and close the app between patients rather than leaving it live.
-</div>
-
-<h4>Reprocessing/cleaning between patients</h4>
-<p>Transabdominal scanning on intact skin is a <strong>non-critical</strong> contact. The requirement is low-level disinfection: remove all gel first (disinfectant will not work through a gel layer), then wipe with a manufacturer-approved agent. No autoclaving, no water rinse. Hand hygiene between patients as normal. Check the approved-agent list for each specific device, the wrong chemical can degrade and damage the probe.</p>
-
-<h4>Images, identification, and data</h4>
-<p>When scanning real patients each stored image must be attached to the correct patient identifier, and every image leaving the device must be handled under your program's de-identification policy. A misattributed image is a patient-safety event, and an ultrasound image is confidential clinical data in exactly the way a written note is.</p>
-
-<h3><span class="lp-num">04</span>The four controls that matter</h3>
-
-<p>Modern machines have many controls. Four of them account for nearly all the difference between a diagnostic study and a poor one.</p>
-
-<h4>Depth</h4>
-<p>Set it so the region of interest fills most of the screen without clipping anything relevant. Too much depth shrinks the liver into the top third and wastes both screen resolution and frame rate; too little cuts off the deep segments, where, inconveniently, lesions like to hide. Adjust depth first, before you touch anything else.</p>
-
-<h4>Gain and time-gain compensation</h4>
-<p>These are frequently confused and do different jobs. <strong>Overall gain</strong> amplifies every returning echo equally; it brightens the whole image, including the noise. <strong>Time-gain compensation</strong> amplifies selectively by depth, correcting for the fact that deeper echoes have traveled further and lost more energy on the way. TGC can, in most cases, be automatically set on modern machines. On the Vscan it is automatically set as long as "Auto Optimize" is enabled.</p>
-
 <figure>
 <svg viewBox="0 0 820 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram showing attenuation with depth and how time-gain compensation corrects it">
 <rect width="820" height="300" fill="#0E1319"/>
@@ -189,118 +126,63 @@ Battery life is the constraint that will actually interrupt in clinic. Charge th
 <figcaption>Attenuation is exponential with depth and worse at higher frequency. TGC does not recover lost signal, it amplifies what did return, including noise. Past a point, no slider setting rescues a beam that never reached.</figcaption>
 </figure>
 
-<div class="lp-key">
-<strong>The over-gaining trap</strong>
-Excessive gain fills anechoic structures with speckle. A simple cyst acquires internal "debris"; a small hypoechoic lesion is washed into the background. Over-gaining does not just make images ugly, it makes them falsely negative. When in doubt, gain down until the vessels look properly black, then come back up slightly.
-</div>
 
-<h4>Focus</h4>
-<p>The focal zone is where the beam is narrowest and lateral resolution best. The focus on most modern machines is automatically set. On the Vscan it is automatically set. Rarely, some older machines may require you to set the focus manually.</p>
+<ol class="lp-steps" start="5">
+<li>Color: Press the color icon and drag the box over the vessel. You can then adjust the color gain if the color goes outside the vessel of interest. Red means flow toward the probe and blue means flow away (&ldquo;BART&rdquo;: blue away, red towards). Red does not mean artery, which is a common misconception. It is also important to note that a vessel lying across the beam can look empty even with normal flow, which is why it is important to view structures in two planes.</li>
+</ol>
+<figure class="lp-video"><iframe src="https://www.youtube-nocookie.com/embed/uxua-Hda4Uc?rel=0" title="Vscan Air CL: color Doppler" loading="lazy" allowfullscreen></iframe><figcaption><strong>Color Doppler.</strong></figcaption></figure>
 
-<h4>Harmonics</h4>
-<p>Tissue harmonic imaging listens at multiples of the transmitted frequency, which suppresses near-field clutter and improves contrast. In practice it helps in patients with a difficult body habitus, which, in a screening population, can be a substantial fraction of your patients. Like many of the other settings, this is also automatically set on most modern machines according to the predefined scanning presets (such as the Abdomen or Cardiac presets).</p>
+<ol class="lp-steps" start="6">
+<li>Freeze and store: Store still images and short clips, attached to the right patient.</li>
+</ol>
+<figure class="lp-video"><iframe src="https://www.youtube-nocookie.com/embed/pjN3Rt7xA_E?rel=0" title="Vscan Air CL: saving images and clips, video 1 of 2" loading="lazy" allowfullscreen></iframe><figcaption><strong>Saving images and clips, video 1 of 2.</strong></figcaption></figure>
+<figure class="lp-video"><iframe src="https://www.youtube-nocookie.com/embed/wAp_FEKKVyQ?rel=0" title="Vscan Air CL: saving images and clips, video 2 of 2" loading="lazy" allowfullscreen></iframe><figcaption><strong>Saving images and clips, video 2 of 2.</strong></figcaption></figure>
 
-<h4>Doppler angle</h4>
-<p>This is the angle between the beam and the direction of flow, and it is important to ensure the angle is correct to get a valid Doppler measurement. At 90 degrees there is no detectable shift at all; as the angle narrows toward parallel, accuracy improves sharply.</p>
-<p>The working rule is to <strong>keep the angle at 60 degrees or less</strong>. Beyond 60 the error in any velocity you calculate grows steeply, and a number quoted from a 75-degree angle is not a measurement so much as a guess with decimal places. Steer the color box or angle the probe rather than accepting a poor measurement.</p>
-<p>For screening you are mostly asking a yes/no question, is there flow, and which way is it going, rather than measuring velocities. But the same geometry also determines whether you see flow at all, which is why a vessel that appears empty on color may simply be perpendicular to your beam.</p>
+<p>GE's own step-by-step guides, with screenshots: <a href="https://vscanair-support.gehealthcare.com/support/solutions/articles/47001170687-black-white-imaging-b-mode-adjustments" target="_blank" rel="noopener">gain, TGC and depth</a> and <a href="https://vscanair-support.gehealthcare.com/support/solutions/articles/47001170693-color-imaging-scanning-adjustments" target="_blank" rel="noopener">color Doppler</a>.</p>
 
-<h3><span class="lp-num">05</span>Artifacts you will encounter</h3>
+<h3><span class="lp-num">04</span>Artifacts in the liver</h3>
 
-<p>Artifacts are a common occurrence, and there are numerous different types and etiologies. Two of the five below are among the most useful diagnostic signs available to you on B-mode.</p>
-
+<p>Artifacts are not errors that the operator creates but are by-products of the ultrasound itself. However, they do help you decide what a structure is.</p>
 <figure>
-<svg viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four panels showing posterior enhancement, acoustic shadowing, reverberation, and mirror image artifact">
-<rect width="720" height="220" fill="#0E1319"/>
-<g>
-<rect x="20" y="30" width="150" height="150" fill="#2A343E"/>
-<circle cx="95" cy="85" r="26" fill="#0E1319"/>
-<rect x="69" y="111" width="52" height="69" fill="#5A6874"/>
-<text x="95" y="205" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11.5" fill="#C8892B">POSTERIOR ENHANCEMENT</text>
-</g>
-<g>
-<rect x="195" y="30" width="150" height="150" fill="#2A343E"/>
-<ellipse cx="270" cy="82" rx="24" ry="14" fill="#EDF2F1"/>
-<rect x="246" y="96" width="48" height="84" fill="#0E1319"/>
-<text x="270" y="205" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11.5" fill="#C8892B">ACOUSTIC SHADOWING</text>
-</g>
-<g>
-<rect x="370" y="30" width="150" height="150" fill="#2A343E"/>
-<rect x="390" y="60" width="110" height="5" fill="#EDF2F1"/>
-<rect x="390" y="85" width="110" height="4" fill="#B6C0CA"/>
-<rect x="390" y="110" width="110" height="3.4" fill="#7D8894"/>
-<rect x="390" y="135" width="110" height="2.8" fill="#525E6A"/>
-<rect x="390" y="160" width="110" height="2.2" fill="#3A444E"/>
-<text x="445" y="205" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11.5" fill="#C8892B">REVERBERATION</text>
-</g>
-<g>
-<rect x="545" y="30" width="150" height="150" fill="#2A343E"/>
-<path d="M555 118 Q620 96 685 118" stroke="#EDF2F1" stroke-width="3" fill="none"/>
-<circle cx="608" cy="145" r="15" fill="#0E1319"/>
-<circle cx="608" cy="91" r="15" fill="#1A222B" stroke="#4A5563" stroke-width="1" stroke-dasharray="3 3"/>
-<text x="608" y="205" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11.5" fill="#C8892B">MIRROR IMAGE</text>
-</g>
-</svg>
-<figcaption>Left to right: enhancement behind a fluid-filled structure; shadowing behind a stone; stacked equal-spaced echoes deep to a strong reflector; a duplicate structure projected across the diaphragm into the chest.</figcaption>
+<img src="/static/images/s1-common-artifacts.png" alt="Diagram titled Common ultrasound artifacts, transducer at top and depth increasing downward: posterior enhancement (brighter tissue behind fluid, less attenuation through fluid); acoustic shadowing (dark shadow behind a stone, marked attenuation); reverberation (repeated reflections create equally spaced echoes); mirror image (a longer echo path creates a deeper duplicate of a structure beyond a strong reflector such as the diaphragm)." style="width:100%;height:auto;display:block;margin-bottom:.6em">
 </figure>
 
-<details>
-<summary><span>Artifact 01</span>Posterior acoustic enhancement, useful</summary>
-<div class="lp-ans">
-<p>Fluid attenuates very little, so the beam emerges from a cyst carrying more energy than the beam either side of it. The tissue directly behind therefore appears brighter.</p>
-<p><strong>Use it:</strong> enhancement behind a rounded anechoic structure is strong supporting evidence that it really is fluid, not a hypoechoic solid mass. In a cirrhotic liver, that distinction is the difference between reassurance and a recall.</p>
-</div>
-</details>
-
-<details>
-<summary><span>Artifact 02</span>Acoustic shadowing, useful</summary>
-<div class="lp-ans">
-<p>A strongly reflective or attenuating structure, a gallstone, a calcification, a rib, gas, blocks nearly all sound, leaving an anechoic band deep to it.</p>
-<p><strong>Use it:</strong> clean posterior shadowing strongly favors a stone over a polyp. Both may be echogenic and sit against the wall, but small stones may not shadow, so confirm with mobility on repositioning as well.</p>
-<p><strong>Beware:</strong> shadowing from ribs and bowel gas is the mechanism by which liver goes unimaged. Recognizing it is also recognizing that you need a different window.</p>
-</div>
-</details>
-
-<details>
-<summary><span>Artifact 03</span>Reverberation, recognize and move on</summary>
-<div class="lp-ans">
-<p>Sound bounces repeatedly between two strong reflectors, and each return arrives later than the last. The machine, assuming every echo came from a single round trip, plots them as a series of equally spaced parallel lines going deeper.</p>
-<p>Practical significance: near-field reverberation clutter degrades the top of your image. Harmonic imaging exists largely to reduce it.</p>
-</div>
-</details>
-
-<details>
-<summary><span>Artifact 04</span>Mirror image, the one that fools people</summary>
-<div class="lp-ans">
-<p>The diaphragm is a large, curved, highly reflective surface. Sound can bounce off it, strike a structure, return to the diaphragm, and only then come back to the probe. That extra journey makes the echo late, so the machine places a duplicate of the structure <em>beyond</em> the diaphragm, apparently inside the chest.</p>
-<p><strong>Why it matters here:</strong> if you have not met this artifact, you may report liver tissue or a lesion above the diaphragm when none exists, or conversely dismiss genuine thoracic pathology as artifact. If a "lesion" sits above the diaphragm and mirrors something below it, angle the probe and watch it move in tandem, duplication of corresponding subdiaphragmatic anatomy that changes with probe angle supports a mirror artifact, but real thoracic pathology can also exist and should not be assumed away without confirming the duplication behavior directly.</p>
-</div>
-</details>
+<table>
+<tr><th style="width:22%">Artifact</th><th style="width:36%">What you see</th><th>What to do with it</th></tr>
+<tr><td>Posterior enhancement</td><td>Bright appearance behind a structure</td><td>Indicates presence of fluid and supports finding of a cyst</td></tr>
+<tr><td>Acoustic shadowing</td><td>A darkness behind a structure</td><td>Can support presence of stones or other obstruction. May indicate rib shadowing as well, depending on probe location.</td></tr>
+<tr><td>Edge shadowing</td><td>Thin dark lines along the sides of a cyst, vessel or gallbladder</td><td>Can be seen commonly along the sides of a fluid-filled cyst</td></tr>
+<tr><td>Reverberation</td><td>Evenly spaced bright lines going deeper</td><td>Nothing</td></tr>
+<tr><td>Mirror image</td><td>A mirror image of the liver above the diaphragm</td><td>Do not report a lesion above the diaphragm until you have checked it is not a mirror of one below.</td></tr>
+</table>
+<p class="lp-src">Source:<a href="references.html#ref104" style="font-size:.68em;color:#7D8894;vertical-align:super;margin-left:1px;text-decoration:none">[104]</a></p>
 
 <figure>
 <img src="/static/images/efs-liver-mirror-artifact-labeled.png" alt="B-mode ultrasound showing the liver mirror artifact, with liver, diaphragm, and the duplicated liver mirror artifact labeled." style="width:100%;height:auto;display:block;margin-bottom:.6em"><a href="references.html#ref1" style="font-size:.68em;color:#7D8894;vertical-align:super;margin-left:1px;text-decoration:none">[1]</a>
-<figcaption><strong>The liver mirror artifact, labeled.</strong> A duplicate of the liver appears beyond the diaphragm, in the position the reflected sound path places it. This is the same mechanism described above, seen directly.</figcaption>
+<figcaption>Liver mirror image artifact</figcaption>
 </figure>
 
-<details>
-<summary><span>Artifact 05</span>Slice thickness, why a simple cyst with debris</summary>
-<div class="lp-ans">
-<p>The beam has thickness perpendicular to the imaging plane. Near the edge of a cyst, the slice includes both cyst fluid and adjacent liver, and the machine averages them into one plane, producing low-level echoes that look like internal debris.</p>
-</div>
-</details>
-
 <div class="lp-key">
-<strong>The habit to build now</strong>
-Any finding seen in only one plane, from only one window, is a candidate artifact until proven otherwise. Confirming a lesion in a second orthogonal plane costs about ten seconds and prevents both false positives and the erosion of confidence that follows a few of them.
+<strong>Important!</strong>
+Anything seen in only one plane is a possible artifact. Confirm every finding in a second plane before you record it.
 </div>
 
-<h3><span class="lp-num">06</span>Before you leave this session</h3>
-<p>Complete the <strong>Section 1 quiz</strong> below. It is formative: unlimited attempts, and the answer appears once you submit. Retake it as many times as you would like.</p>
+<h3><span class="lp-num">05</span>Before you leave this session</h3>
+<p>Complete the Session 1 quiz below. It is formative: unlimited attempts, and the answer appears once you submit. Retake it as many times as you would like.</p>
+
+<div class="lp-field">
+<strong>Suggested additional videos to watch</strong>
+<ul class="lp-res">
+<li><a href="https://coreultrasound.com/5minsono-basics/" target="_blank" rel="noopener">CORE Ultrasound: 5 Minute Sono, Basics</a>. A short video on how the image is formed and the common artifacts.</li>
+<li><a href="https://www.pocus101.com/basic-principles-of-ultrasound-physics-and-artifacts-made-easy/" target="_blank" rel="noopener">POCUS 101: Ultrasound physics and artifacts made easy</a>. The same ideas with images and clips; use it to look up any artifact below.</li>
+<li><a href="https://www.pocus101.com/ultrasound-machine-basics-knobology-probes-and-modes/" target="_blank" rel="noopener">POCUS 101: Machine basics, knobology, probes and modes</a>. What each control does on any machine, and how to move the probe.</li>
+</ul>
+</div>
 
 </div>
 <div id="prevnext"></div>
 <div style="margin:2.5rem 0;padding:1.2rem;background:var(--site-panel);border-radius:6px;text-align:center">
-  <a href="/quiz.html?quiz=section-01" style="font-weight:700;text-decoration:none;font-size:1.02rem">Take the Section Quiz &rarr;</a>
+  <a href="/quiz.html?quiz=section-01" style="font-weight:700;text-decoration:none;font-size:1.02rem">Take the Session Quiz &rarr;</a>
 </div>
 </div>
 <script src="/static/js/api.js"></script>
@@ -330,5 +212,7 @@ Any finding seen in only one plane, from only one window, is a candidate artifac
     </div>`;
 })();
 </script>
+<script src="/static/js/review-mode.js" defer></script>
+<script src="/static/js/comment-mode.js" defer></script>
 </body>
 </html>

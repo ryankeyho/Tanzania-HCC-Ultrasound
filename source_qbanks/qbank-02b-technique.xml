@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
   <question type="category">
-    <category><text>$course$/top/Section 2b - Scanning Technique and Bile Duct</text></category>
+    <category><text>$course$/top/Session 2b - Scanning Technique and Bile Duct</text></category>
     <info format="html"><text><![CDATA[Knobology, probe movements, positioning, protocol and the common bile duct.]]></text></info>
   </question>
   <question type="multichoice">
@@ -86,36 +86,9 @@
     </answer>
   </question>
   <question type="multichoice">
-    <name><text>Q004</text></name>
-    <questiontext format="html"><text><![CDATA[<p>When you increase image depth mid-study, which other control should you revisit?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>The focal zone should sit at or just deep to the region of interest; changing depth moves that region relative to the focus.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0000000</defaultgrade>
-    <penalty>0.0000000</penalty>
-    <hidden>0</hidden>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answernumbering>abc</answernumbering>
-    <answer fraction="0" format="html">
-      <text><![CDATA[Answer format]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="0" format="html">
-      <text><![CDATA[Probe selection]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="100" format="html">
-      <text><![CDATA[Focus]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="0" format="html">
-      <text><![CDATA[Preset]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-  </question>
-  <question type="multichoice">
     <name><text>Q005</text></name>
-    <questiontext format="html"><text><![CDATA[<p>Which transducer movement is responsible for covering a volume of tissue rather than a single plane?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Fanning angles the beam through the tissue from a fixed footprint. Sliding moves you to new anatomy; it does not fill in the volume between planes.</p>]]></text></generalfeedback>
+    <questiontext format="html"><text><![CDATA[<p>Which movement changes the beam angle while keeping the skin contact point approximately fixed?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Fanning (tilting) changes the beam angle from an approximately fixed skin contact point. Sliding moves the contact point to new anatomy, and deliberate overlapping slides also sample tissue. Good coverage combines overlapping translations with angular sweeps.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -249,8 +222,8 @@
   </question>
   <question type="multichoice">
     <name><text>Q010</text></name>
-    <questiontext format="html"><text><![CDATA[<p>Which position most reliably improves access to the right hepatic lobe and dome?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Rolling the patient onto the left side brings the liver forward and downward and shifts bowel gas medially, opening the right intercostal spaces.</p>]]></text></generalfeedback>
+    <questiontext format="html"><text><![CDATA[<p>The liver and gallbladder are hard to see with the patient supine. Which position does ACEP Sonoguide suggest trying?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Lying on the left side, or sitting more upright, shifts the liver and gallbladder and makes them easier to image (ACEP Sonoguide).</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -271,33 +244,6 @@
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Prone]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-  </question>
-  <question type="multichoice">
-    <name><text>Q011</text></name>
-    <questiontext format="html"><text><![CDATA[<p>A frail patient on a narrow couch cannot roll fully into left lateral decubitus. A reasonable alternative is:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>A partial oblique captures much of the benefit of full decubitus and is practical in outreach settings.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0000000</defaultgrade>
-    <penalty>0.0000000</penalty>
-    <hidden>0</hidden>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answernumbering>abc</answernumbering>
-    <answer fraction="0" format="html">
-      <text><![CDATA[Abandon the right lobe]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="100" format="html">
-      <text><![CDATA[Left posterior oblique, rolled about 45 degrees]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="0" format="html">
-      <text><![CDATA[Prone positioning]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="0" format="html">
-      <text><![CDATA[Trendelenburg]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
   </question>
@@ -411,8 +357,8 @@
   </question>
   <question type="multichoice">
     <name><text>Q016</text></name>
-    <questiontext format="html"><text><![CDATA[<p>In the twelve-step screening protocol, repositioning the patient to left lateral decubitus should occur:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>It is a routine step. Skipping it because the first pass 'looked fine' is how dome coverage quietly goes missing.</p>]]></text></generalfeedback>
+    <questiontext format="html"><text><![CDATA[<p>In this course&#39;s liver protocol, changing the patient&#39;s position should happen:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The last step of the protocol is to change position and re-cover any region that was not adequately seen. Skipping it is how the top of the liver goes unimaged.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -424,11 +370,11 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[Only if the first pass was obviously inadequate]]></text>
+      <text><![CDATA[Only when examining the gallbladder]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[As a routine step, re-covering anything incomplete]]></text>
+      <text><![CDATA[Whenever any part of the liver was not adequately seen]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
@@ -547,7 +493,7 @@
   <question type="multichoice">
     <name><text>Q021</text></name>
     <questiontext format="html"><text><![CDATA[<p>The common duct is conventionally measured:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Lumen only, longitudinal, at a consistent, defined point along its course (commonly just before it enters the pancreas), perpendicular to the long axis. Follow your local protocol's measurement convention, and distinguish this standard measurement from documentation of the widest abnormal segment if the duct is irregular.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>Lumen only, longitudinal, at a consistent, defined point along its course, perpendicular to the long axis. Follow your local protocol's measurement convention, and distinguish this standard measurement from documentation of the widest abnormal segment if the duct is irregular.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -601,7 +547,7 @@
   <question type="multichoice">
     <name><text>Q023</text></name>
     <questiontext format="html"><text><![CDATA[<p>A CBD of 9 mm is measured in an asymptomatic patient who had a cholecystectomy fifteen years ago. This is best interpreted as:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Up to about 10 mm can be normal after remote cholecystectomy. Always establish the surgical history before calling a duct dilated.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>Duct caliper depends on age, prior cholecystectomy and measurement site, and is read with symptoms and labs. In an asymptomatic patient with remote cholecystectomy, 9 mm may be acceptable, but unexpected dilation needs further clinical assessment. Always establish the surgical history before calling a duct dilated.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -681,7 +627,7 @@
   </question>
     <question type="multichoice">
     <name><text>Q027</text></name>
-    <questiontext format="html"><text><![CDATA[<p>In a transverse liver column, the first probe movement after placing it high under the costal margin should be to:</p>]]></text></questiontext>
+    <questiontext format="html"><text><![CDATA[<p>In a transverse liver sweep, the first probe movement after placing it high under the costal margin should be to:</p>]]></text></questiontext>
     <generalfeedback format="html"><text><![CDATA[<p>Everything above the starting point is otherwise never imaged - and that is the dome, where lesions hide.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
@@ -703,33 +649,6 @@
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Rotate to sagittal]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-  </question>
-  <question type="multichoice">
-    <name><text>Q028</text></name>
-    <questiontext format="html"><text><![CDATA[<p>The liver is scanned in transverse as:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Left, middle and right columns, each starting high with a cranial fan before descending.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0000000</defaultgrade>
-    <penalty>0.0000000</penalty>
-    <hidden>0</hidden>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answernumbering>abc</answernumbering>
-    <answer fraction="100" format="html">
-      <text><![CDATA[Three vertical columns worked left to right, each fanned cranially then caudally]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="0" format="html">
-      <text><![CDATA[Two oblique passes]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="0" format="html">
-      <text><![CDATA[One static image per lobe]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="0" format="html">
-      <text><![CDATA[A single sweep across the abdomen]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
   </question>
@@ -761,36 +680,9 @@
     </answer>
   </question>
   <question type="multichoice">
-    <name><text>Q030</text></name>
-    <questiontext format="html"><text><![CDATA[<p>The longitudinal liver sweep is performed by:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>The rock covers craniocaudal extent at each position; the slide carries you across. One without the other leaves gaps.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0000000</defaultgrade>
-    <penalty>0.0000000</penalty>
-    <hidden>0</hidden>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answernumbering>abc</answernumbering>
-    <answer fraction="0" format="html">
-      <text><![CDATA[Scanning only the right lobe]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="100" format="html">
-      <text><![CDATA[Starting on the left and gently rocking the probe up and down while sliding across to the right]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="0" format="html">
-      <text><![CDATA[Taking one sagittal image of each lobe]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="0" format="html">
-      <text><![CDATA[Fanning from a single fixed point]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-  </question>
-  <question type="multichoice">
     <name><text>Q031</text></name>
     <questiontext format="html"><text><![CDATA[<p>In the longitudinal liver sweep, the rocking movement serves to:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Sliding alone would image only one horizontal band; the rock fills in the height.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>Rocking angles the beam through the craniocaudal extent from a fixed contact point. Sliding also samples tissue as the plane moves across the organ, so overlapping slides and angular sweeps together give coverage.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -1033,7 +925,7 @@
   <question type="multichoice">
     <name><text>Q040</text></name>
     <questiontext format="html"><text><![CDATA[<p>A trainee completes the entire liver protocol in under three minutes. This raises concern chiefly about:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>A study finished this quickly raises concern about incomplete systematic coverage generally. The cranial fan at the top of each column is what most often gets skipped when a study is rushed, since it is what takes the time and covers the dome.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>A study finished this quickly raises concern about incomplete systematic coverage generally. The cranial fan at the top of each transverse sweep is what most often gets skipped when a study is rushed, since it is what takes the time and covers the dome.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -1049,7 +941,7 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[The cranial fan at the top of each transverse column]]></text>
+      <text><![CDATA[The cranial fan at the top of each transverse sweep]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">

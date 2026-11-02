@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
   <question type="category">
-    <category><text>$course$/top/Section 1 - Physics and Equipment</text></category>
-    <info format="html"><text><![CDATA[Section 1 - Physics and Equipment]]></text></info>
+    <category><text>$course$/top/Session 1 - Physics and Equipment</text></category>
+    <info format="html"><text><![CDATA[Session 1 - Physics and Equipment]]></text></info>
   </question>
   <question type="multichoice">
     <name><text>Q001</text></name>
@@ -61,7 +61,7 @@
   <question type="multichoice">
     <name><text>Q003</text></name>
     <questiontext format="html"><text><![CDATA[<p>Time-gain compensation (TGC) is used to:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>TGC selectively boosts gain with depth to offset attenuation.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>TGC selectively boosts gain with depth to offset attenuation. Different tissues should still keep their different echogenicity; the aim is comparable tissue with appropriate brightness at different depths, not everything equally bright.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -73,7 +73,7 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[Compensate for attenuation with depth so structures at all depths appear equally bright]]></text>
+      <text><![CDATA[Compensate for attenuation with depth so that comparable tissue has appropriate brightness at different depths]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
@@ -88,7 +88,7 @@
   <question type="multichoice">
     <name><text>Q004</text></name>
     <questiontext format="html"><text><![CDATA[<p>On the Vscan Air CL, which probe is correct for a deep abdominal liver survey?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>The curved array is the deep abdominal side of the dual probe.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>The curved array is the deep abdominal end of the dual probe, reaching up to 24 cm; the linear end reaches only about 8 cm (GE Vscan Air CL data sheet).</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -100,7 +100,7 @@
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[Curved array, 2-5 MHz]]></text>
+      <text><![CDATA[Curved array, which reaches up to 24 cm deep]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
@@ -439,7 +439,7 @@
   <question type="multichoice">
     <name><text>Q017</text></name>
     <questiontext format="html"><text><![CDATA[<p>For transabdominal scanning on intact skin, appropriate probe reprocessing between patients is:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Intact-skin contact is non-critical use requiring low-level disinfection with manufacturer-approved agents.</p>]]></text></generalfeedback>
+    <generalfeedback format="html"><text><![CDATA[<p>Follow the current device manual and local infection-control policy: the manufacturer specifies the disinfection level, the validated products, the contact time and whether to rinse or dry. A general rule for intact skin does not replace the device instructions.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -447,7 +447,7 @@
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text><![CDATA[Low-level disinfection with an approved wipe after gel removal]]></text>
+      <text><![CDATA[Gel removal, then the cleaning and disinfection process specified in the device manual and local policy]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
     <answer fraction="0" format="html">
@@ -460,33 +460,6 @@
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Rinsing with water only]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-  </question>
-  <question type="multichoice">
-    <name><text>Q018</text></name>
-    <questiontext format="html"><text><![CDATA[<p>The ALARA principle means:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>ALARA balances diagnostic yield against acoustic exposure, tracked via thermal and mechanical indices.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0000000</defaultgrade>
-    <penalty>0.0000000</penalty>
-    <hidden>0</hidden>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answernumbering>abc</answernumbering>
-    <answer fraction="0" format="html">
-      <text><![CDATA[Limit exams to five minutes]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="0" format="html">
-      <text><![CDATA[Always use maximum output for clarity]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="0" format="html">
-      <text><![CDATA[Avoid Doppler entirely]]></text>
-      <feedback format="html"><text></text></feedback>
-    </answer>
-    <answer fraction="100" format="html">
-      <text><![CDATA[Keep acoustic output as low as reasonably achievable while still obtaining diagnostic images]]></text>
       <feedback format="html"><text></text></feedback>
     </answer>
   </question>

@@ -527,8 +527,8 @@
   </question>
   <question type="multichoice">
     <name><text>Q021</text></name>
-    <questiontext format="html"><text><![CDATA[<p>A liver with preserved smooth contour but marked periportal echogenic thickening and splenomegaly suggests:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Preserved contour with portal hypertension is the schistosomiasis pattern, and it changes the differential.</p>]]></text></generalfeedback>
+    <questiontext format="html"><text><![CDATA[<p>Marked echogenic thickening around the portal tracts, with splenomegaly and largely preserved liver function, suggests:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Periportal fibrosis with portal hypertension and preserved liver function is the schistosomiasis pattern. The liver surface can still look irregular, so contour alone can mimic cirrhosis (Radiopaedia).</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -666,8 +666,8 @@
   </question>
   <question type="multichoice">
     <name><text>Q026</text></name>
-    <questiontext format="html"><text><![CDATA[<p>A new 1.4 cm focal lesion on screening ultrasound in a cirrhotic patient should prompt:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Lesions 1 cm or larger trigger diagnostic multiphase imaging.</p>]]></text></generalfeedback>
+    <questiontext format="html"><text><![CDATA[<p>A new 1.4 cm focal lesion that is not definitely benign, on screening ultrasound in a cirrhotic patient, should prompt:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Observations 1 cm or larger that are not definitely benign trigger diagnostic multiphase imaging: contrast CT or MRI, or contrast ultrasound (LI-RADS US Surveillance v2024). Size alone is not enough: a simple cyst or other definitely benign lesion does not enter the positive pathway.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
@@ -940,8 +940,8 @@
   </question>
   <question type="multichoice">
     <name><text>Q036</text></name>
-    <questiontext format="html"><text><![CDATA[<p>The recall algorithm for a nodule of 1 cm or greater in a cirrhotic patient is:</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>One centimetre is the threshold for diagnostic cross-sectional imaging.</p>]]></text></generalfeedback>
+    <questiontext format="html"><text><![CDATA[<p>The recall algorithm for a nodule of 1 cm or greater that is not definitely benign, in a cirrhotic patient, is:</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>For observations that are not definitely benign, one centimetre is the threshold for diagnostic multiphase imaging: contrast CT or MRI, or contrast ultrasound (LI-RADS US Surveillance v2024). A definitely benign lesion such as a simple cyst does not enter this pathway on size alone.</p>]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>

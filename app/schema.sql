@@ -32,7 +32,9 @@ CREATE TABLE IF NOT EXISTS questions (
     choice_d    TEXT NOT NULL,
     correct     INTEGER NOT NULL CHECK (correct IN (0,1,2,3)),
     rationale   TEXT NOT NULL,
-    sort_order  INTEGER NOT NULL DEFAULT 0
+    sort_order  INTEGER NOT NULL DEFAULT 0,
+    xml_id      TEXT,                    -- stable ID from the source XML (e.g. 'Q014')
+    retired     INTEGER NOT NULL DEFAULT 0 -- 1 = superseded version kept for learner history
 );
 
 -- One row per completed (or in-progress) attempt at a quiz.
@@ -63,3 +65,27 @@ CREATE INDEX IF NOT EXISTS idx_questions_quiz ON questions(quiz_id);
 CREATE INDEX IF NOT EXISTS idx_attempts_user ON attempts(user_id);
 CREATE INDEX IF NOT EXISTS idx_attempts_quiz ON attempts(quiz_id);
 CREATE INDEX IF NOT EXISTS idx_answers_attempt ON attempt_answers(attempt_id);
+
+-- Reviewer comments: highlighted passages (or figures) with a category and a note.
+-- Reviewers see only their own; instructors and admins see all.
+CREATE TABLE IF NOT EXISTS comments (
+    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id     INTEGER NOT NULL REFERENCES users(id),
+    page        TEXT NOT NULL,
+    kind        TEXT NOT NULL DEFAULT 'text' CHECK (kind IN ('text','figure')),
+    quote       TEXT NOT NULL,
+    prefix      TEXT NOT NULL DEFAULT '',
+    suffix      TEXT NOT NULL DEFAULT '',
+    category    TEXT NOT NULL DEFAULT 'other',
+    comment     TEXT NOT NULL,
+    status      TEXT NOT NULL DEFAULT 'open' CHECK (status IN ('open','resolved','declined')),
+    admin_note  TEXT NOT NULL DEFAULT '',
+    created_at  TEXT NOT NULL DEFAULT (datetime('now')),
+    updated_at  TEXT NOT NULL DEFAULT (datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS idx_comments_page ON comments(page);
+
+CREATE TABLE IF NOT EXISTS settings (
+    key   TEXT PRIMARY KEY,
+    value TEXT NOT NULL
+);
